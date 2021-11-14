@@ -1,17 +1,17 @@
 import json
 import os
 import sys
-import imp
 import string
 import random
 from pathlib import Path
 
-try:
-    imp.find_module('names')
-    import names
-    names_imported = True
-except ImportError:
-    names_imported = False
+# import imp
+# try:
+#     imp.find_module('names')
+#     import names
+#     names_imported = True
+# except ImportError:
+#     names_imported = False
 
 """
 Helper methods -
@@ -51,11 +51,6 @@ def get_filepath(default_file = 'instances/D1-1-16.json'):
     return default_file
 
 pluck = lambda dict, *args: (dict.get(arg) for arg in args)
-
-def random_name():
-    if names_imported: return names.get_first_name()
-    letters = string.ascii_letters
-    return ''.join(random.choice(letters) for i in range(random.randrange(25)))
 
 def random_range(threshold = 20, size = 5):
     random_size = random.randint(0, size)
