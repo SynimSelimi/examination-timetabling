@@ -1,0 +1,220 @@
+{
+  "Constraints": [
+    {
+      "Level": "Forbidden",
+      "Period": 19,
+      "Room": "A",
+      "Type": "RoomPeriodConstraint"
+    },
+    {
+      "Course": "Databases",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "Databases",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "Databases",
+      "Exam": 1,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "Databases",
+      "Exam": 1,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "Programming",
+      "Exam": 0,
+      "Level": "Undesired",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "Programming",
+      "Exam": 1,
+      "Level": "Undesired",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "OpRes",
+      "Exam": 1,
+      "Level": "Preferred",
+      "Part": "Oral",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Undesired",
+      "Period": 9,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Course": "Databases",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    }
+  ],
+  "Courses": [
+    {
+      "Course": "Databases",
+      "ExamType": "WrittenAndOral",
+      "MinimumDistanceBetweenExams": 5,
+      "NumberOfExams": 2,
+      "RoomsRequested": {
+        "Number": 2,
+        "Type": "Large"
+      },
+      "Teacher": "Andrea",
+      "WrittenOralSpecs": {
+        "MaxDistance": 8,
+        "MinDistance": 4,
+        "RoomForOral": false,
+        "SameDay": false
+      }
+    },
+    {
+      "Course": "Algorithms",
+      "ExamType": "Written",
+      "MinimumDistanceBetweenExams": 5,
+      "NumberOfExams": 2,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "Luca"
+    },
+    {
+      "Course": "Programming",
+      "ExamType": "Written",
+      "MinimumDistanceBetweenExams": 4,
+      "NumberOfExams": 2,
+      "RoomsRequested": {
+        "Number": 2,
+        "Type": "Large"
+      },
+      "Teacher": "Sara"
+    },
+    {
+      "Course": "OpRes",
+      "ExamType": "WrittenAndOral",
+      "MinimumDistanceBetweenExams": 4,
+      "NumberOfExams": 2,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "Michele",
+      "WrittenOralSpecs": {
+        "MaxDistance": 1,
+        "MinDistance": 1,
+        "RoomForOral": true,
+        "SameDay": true
+      }
+    },
+    {
+      "Course": "Analytics",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 0
+      },
+      "Teacher": "Andrea"
+    }
+  ],
+  "Curricula": [
+    {
+      "Curriculum": "IngGest2",
+      "PrimaryCourses": [
+        "Databases",
+        "OpRes"
+      ],
+      "SecondaryCourses": [
+        "Analytics"
+        ]
+    },
+    {
+      "Curriculum": "IngElet2",
+      "PrimaryCourses": [
+        "Databases",
+        "Algorithms"
+      ],
+      "SecondaryCourses": [
+        "OpRes",
+        "Analytics"
+      ]
+    }
+  ],
+  "Periods": 20,
+  "PrimaryPrimaryDistance": 6,
+  "Rooms": [
+    {
+      "Room": "A",
+      "Type": "Large"
+    },
+    {
+      "Room": "B",
+      "Type": "Large"
+    },
+    {
+      "Room": "C",
+      "Type": "Large"
+    },
+    {
+      "Room": "G",
+      "Type": "Small"
+    },
+    {
+      "Room": "H",
+      "Type": "Small"
+    },
+    {
+      "Members": [
+        "A",
+        "B"
+      ],
+      "Room": "AB",
+      "Type": "Composite"
+    },
+    {
+      "Members": [
+        "A",
+        "C"
+      ],
+      "Room": "AC",
+      "Type": "Composite"
+    }
+  ],
+  "SlotsPerDay": 2,
+  "Teachers": [
+    "Andrea",
+    "Luca",
+    "Sara",
+    "Michele"
+  ]
+}
+

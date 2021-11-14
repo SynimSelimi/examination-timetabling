@@ -1,0 +1,5964 @@
+{
+  "Constraints": [
+    {
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 24,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 25,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 26,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 27,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Course": "3509",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3510",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3524",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3525",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3560",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3572",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3573",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3602",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3604",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3622",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3675",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3726",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3744",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3760",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3788",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3795",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3801",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3625",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3679",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3515",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3516",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3553",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3566",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3567",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3568",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3571",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3574",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3578",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3580",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3603",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3629",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3646",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3684",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3707",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3711",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3712",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3737",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3770",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3789",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3513",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3514",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3535",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3536",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3537",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3588",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3590",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3637",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3641",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3658",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3663",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3682",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3696",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3699",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3754",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3755",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3776",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3685",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3526",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3527",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3549",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3556",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3599",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3601",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3626",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3681",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3691",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3697",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3720",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3722",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3753",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3763",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3769",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3778",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3633",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3519",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3520",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3542",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3563",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3565",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3592",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3596",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3598",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3605",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3607",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3610",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3650",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3688",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3736",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3739",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3747",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3799",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3612",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3521",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3522",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3523",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3559",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3561",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3583",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3584",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3585",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3586",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3587",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3589",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3617",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3634",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3659",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3661",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3677",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3703",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3704",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3706",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3748",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3749",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3750",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3751",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3758",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3768",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3772",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3777",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3784",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3787",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3794",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3620",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3631",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3517",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3518",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3547",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3564",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3569",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3570",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3591",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3593",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3594",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3618",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3656",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3670",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3673",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3689",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3694",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3695",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3709",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3745",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3791",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3793",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3624",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3664",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3511",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3512",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3530",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3531",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3554",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3558",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3595",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3597",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3616",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3671",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3692",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3693",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3719",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3732",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3733",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3734",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3740",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3782",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3786",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3790",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3797",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3635",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3653",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 20,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3660",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 20,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3669",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 20,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3674",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 20,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3698",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 20,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3723",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 20,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3775",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 20,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3785",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 20,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3678",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 21,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3627",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 22,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3647",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 22,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3680",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 22,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3705",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 22,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3759",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 22,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3762",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 22,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3771",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 22,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3781",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 22,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3621",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 23,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3532",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3533",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3534",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3546",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3550",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3555",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3576",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3579",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3582",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3630",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3714",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3715",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3727",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3746",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3774",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3783",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3528",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3529",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3608",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3638",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3644",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3655",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3708",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3716",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3718",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3725",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3728",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3729",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3730",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3731",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3741",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3742",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3743",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3756",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3773",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3611",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 31,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3639",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 31,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3541",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3544",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3551",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3552",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3557",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3575",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3600",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3606",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3642",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3645",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3676",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3690",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3700",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3701",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3702",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3710",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3721",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3724",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3735",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3764",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3765",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3609",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 33,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3640",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 33,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3543",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3545",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3577",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3581",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3614",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3636",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3648",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3651",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3657",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3666",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3667",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3713",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3717",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3738",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3766",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3767",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3779",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3780",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3792",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3538",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3539",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3540",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3613",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3623",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3652",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3665",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3672",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3683",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3687",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3752",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3757",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3796",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3798",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "3649",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 37,
+      "Type": "EventPeriodConstraint"
+    }
+  ],
+  "Courses": [
+    {
+      "Course": "3509",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1330"
+    },
+    {
+      "Course": "3510",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "2265"
+    },
+    {
+      "Course": "3511",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "973"
+    },
+    {
+      "Course": "3512",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1336"
+    },
+    {
+      "Course": "3513",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "933"
+    },
+    {
+      "Course": "3514",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "930"
+    },
+    {
+      "Course": "3515",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1958"
+    },
+    {
+      "Course": "3516",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1959"
+    },
+    {
+      "Course": "3517",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "2263"
+    },
+    {
+      "Course": "3518",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1323"
+    },
+    {
+      "Course": "3519",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "950"
+    },
+    {
+      "Course": "3520",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "912"
+    },
+    {
+      "Course": "3521",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1960"
+    },
+    {
+      "Course": "3522",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "926"
+    },
+    {
+      "Course": "3523",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "930"
+    },
+    {
+      "Course": "3524",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "911"
+    },
+    {
+      "Course": "3525",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "912"
+    },
+    {
+      "Course": "3526",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "913"
+    },
+    {
+      "Course": "3527",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "959"
+    },
+    {
+      "Course": "3528",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "914"
+    },
+    {
+      "Course": "3529",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "915"
+    },
+    {
+      "Course": "3530",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1326"
+    },
+    {
+      "Course": "3531",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2262"
+    },
+    {
+      "Course": "3532",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "921"
+    },
+    {
+      "Course": "3533",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "937"
+    },
+    {
+      "Course": "3534",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "973"
+    },
+    {
+      "Course": "3535",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "924"
+    },
+    {
+      "Course": "3536",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "952"
+    },
+    {
+      "Course": "3537",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "925"
+    },
+    {
+      "Course": "3538",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "922"
+    },
+    {
+      "Course": "3539",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "2264"
+    },
+    {
+      "Course": "3540",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "923"
+    },
+    {
+      "Course": "3541",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "944"
+    },
+    {
+      "Course": "3542",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1089"
+    },
+    {
+      "Course": "3543",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "945"
+    },
+    {
+      "Course": "3544",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1332"
+    },
+    {
+      "Course": "3545",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "946"
+    },
+    {
+      "Course": "3546",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "940"
+    },
+    {
+      "Course": "3547",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "934"
+    },
+    {
+      "Course": "3549",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "915"
+    },
+    {
+      "Course": "3550",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "941"
+    },
+    {
+      "Course": "3551",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "935"
+    },
+    {
+      "Course": "3552",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "936"
+    },
+    {
+      "Course": "3553",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1139"
+    },
+    {
+      "Course": "3554",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1135"
+    },
+    {
+      "Course": "3555",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1145"
+    },
+    {
+      "Course": "3556",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "987"
+    },
+    {
+      "Course": "3557",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1143"
+    },
+    {
+      "Course": "3558",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1070"
+    },
+    {
+      "Course": "3559",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1142"
+    },
+    {
+      "Course": "3560",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "941"
+    },
+    {
+      "Course": "3561",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1142"
+    },
+    {
+      "Course": "3563",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1051"
+    },
+    {
+      "Course": "3564",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1129"
+    },
+    {
+      "Course": "3565",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "975"
+    },
+    {
+      "Course": "3566",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "914"
+    },
+    {
+      "Course": "3567",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "949"
+    },
+    {
+      "Course": "3568",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "962"
+    },
+    {
+      "Course": "3569",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1382"
+    },
+    {
+      "Course": "3570",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2266"
+    },
+    {
+      "Course": "3571",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "960"
+    },
+    {
+      "Course": "3572",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1340"
+    },
+    {
+      "Course": "3573",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1339"
+    },
+    {
+      "Course": "3574",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "984"
+    },
+    {
+      "Course": "3575",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "943"
+    },
+    {
+      "Course": "3576",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "967"
+    },
+    {
+      "Course": "3577",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1145"
+    },
+    {
+      "Course": "3578",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "953"
+    },
+    {
+      "Course": "3579",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "982"
+    },
+    {
+      "Course": "3580",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "955"
+    },
+    {
+      "Course": "3581",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1144"
+    },
+    {
+      "Course": "3582",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "969"
+    },
+    {
+      "Course": "3583",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1968"
+    },
+    {
+      "Course": "3584",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "947"
+    },
+    {
+      "Course": "3585",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "974"
+    },
+    {
+      "Course": "3586",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "951"
+    },
+    {
+      "Course": "3587",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1054"
+    },
+    {
+      "Course": "3588",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1024"
+    },
+    {
+      "Course": "3589",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "956"
+    },
+    {
+      "Course": "3590",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1051"
+    },
+    {
+      "Course": "3591",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1044"
+    },
+    {
+      "Course": "3592",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "945"
+    },
+    {
+      "Course": "3593",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1332"
+    },
+    {
+      "Course": "3594",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1045"
+    },
+    {
+      "Course": "3595",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "928"
+    },
+    {
+      "Course": "3596",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "974"
+    },
+    {
+      "Course": "3597",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1344"
+    },
+    {
+      "Course": "3598",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1053"
+    },
+    {
+      "Course": "3599",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "939"
+    },
+    {
+      "Course": "3600",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "911"
+    },
+    {
+      "Course": "3601",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "922"
+    },
+    {
+      "Course": "3602",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "976"
+    },
+    {
+      "Course": "3603",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "934"
+    },
+    {
+      "Course": "3604",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "986"
+    },
+    {
+      "Course": "3605",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "2283"
+    },
+    {
+      "Course": "3606",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "958"
+    },
+    {
+      "Course": "3607",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "917"
+    },
+    {
+      "Course": "3608",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "935"
+    },
+    {
+      "Course": "3609",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1059"
+    },
+    {
+      "Course": "3610",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1084"
+    },
+    {
+      "Course": "3611",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1969"
+    },
+    {
+      "Course": "3612",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1084"
+    },
+    {
+      "Course": "3613",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1028"
+    },
+    {
+      "Course": "3614",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1028"
+    },
+    {
+      "Course": "3616",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1017"
+    },
+    {
+      "Course": "3617",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1071"
+    },
+    {
+      "Course": "3618",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1013"
+    },
+    {
+      "Course": "3620",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1071"
+    },
+    {
+      "Course": "3621",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1983"
+    },
+    {
+      "Course": "3622",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1971"
+    },
+    {
+      "Course": "3623",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1072"
+    },
+    {
+      "Course": "3624",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1015"
+    },
+    {
+      "Course": "3625",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "977"
+    },
+    {
+      "Course": "3626",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1046"
+    },
+    {
+      "Course": "3627",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1981"
+    },
+    {
+      "Course": "3629",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1029"
+    },
+    {
+      "Course": "3630",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1014"
+    },
+    {
+      "Course": "3631",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1033"
+    },
+    {
+      "Course": "3632",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1111"
+    },
+    {
+      "Course": "3633",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1022"
+    },
+    {
+      "Course": "3634",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1075"
+    },
+    {
+      "Course": "3635",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1018"
+    },
+    {
+      "Course": "3636",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1074"
+    },
+    {
+      "Course": "3637",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1089"
+    },
+    {
+      "Course": "3638",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1076"
+    },
+    {
+      "Course": "3639",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1076"
+    },
+    {
+      "Course": "3640",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1083"
+    },
+    {
+      "Course": "3641",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1979"
+    },
+    {
+      "Course": "3642",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1060"
+    },
+    {
+      "Course": "3644",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1031"
+    },
+    {
+      "Course": "3645",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1031"
+    },
+    {
+      "Course": "3646",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1089"
+    },
+    {
+      "Course": "3647",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1023"
+    },
+    {
+      "Course": "3648",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1058"
+    },
+    {
+      "Course": "3649",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1058"
+    },
+    {
+      "Course": "3650",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1026"
+    },
+    {
+      "Course": "3651",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1061"
+    },
+    {
+      "Course": "3652",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1350"
+    },
+    {
+      "Course": "3653",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1062"
+    },
+    {
+      "Course": "3655",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1077"
+    },
+    {
+      "Course": "3656",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1104"
+    },
+    {
+      "Course": "3657",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1105"
+    },
+    {
+      "Course": "3658",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1107"
+    },
+    {
+      "Course": "3659",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1094"
+    },
+    {
+      "Course": "3660",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1139"
+    },
+    {
+      "Course": "3661",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1110"
+    },
+    {
+      "Course": "3663",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1135"
+    },
+    {
+      "Course": "3664",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1080"
+    },
+    {
+      "Course": "3665",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1376"
+    },
+    {
+      "Course": "3666",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1149"
+    },
+    {
+      "Course": "3667",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1146"
+    },
+    {
+      "Course": "3669",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1146"
+    },
+    {
+      "Course": "3670",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1973"
+    },
+    {
+      "Course": "3671",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "970"
+    },
+    {
+      "Course": "3672",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1132"
+    },
+    {
+      "Course": "3673",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1135"
+    },
+    {
+      "Course": "3674",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1975"
+    },
+    {
+      "Course": "3675",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1117"
+    },
+    {
+      "Course": "3676",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1088"
+    },
+    {
+      "Course": "3677",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1121"
+    },
+    {
+      "Course": "3678",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1086"
+    },
+    {
+      "Course": "3679",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1147"
+    },
+    {
+      "Course": "3680",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1127"
+    },
+    {
+      "Course": "3681",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "923"
+    },
+    {
+      "Course": "3682",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1079"
+    },
+    {
+      "Course": "3683",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2305"
+    },
+    {
+      "Course": "3684",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1097"
+    },
+    {
+      "Course": "3685",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1978"
+    },
+    {
+      "Course": "3687",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2282"
+    },
+    {
+      "Course": "3688",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1112"
+    },
+    {
+      "Course": "3689",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1085"
+    },
+    {
+      "Course": "3690",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "959"
+    },
+    {
+      "Course": "3691",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "997"
+    },
+    {
+      "Course": "3692",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "964"
+    },
+    {
+      "Course": "3693",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2269"
+    },
+    {
+      "Course": "3694",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1391"
+    },
+    {
+      "Course": "3695",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "999"
+    },
+    {
+      "Course": "3696",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "2268"
+    },
+    {
+      "Course": "3697",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1025"
+    },
+    {
+      "Course": "3698",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1026"
+    },
+    {
+      "Course": "3699",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "987"
+    },
+    {
+      "Course": "3700",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "988"
+    },
+    {
+      "Course": "3701",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "989"
+    },
+    {
+      "Course": "3702",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "990"
+    },
+    {
+      "Course": "3703",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "991"
+    },
+    {
+      "Course": "3704",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1003"
+    },
+    {
+      "Course": "3705",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1024"
+    },
+    {
+      "Course": "3706",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1009"
+    },
+    {
+      "Course": "3707",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "2267"
+    },
+    {
+      "Course": "3708",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1016"
+    },
+    {
+      "Course": "3709",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1015"
+    },
+    {
+      "Course": "3710",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2270"
+    },
+    {
+      "Course": "3711",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1011"
+    },
+    {
+      "Course": "3712",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1390"
+    },
+    {
+      "Course": "3713",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1028"
+    },
+    {
+      "Course": "3714",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "974"
+    },
+    {
+      "Course": "3715",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "975"
+    },
+    {
+      "Course": "3716",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "925"
+    },
+    {
+      "Course": "3717",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1017"
+    },
+    {
+      "Course": "3718",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "924"
+    },
+    {
+      "Course": "3719",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1018"
+    },
+    {
+      "Course": "3720",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "976"
+    },
+    {
+      "Course": "3721",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1023"
+    },
+    {
+      "Course": "3722",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "977"
+    },
+    {
+      "Course": "3723",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1038"
+    },
+    {
+      "Course": "3724",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1036"
+    },
+    {
+      "Course": "3725",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1964"
+    },
+    {
+      "Course": "3726",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1037"
+    },
+    {
+      "Course": "3727",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1019"
+    },
+    {
+      "Course": "3728",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1023"
+    },
+    {
+      "Course": "3729",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "972"
+    },
+    {
+      "Course": "3730",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1020"
+    },
+    {
+      "Course": "3731",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1056"
+    },
+    {
+      "Course": "3732",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "978"
+    },
+    {
+      "Course": "3733",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "979"
+    },
+    {
+      "Course": "3734",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "980"
+    },
+    {
+      "Course": "3735",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2277"
+    },
+    {
+      "Course": "3736",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1962"
+    },
+    {
+      "Course": "3737",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1022"
+    },
+    {
+      "Course": "3738",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1014"
+    },
+    {
+      "Course": "3739",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "959"
+    },
+    {
+      "Course": "3740",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1018"
+    },
+    {
+      "Course": "3741",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2284"
+    },
+    {
+      "Course": "3742",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "961"
+    },
+    {
+      "Course": "3743",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1963"
+    },
+    {
+      "Course": "3744",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1029"
+    },
+    {
+      "Course": "3745",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1013"
+    },
+    {
+      "Course": "3746",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1031"
+    },
+    {
+      "Course": "3747",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1026"
+    },
+    {
+      "Course": "3748",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1347"
+    },
+    {
+      "Course": "3749",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1033"
+    },
+    {
+      "Course": "3750",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "963"
+    },
+    {
+      "Course": "3751",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "964"
+    },
+    {
+      "Course": "3752",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "965"
+    },
+    {
+      "Course": "3753",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1000"
+    },
+    {
+      "Course": "3754",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1034"
+    },
+    {
+      "Course": "3755",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1035"
+    },
+    {
+      "Course": "3756",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1113"
+    },
+    {
+      "Course": "3757",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "969"
+    },
+    {
+      "Course": "3758",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1110"
+    },
+    {
+      "Course": "3759",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "970"
+    },
+    {
+      "Course": "3760",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1000"
+    },
+    {
+      "Course": "3762",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2279"
+    },
+    {
+      "Course": "3763",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1107"
+    },
+    {
+      "Course": "3764",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1108"
+    },
+    {
+      "Course": "3765",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1099"
+    },
+    {
+      "Course": "3766",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1106"
+    },
+    {
+      "Course": "3767",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1103"
+    },
+    {
+      "Course": "3768",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1104"
+    },
+    {
+      "Course": "3769",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "989"
+    },
+    {
+      "Course": "3770",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2274"
+    },
+    {
+      "Course": "3771",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "2275"
+    },
+    {
+      "Course": "3772",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2278"
+    },
+    {
+      "Course": "3773",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1095"
+    },
+    {
+      "Course": "3774",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "929"
+    },
+    {
+      "Course": "3775",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "936"
+    },
+    {
+      "Course": "3776",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1095"
+    },
+    {
+      "Course": "3777",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1094"
+    },
+    {
+      "Course": "3778",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1089"
+    },
+    {
+      "Course": "3779",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1093"
+    },
+    {
+      "Course": "3780",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1092"
+    },
+    {
+      "Course": "3781",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "2272"
+    },
+    {
+      "Course": "3782",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1066"
+    },
+    {
+      "Course": "3783",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1098"
+    },
+    {
+      "Course": "3784",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1065"
+    },
+    {
+      "Course": "3785",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1066"
+    },
+    {
+      "Course": "3786",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1068"
+    },
+    {
+      "Course": "3787",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1973"
+    },
+    {
+      "Course": "3788",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1086"
+    },
+    {
+      "Course": "3789",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "923"
+    },
+    {
+      "Course": "3790",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1079"
+    },
+    {
+      "Course": "3791",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1129"
+    },
+    {
+      "Course": "3792",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1085"
+    },
+    {
+      "Course": "3793",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1080"
+    },
+    {
+      "Course": "3794",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1075"
+    },
+    {
+      "Course": "3795",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1082"
+    },
+    {
+      "Course": "3796",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1576"
+    },
+    {
+      "Course": "3797",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1021"
+    },
+    {
+      "Course": "3798",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1967"
+    },
+    {
+      "Course": "3799",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "2000"
+    },
+    {
+      "Course": "3801",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "946"
+    }
+  ],
+  "Curricula": [
+    {
+      "Curriculum": "644",
+      "PrimaryCourses": [
+        "3511",
+        "3512",
+        "3513",
+        "3514",
+        "3541",
+        "3542",
+        "3545",
+        "3546",
+        "3547",
+        "3599"
+      ],
+      "SecondaryCourses": [
+        "3509",
+        "3510",
+        "3543",
+        "3544",
+        "3549",
+        "3550",
+        "3551",
+        "3552"
+      ]
+    },
+    {
+      "Curriculum": "645",
+      "PrimaryCourses": [
+        "3515",
+        "3516",
+        "3521",
+        "3522",
+        "3523"
+      ],
+      "SecondaryCourses": [
+        "3517",
+        "3518",
+        "3519",
+        "3520",
+        "3538",
+        "3539",
+        "3540",
+        "3716",
+        "3718"
+      ]
+    },
+    {
+      "Curriculum": "646",
+      "PrimaryCourses": [
+        "3524",
+        "3525",
+        "3526",
+        "3527",
+        "3528",
+        "3529",
+        "3530",
+        "3531"
+      ],
+      "SecondaryCourses": [
+        "3532",
+        "3533",
+        "3534",
+        "3535",
+        "3536",
+        "3537",
+        "3538",
+        "3539",
+        "3540"
+      ]
+    },
+    {
+      "Curriculum": "647",
+      "PrimaryCourses": [
+        "3560",
+        "3575",
+        "3584",
+        "3586",
+        "3592",
+        "3595",
+        "3597",
+        "3601",
+        "3603",
+        "3681",
+        "3801"
+      ],
+      "SecondaryCourses": [
+        "3578",
+        "3580",
+        "3589",
+        "3593",
+        "3605",
+        "3607",
+        "3608"
+      ]
+    },
+    {
+      "Curriculum": "648",
+      "PrimaryCourses": [
+        "3572",
+        "3573"
+      ],
+      "SecondaryCourses": [
+        "3566",
+        "3567",
+        "3569",
+        "3570",
+        "3600"
+      ]
+    },
+    {
+      "Curriculum": "649",
+      "PrimaryCourses": [
+        "3696",
+        "3699",
+        "3700",
+        "3701",
+        "3702",
+        "3703",
+        "3704",
+        "3706",
+        "3760"
+      ],
+      "SecondaryCourses": [
+        "3691",
+        "3692",
+        "3693",
+        "3694",
+        "3695"
+      ]
+    },
+    {
+      "Curriculum": "650",
+      "PrimaryCourses": [
+        "3720",
+        "3722",
+        "3725",
+        "3729",
+        "3731",
+        "3732",
+        "3733",
+        "3734"
+      ],
+      "SecondaryCourses": [
+        "3707",
+        "3712",
+        "3714",
+        "3715"
+      ]
+    },
+    {
+      "Curriculum": "651",
+      "PrimaryCourses": [
+        "3748",
+        "3750",
+        "3751",
+        "3752",
+        "3757",
+        "3759"
+      ],
+      "SecondaryCourses": [
+        "3736",
+        "3739",
+        "3741",
+        "3742",
+        "3743"
+      ]
+    },
+    {
+      "Curriculum": "652",
+      "PrimaryCourses": [
+        "3677",
+        "3698",
+        "3719",
+        "3737",
+        "3744",
+        "3749",
+        "3754",
+        "3755",
+        "3796",
+        "3799"
+      ],
+      "SecondaryCourses": [
+        "3647",
+        "3697",
+        "3705",
+        "3713",
+        "3717",
+        "3721",
+        "3726",
+        "3728",
+        "3746",
+        "3747",
+        "3753"
+      ]
+    },
+    {
+      "Curriculum": "653",
+      "PrimaryCourses": [
+        "3677",
+        "3724",
+        "3740",
+        "3744",
+        "3749",
+        "3754",
+        "3755",
+        "3799"
+      ],
+      "SecondaryCourses": [
+        "3713",
+        "3717",
+        "3721",
+        "3723",
+        "3726",
+        "3746",
+        "3747",
+        "3753"
+      ]
+    },
+    {
+      "Curriculum": "654",
+      "PrimaryCourses": [
+        "3709"
+      ],
+      "SecondaryCourses": [
+        "3708"
+      ]
+    },
+    {
+      "Curriculum": "655",
+      "PrimaryCourses": [
+        "3730",
+        "3737",
+        "3797"
+      ],
+      "SecondaryCourses": [
+        "3727",
+        "3728"
+      ]
+    },
+    {
+      "Curriculum": "656",
+      "PrimaryCourses": [
+        "3711",
+        "3745"
+      ],
+      "SecondaryCourses": [
+        "3710"
+      ]
+    },
+    {
+      "Curriculum": "657",
+      "PrimaryCourses": [
+        "3738",
+        "3745",
+        "3798"
+      ],
+      "SecondaryCourses": []
+    },
+    {
+      "Curriculum": "658",
+      "PrimaryCourses": [
+        "3576",
+        "3579",
+        "3582",
+        "3596",
+        "3598",
+        "3602",
+        "3604",
+        "3606",
+        "3690"
+      ],
+      "SecondaryCourses": [
+        "3568",
+        "3571",
+        "3574",
+        "3583",
+        "3585",
+        "3587",
+        "3588",
+        "3590",
+        "3591",
+        "3594"
+      ]
+    },
+    {
+      "Curriculum": "659",
+      "PrimaryCourses": [
+        "3591",
+        "3594",
+        "3613",
+        "3614",
+        "3616",
+        "3618",
+        "3630",
+        "3631",
+        "3635",
+        "3644",
+        "3648",
+        "3649",
+        "3670",
+        "3680"
+      ],
+      "SecondaryCourses": [
+        "3609",
+        "3611",
+        "3622",
+        "3624",
+        "3625",
+        "3626",
+        "3629",
+        "3633",
+        "3642",
+        "3647",
+        "3650",
+        "3658",
+        "3661"
+      ]
+    },
+    {
+      "Curriculum": "660",
+      "PrimaryCourses": [
+        "3591",
+        "3594",
+        "3614",
+        "3616",
+        "3618",
+        "3630",
+        "3631",
+        "3635",
+        "3644",
+        "3648",
+        "3649",
+        "3652",
+        "3653",
+        "3670",
+        "3680"
+      ],
+      "SecondaryCourses": [
+        "3621",
+        "3622",
+        "3624",
+        "3625",
+        "3626",
+        "3629",
+        "3633",
+        "3642",
+        "3647",
+        "3650",
+        "3651",
+        "3658",
+        "3661"
+      ]
+    },
+    {
+      "Curriculum": "661",
+      "PrimaryCourses": [],
+      "SecondaryCourses": []
+    },
+    {
+      "Curriculum": "662",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "3651"
+      ]
+    },
+    {
+      "Curriculum": "663",
+      "PrimaryCourses": [
+        "3735",
+        "3773",
+        "3774",
+        "3775"
+      ],
+      "SecondaryCourses": [
+        "3769",
+        "3770",
+        "3771",
+        "3772"
+      ]
+    },
+    {
+      "Curriculum": "664",
+      "PrimaryCourses": [
+        "3756",
+        "3764",
+        "3765",
+        "3766",
+        "3767",
+        "3768"
+      ],
+      "SecondaryCourses": [
+        "3632",
+        "3758",
+        "3762",
+        "3763"
+      ]
+    },
+    {
+      "Curriculum": "665",
+      "PrimaryCourses": [
+        "3779",
+        "3780",
+        "3781",
+        "3782",
+        "3783"
+      ],
+      "SecondaryCourses": [
+        "3776",
+        "3777",
+        "3778"
+      ]
+    },
+    {
+      "Curriculum": "666",
+      "PrimaryCourses": [
+        "3788",
+        "3790",
+        "3792"
+      ],
+      "SecondaryCourses": [
+        "3637",
+        "3640",
+        "3789",
+        "3791"
+      ]
+    },
+    {
+      "Curriculum": "667",
+      "PrimaryCourses": [
+        "3682",
+        "3793",
+        "3794"
+      ],
+      "SecondaryCourses": [
+        "3610",
+        "3640",
+        "3655",
+        "3795"
+      ]
+    },
+    {
+      "Curriculum": "668",
+      "PrimaryCourses": [
+        "3636",
+        "3638"
+      ],
+      "SecondaryCourses": [
+        "3558",
+        "3617",
+        "3623",
+        "3627",
+        "3634"
+      ]
+    },
+    {
+      "Curriculum": "669",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "3784",
+        "3785",
+        "3786",
+        "3787"
+      ]
+    },
+    {
+      "Curriculum": "670",
+      "PrimaryCourses": [
+        "3616",
+        "3656",
+        "3670",
+        "3672",
+        "3674"
+      ],
+      "SecondaryCourses": [
+        "3657",
+        "3658",
+        "3659",
+        "3688"
+      ]
+    },
+    {
+      "Curriculum": "671",
+      "PrimaryCourses": [
+        "3623",
+        "3665",
+        "3670",
+        "3672"
+      ],
+      "SecondaryCourses": [
+        "3658",
+        "3659",
+        "3661",
+        "3663",
+        "3688"
+      ]
+    },
+    {
+      "Curriculum": "672",
+      "PrimaryCourses": [
+        "3555",
+        "3556",
+        "3558"
+      ],
+      "SecondaryCourses": [
+        "3554",
+        "3557",
+        "3559",
+        "3561",
+        "3563"
+      ]
+    },
+    {
+      "Curriculum": "673",
+      "PrimaryCourses": [
+        "3564",
+        "3565"
+      ],
+      "SecondaryCourses": [
+        "3553",
+        "3577",
+        "3581"
+      ]
+    },
+    {
+      "Curriculum": "674",
+      "PrimaryCourses": [
+        "3564",
+        "3620",
+        "3623",
+        "3639",
+        "3667",
+        "3669",
+        "3673",
+        "3684",
+        "3689"
+      ],
+      "SecondaryCourses": [
+        "3612",
+        "3641",
+        "3660",
+        "3664"
+      ]
+    },
+    {
+      "Curriculum": "675",
+      "PrimaryCourses": [
+        "3564",
+        "3620",
+        "3623",
+        "3639",
+        "3666",
+        "3669",
+        "3684",
+        "3689"
+      ],
+      "SecondaryCourses": [
+        "3612",
+        "3641",
+        "3660",
+        "3664",
+        "3671",
+        "3679"
+      ]
+    },
+    {
+      "Curriculum": "676",
+      "PrimaryCourses": [
+        "3564",
+        "3620",
+        "3623",
+        "3627",
+        "3666",
+        "3667",
+        "3669",
+        "3673",
+        "3684",
+        "3685",
+        "3689"
+      ],
+      "SecondaryCourses": [
+        "3612",
+        "3641",
+        "3660",
+        "3671",
+        "3679"
+      ]
+    },
+    {
+      "Curriculum": "677",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "3676",
+        "3678"
+      ]
+    },
+    {
+      "Curriculum": "678",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "3676",
+        "3678"
+      ]
+    },
+    {
+      "Curriculum": "679",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "3676",
+        "3685"
+      ]
+    },
+    {
+      "Curriculum": "680",
+      "PrimaryCourses": [
+        "3675",
+        "3677"
+      ],
+      "SecondaryCourses": []
+    },
+    {
+      "Curriculum": "681",
+      "PrimaryCourses": [
+        "3645",
+        "3646",
+        "3650",
+        "3680",
+        "3683",
+        "3687"
+      ],
+      "SecondaryCourses": [
+        "3642",
+        "3688"
+      ]
+    }
+  ],
+  "Periods": 38,
+  "PrimaryPrimaryDistance": 6,
+  "Rooms": [
+    {
+      "Room": "704",
+      "Type": "Small"
+    },
+    {
+      "Room": "705",
+      "Type": "Small"
+    },
+    {
+      "Room": "706",
+      "Type": "Small"
+    },
+    {
+      "Room": "707",
+      "Type": "Small"
+    },
+    {
+      "Room": "708",
+      "Type": "Small"
+    },
+    {
+      "Room": "709",
+      "Type": "Small"
+    },
+    {
+      "Room": "710",
+      "Type": "Small"
+    },
+    {
+      "Room": "711",
+      "Type": "Small"
+    },
+    {
+      "Room": "712",
+      "Type": "Small"
+    },
+    {
+      "Room": "713",
+      "Type": "Small"
+    },
+    {
+      "Room": "714",
+      "Type": "Small"
+    },
+    {
+      "Room": "715",
+      "Type": "Small"
+    },
+    {
+      "Room": "722",
+      "Type": "Small"
+    },
+    {
+      "Room": "723",
+      "Type": "Small"
+    },
+    {
+      "Room": "716",
+      "Type": "Small"
+    },
+    {
+      "Room": "717",
+      "Type": "Medium"
+    },
+    {
+      "Room": "718",
+      "Type": "Small"
+    },
+    {
+      "Room": "719",
+      "Type": "Medium"
+    },
+    {
+      "Room": "720",
+      "Type": "Small"
+    },
+    {
+      "Room": "721",
+      "Type": "Medium"
+    },
+    {
+      "Room": "724",
+      "Type": "Small"
+    },
+    {
+      "Room": "725",
+      "Type": "Small"
+    },
+    {
+      "Room": "726",
+      "Type": "Small"
+    },
+    {
+      "Room": "727",
+      "Type": "Small"
+    },
+    {
+      "Room": "728",
+      "Type": "Small"
+    },
+    {
+      "Room": "729",
+      "Type": "Small"
+    },
+    {
+      "Room": "730",
+      "Type": "Large"
+    },
+    {
+      "Room": "674",
+      "Type": "Small"
+    },
+    {
+      "Room": "684",
+      "Type": "Large"
+    },
+    {
+      "Room": "677",
+      "Type": "Medium"
+    },
+    {
+      "Room": "685",
+      "Type": "Large"
+    },
+    {
+      "Room": "678",
+      "Type": "Small"
+    },
+    {
+      "Room": "679",
+      "Type": "Small"
+    },
+    {
+      "Room": "680",
+      "Type": "Medium"
+    },
+    {
+      "Room": "686",
+      "Type": "Large"
+    },
+    {
+      "Room": "731",
+      "Type": "Large"
+    },
+    {
+      "Room": "675",
+      "Type": "Small"
+    },
+    {
+      "Room": "732",
+      "Type": "Medium"
+    },
+    {
+      "Room": "681",
+      "Type": "Small"
+    },
+    {
+      "Room": "682",
+      "Type": "Medium"
+    },
+    {
+      "Room": "687",
+      "Type": "Large"
+    },
+    {
+      "Room": "733",
+      "Type": "Small"
+    },
+    {
+      "Room": "683",
+      "Type": "Small"
+    },
+    {
+      "Room": "688",
+      "Type": "Large"
+    },
+    {
+      "Room": "734",
+      "Type": "Medium"
+    },
+    {
+      "Room": "689",
+      "Type": "Large"
+    },
+    {
+      "Room": "735",
+      "Type": "Small"
+    },
+    {
+      "Room": "676",
+      "Type": "Small"
+    },
+    {
+      "Room": "690",
+      "Type": "Large"
+    },
+    {
+      "Room": "736",
+      "Type": "Medium"
+    },
+    {
+      "Room": "691",
+      "Type": "Large"
+    },
+    {
+      "Room": "737",
+      "Type": "Medium"
+    },
+    {
+      "Room": "692",
+      "Type": "Medium"
+    },
+    {
+      "Room": "693",
+      "Type": "Medium"
+    },
+    {
+      "Room": "694",
+      "Type": "Medium"
+    },
+    {
+      "Room": "695",
+      "Type": "Large"
+    },
+    {
+      "Room": "696",
+      "Type": "Large"
+    },
+    {
+      "Room": "697",
+      "Type": "Medium"
+    },
+    {
+      "Room": "698",
+      "Type": "Medium"
+    },
+    {
+      "Room": "699",
+      "Type": "Medium"
+    },
+    {
+      "Room": "700",
+      "Type": "Medium"
+    },
+    {
+      "Room": "701",
+      "Type": "Medium"
+    },
+    {
+      "Room": "702",
+      "Type": "Medium"
+    },
+    {
+      "Room": "738",
+      "Type": "Medium"
+    },
+    {
+      "Room": "703",
+      "Type": "Medium"
+    }
+  ],
+  "SlotsPerDay": 2,
+  "Teachers": [
+    "2271",
+    "1391",
+    "1005",
+    "1004",
+    "943",
+    "1967",
+    "1018",
+    "1117",
+    "1007",
+    "1108",
+    "1115",
+    "1975",
+    "2264",
+    "923",
+    "950",
+    "1382",
+    "2276",
+    "1041",
+    "2275",
+    "1055",
+    "1110",
+    "2269",
+    "940",
+    "1093",
+    "952",
+    "935",
+    "1058",
+    "912",
+    "1068",
+    "1089",
+    "1390",
+    "1046",
+    "976",
+    "1962",
+    "1021",
+    "1105",
+    "1080",
+    "1097",
+    "1024",
+    "1343",
+    "2265",
+    "1106",
+    "1104",
+    "987",
+    "931",
+    "938",
+    "1095",
+    "968",
+    "1141",
+    "1099",
+    "1332",
+    "1034",
+    "2272",
+    "2278",
+    "1042",
+    "933",
+    "1060",
+    "1132",
+    "1112",
+    "1326",
+    "999",
+    "1138",
+    "2273",
+    "1111",
+    "986",
+    "990",
+    "918",
+    "1061",
+    "1043",
+    "1143",
+    "1006",
+    "955",
+    "1025",
+    "1050",
+    "988",
+    "2277",
+    "1323",
+    "1335",
+    "1971",
+    "953",
+    "951",
+    "937",
+    "949",
+    "1958",
+    "1088",
+    "1048",
+    "947",
+    "958",
+    "996",
+    "965",
+    "1137",
+    "995",
+    "948",
+    "961",
+    "1086",
+    "2268",
+    "1019",
+    "1047",
+    "911",
+    "1127",
+    "1103",
+    "1085",
+    "1014",
+    "1376",
+    "1113",
+    "980",
+    "1008",
+    "1051",
+    "1017",
+    "1969",
+    "1070",
+    "989",
+    "1084",
+    "2279",
+    "927",
+    "1082",
+    "1013",
+    "1083",
+    "1045",
+    "1336",
+    "941",
+    "922",
+    "2305",
+    "1000",
+    "1038",
+    "1011",
+    "982",
+    "2266",
+    "977",
+    "959",
+    "1098",
+    "1959",
+    "1031",
+    "946",
+    "1052",
+    "997",
+    "991",
+    "1977",
+    "1964",
+    "1026",
+    "1981",
+    "1077",
+    "979",
+    "1979",
+    "939",
+    "1149",
+    "966",
+    "981",
+    "1029",
+    "954",
+    "1072",
+    "1079",
+    "1033",
+    "1035",
+    "930",
+    "913",
+    "1039",
+    "1022",
+    "1002",
+    "2267",
+    "956",
+    "1009",
+    "1056",
+    "2281",
+    "964",
+    "984",
+    "1059",
+    "1037",
+    "1146",
+    "970",
+    "2000",
+    "1973",
+    "1379",
+    "1074",
+    "2284",
+    "975",
+    "1576",
+    "1340",
+    "960",
+    "1978",
+    "1129",
+    "924",
+    "1065",
+    "2282",
+    "1960",
+    "915",
+    "1350",
+    "1003",
+    "1339",
+    "1071",
+    "2283",
+    "936",
+    "1107",
+    "1344",
+    "993",
+    "978",
+    "1135",
+    "973",
+    "1044",
+    "1145",
+    "929",
+    "1963",
+    "1020",
+    "926",
+    "969",
+    "1036",
+    "2262",
+    "1121",
+    "1053",
+    "974",
+    "945",
+    "1144",
+    "2274",
+    "1066",
+    "2263",
+    "1094",
+    "925",
+    "962",
+    "1139",
+    "1054",
+    "972",
+    "1968",
+    "2270",
+    "1075",
+    "963",
+    "921",
+    "917",
+    "1015",
+    "1016",
+    "944",
+    "1147",
+    "1023",
+    "928",
+    "967",
+    "1028",
+    "1076",
+    "1347",
+    "1062",
+    "1983",
+    "934",
+    "1142",
+    "1092",
+    "1330",
+    "914"
+  ]
+}
+

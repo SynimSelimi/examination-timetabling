@@ -1,0 +1,5784 @@
+{
+  "Constraints": [
+    {
+      "Level": "Forbidden",
+      "Period": 20,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 21,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 22,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 23,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 24,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 25,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 26,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Level": "Forbidden",
+      "Period": 27,
+      "Type": "PeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 0,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 1,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 2,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 3,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 4,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 5,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 6,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 7,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 8,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 9,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 10,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70657",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70664",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70674",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70676",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70680",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70688",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70693",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70698",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70707",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70713",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70717",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70722",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70731",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70741",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70748",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70749",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 11,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 12,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 13,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 14,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 15,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70740",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70742",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 16,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70740",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70742",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 17,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70740",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70742",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 18,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70692",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70704",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70718",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70727",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70738",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70740",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70742",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 19,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 20,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 21,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 22,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 23,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 24,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 25,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 26,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 27,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70691",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 28,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70662",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 29,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 29,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 29,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 29,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70700",
+      "Exam": 0,
+      "Level": "Preferred",
+      "Period": 29,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70712",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 29,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 29,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 29,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 29,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70684",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 30,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 31,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70685",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 31,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 31,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70721",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 31,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 31,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "71862",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 31,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 32,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 33,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 33,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 34,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 35,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 35,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70729",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 35,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 36,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 37,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 37,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 37,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 37,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 38,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 38,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 38,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 39,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70661",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 39,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 39,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 39,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 40,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 40,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 40,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 40,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 40,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 41,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 41,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 41,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 41,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 42,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 42,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 42,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 42,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 43,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 43,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 43,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70750",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 43,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 44,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 44,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 44,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70740",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 44,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70742",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 44,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 44,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Oral",
+      "Period": 45,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 45,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70740",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 45,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70742",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 45,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70756",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 45,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 46,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 46,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70740",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 46,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70742",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 46,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70660",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 47,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70696-70697",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Part": "Written",
+      "Period": 47,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70735",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 47,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70740",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 47,
+      "Type": "EventPeriodConstraint"
+    },
+    {
+      "Course": "70742",
+      "Exam": 0,
+      "Level": "Forbidden",
+      "Period": 47,
+      "Type": "EventPeriodConstraint"
+    }
+  ],
+  "Courses": [
+    {
+      "Course": "70655",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1197",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70656",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 3,
+        "Type": "Small"
+      },
+      "Teacher": "1159",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70657",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 2,
+        "Type": "Small"
+      },
+      "Teacher": "1129",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70658",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1125",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70660",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1175",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70661",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1167",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70662",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1135",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70663",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1112",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70664",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1119",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70668",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1125",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70669",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1193",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70673",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "2611",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70674",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1190",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70675",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "5627",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70676",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1139",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70677",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 2,
+        "Type": "Small"
+      },
+      "Teacher": "2638",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70678",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1163",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70679",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2629",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70680",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1144",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70682",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 3,
+        "Type": "Small"
+      },
+      "Teacher": "1561",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70684",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2429",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70685",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1126",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70686",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "12805",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70687",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1170",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70688",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1187",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70690",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1193",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70691",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1115",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70692",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1182",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70693",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 3,
+        "Type": "Small"
+      },
+      "Teacher": "1146",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70694",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2626",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70695",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1100",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70696-70697",
+      "ExamType": "WrittenAndOral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 0
+      },
+      "Teacher": "1100",
+      "WrittenOralSpecs": {
+        "MaxDistance": 1,
+        "MinDistance": 1,
+        "RoomForOral": true,
+        "SameDay": true
+      }
+    },
+    {
+      "Course": "70698",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1144",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70699",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "5629",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70700",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "12706",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70701",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "5626",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70702",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1153",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70703",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1125",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70704",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1197",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70707",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1168",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70709",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1137",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70710",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "13686",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70712",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1135",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70713",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1147",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70715",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1152",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70716",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Small"
+      },
+      "Teacher": "1154",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70717",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "5815",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70718",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "9427",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70719",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 0
+      },
+      "Teacher": "2431"
+    },
+    {
+      "Course": "70721",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1216",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70722",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1187",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70723",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 3,
+        "Type": "Small"
+      },
+      "Teacher": "1888",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70724",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "5777",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70725",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 3,
+        "Type": "Small"
+      },
+      "Teacher": "13637",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70726",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1215",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70727",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1889",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70728",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1215",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70729",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1131",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70730",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1191",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70731",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1133",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70732",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1220",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70734",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 3,
+        "Type": "Small"
+      },
+      "Teacher": "1561",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70735",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1097",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70736",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "9406",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70738",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1181",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70740",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 0
+      },
+      "Teacher": "1158"
+    },
+    {
+      "Course": "70741",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1146",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70742",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 0
+      },
+      "Teacher": "1158"
+    },
+    {
+      "Course": "70743",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1186",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70745",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 2,
+        "Type": "Small"
+      },
+      "Teacher": "1209",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70747",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1112",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70748",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 2,
+        "Type": "Small"
+      },
+      "Teacher": "1133",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70749",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Large"
+      },
+      "Teacher": "1116",
+      "MinSupervisors": 3
+    },
+    {
+      "Course": "70750",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1118",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70751",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1121",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70752",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1127",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70753",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1121",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70754",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1127",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70755",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 3,
+        "Type": "Small"
+      },
+      "Teacher": "1201",
+      "MinSupervisors": 1
+    },
+    {
+      "Course": "70756",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "1153",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "70757",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "13638",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "71862",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "9887",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "71863",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "12996",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "71864",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "9888",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "71865",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "9889",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "71866",
+      "ExamType": "Written",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "9890",
+      "MinSupervisors": 2
+    },
+    {
+      "Course": "71880",
+      "ExamType": "Oral",
+      "NumberOfExams": 1,
+      "RoomsRequested": {
+        "Number": 1,
+        "Type": "Medium"
+      },
+      "Teacher": "2430",
+      "MinSupervisors": 2
+    }
+  ],
+  "Curricula": [
+    {
+      "Curriculum": "2538",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70703",
+        "70713",
+        "70715",
+        "70734",
+        "70735",
+        "70745",
+        "71863"
+      ]
+    },
+    {
+      "Curriculum": "2539",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70660",
+        "70664",
+        "70703",
+        "70715",
+        "70734",
+        "70735",
+        "70745",
+        "71863"
+      ]
+    },
+    {
+      "Curriculum": "2540",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70674",
+        "70688",
+        "70716",
+        "70721",
+        "70753"
+      ]
+    },
+    {
+      "Curriculum": "2541",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70716",
+        "70718",
+        "70753",
+        "70756"
+      ]
+    },
+    {
+      "Curriculum": "2542",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70655",
+        "70656",
+        "70658",
+        "70687",
+        "70691",
+        "70709",
+        "70715",
+        "70716",
+        "70740"
+      ]
+    },
+    {
+      "Curriculum": "2543",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70656",
+        "70658",
+        "70691",
+        "70704",
+        "70715",
+        "70716",
+        "70722",
+        "70738",
+        "70743"
+      ]
+    },
+    {
+      "Curriculum": "2544",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70661",
+        "70690",
+        "70712",
+        "70757",
+        "71864",
+        "71865"
+      ]
+    },
+    {
+      "Curriculum": "2545",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70657",
+        "70702",
+        "70719",
+        "70726",
+        "71864",
+        "71865"
+      ]
+    },
+    {
+      "Curriculum": "2546",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70656",
+        "70680",
+        "70691",
+        "70741",
+        "70750",
+        "70754",
+        "71880"
+      ]
+    },
+    {
+      "Curriculum": "2547",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70656",
+        "70680",
+        "70691",
+        "70741",
+        "70750",
+        "70751",
+        "70754"
+      ]
+    },
+    {
+      "Curriculum": "2548",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70679",
+        "70684",
+        "70685",
+        "70710",
+        "70734",
+        "70740",
+        "70748"
+      ]
+    },
+    {
+      "Curriculum": "2549",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70678",
+        "70684",
+        "70691",
+        "70696-70697",
+        "70712",
+        "70734"
+      ]
+    },
+    {
+      "Curriculum": "2550",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70668",
+        "70669",
+        "70682",
+        "70686",
+        "70699",
+        "70717",
+        "70725",
+        "70729",
+        "70735"
+      ]
+    },
+    {
+      "Curriculum": "2551",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70655",
+        "70687",
+        "70709",
+        "70713",
+        "70727",
+        "70730",
+        "70755",
+        "71862",
+        "71866"
+      ]
+    },
+    {
+      "Curriculum": "2552",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70661",
+        "70662",
+        "70738",
+        "70742"
+      ]
+    },
+    {
+      "Curriculum": "2553",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70675",
+        "70682",
+        "70693",
+        "70698",
+        "70707",
+        "70728",
+        "70736",
+        "70749"
+      ]
+    },
+    {
+      "Curriculum": "2554",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70663",
+        "70673",
+        "70677",
+        "70692",
+        "70694",
+        "70695",
+        "70723",
+        "70724",
+        "70734",
+        "70735",
+        "70752",
+        "70755"
+      ]
+    },
+    {
+      "Curriculum": "2555",
+      "PrimaryCourses": [],
+      "SecondaryCourses": [
+        "70676",
+        "70700",
+        "70701",
+        "70728",
+        "70731",
+        "70732",
+        "70747"
+      ]
+    }
+  ],
+  "Periods": 48,
+  "PrimaryPrimaryDistance": 12,
+  "Rooms": [
+    {
+      "Members": [
+        "4355",
+        "4356"
+      ],
+      "Room": "4381",
+      "Type": "Composite"
+    },
+    {
+      "Members": [
+        "4358",
+        "4359"
+      ],
+      "Room": "4382",
+      "Type": "Composite"
+    },
+    {
+      "Room": "4363",
+      "Type": "Medium"
+    },
+    {
+      "Room": "4364",
+      "Type": "Medium"
+    },
+    {
+      "Room": "4365",
+      "Type": "Medium"
+    },
+    {
+      "Room": "4352",
+      "Type": "Large"
+    },
+    {
+      "Room": "4354",
+      "Type": "Large"
+    },
+    {
+      "Room": "4355",
+      "Type": "Small"
+    },
+    {
+      "Room": "4356",
+      "Type": "Small"
+    },
+    {
+      "Room": "4353",
+      "Type": "Small"
+    },
+    {
+      "Room": "4380",
+      "Type": "Medium"
+    },
+    {
+      "Room": "4359",
+      "Type": "Small"
+    },
+    {
+      "Room": "4358",
+      "Type": "Small"
+    },
+    {
+      "Room": "4357",
+      "Type": "Large"
+    },
+    {
+      "Room": "4360",
+      "Type": "Small"
+    },
+    {
+      "Room": "4361",
+      "Type": "Small"
+    },
+    {
+      "Room": "4362",
+      "Type": "Small"
+    },
+    {
+      "Members": [
+        "4360",
+        "4361",
+        "4362"
+      ],
+      "Room": "4384",
+      "Type": "Composite"
+    }
+  ],
+  "SlotsPerDay": 4,
+  "Teachers": [
+    "2430",
+    "1560",
+    "1097",
+    "1216",
+    "1100",
+    "9889",
+    "1111",
+    "13638",
+    "1115",
+    "1116",
+    "1118",
+    "1119",
+    "1121",
+    "5628",
+    "12805",
+    "9427",
+    "5626",
+    "1125",
+    "2611",
+    "1126",
+    "1127",
+    "1129",
+    "1131",
+    "1130",
+    "1133",
+    "1135",
+    "1137",
+    "1139",
+    "9887",
+    "1143",
+    "1144",
+    "1201",
+    "2429",
+    "1146",
+    "1147",
+    "5627",
+    "12706",
+    "1152",
+    "13637",
+    "1153",
+    "1154",
+    "9888",
+    "1158",
+    "1159",
+    "1163",
+    "2638",
+    "1167",
+    "1112",
+    "1168",
+    "13686",
+    "1170",
+    "1215",
+    "1175",
+    "1209",
+    "1888",
+    "12996",
+    "2626",
+    "1181",
+    "1220",
+    "1182",
+    "5629",
+    "1186",
+    "2629",
+    "1187",
+    "1190",
+    "1191",
+    "9890",
+    "5777",
+    "2431",
+    "1193",
+    "9406",
+    "1889",
+    "1197",
+    "1561",
+    "5815"
+  ],
+  "Supervisors": [
+    {
+      "Id": 1,
+      "Name": "Faye",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 2,
+      "Name": "Kim",
+      "DisfavoredPeriods": [
+        46,
+        36,
+        43
+      ]
+    },
+    {
+      "Id": 3,
+      "Name": "Jeremy",
+      "DisfavoredPeriods": [
+        18,
+        25,
+        11
+      ]
+    },
+    {
+      "Id": 4,
+      "Name": "Charles",
+      "DisfavoredPeriods": [
+        6,
+        33
+      ]
+    },
+    {
+      "Id": 5,
+      "Name": "Martha",
+      "DisfavoredPeriods": [
+        26
+      ]
+    },
+    {
+      "Id": 6,
+      "Name": "Jimmy",
+      "DisfavoredPeriods": [
+        20
+      ]
+    },
+    {
+      "Id": 7,
+      "Name": "Roy",
+      "DisfavoredPeriods": [
+        41,
+        22,
+        9,
+        6,
+        38
+      ]
+    },
+    {
+      "Id": 8,
+      "Name": "Tonia",
+      "DisfavoredPeriods": [
+        47,
+        13
+      ]
+    },
+    {
+      "Id": 9,
+      "Name": "Dorothy",
+      "DisfavoredPeriods": [
+        18
+      ]
+    },
+    {
+      "Id": 10,
+      "Name": "Robert",
+      "DisfavoredPeriods": [
+        30
+      ]
+    },
+    {
+      "Id": 11,
+      "Name": "Rodney",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 12,
+      "Name": "Chris",
+      "DisfavoredPeriods": [
+        34
+      ]
+    },
+    {
+      "Id": 13,
+      "Name": "Benjamin",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 14,
+      "Name": "Marion",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 15,
+      "Name": "Kathryn",
+      "DisfavoredPeriods": [
+        29,
+        31,
+        17,
+        41,
+        47
+      ]
+    },
+    {
+      "Id": 16,
+      "Name": "Chris",
+      "DisfavoredPeriods": [
+        10,
+        37
+      ]
+    },
+    {
+      "Id": 17,
+      "Name": "June",
+      "DisfavoredPeriods": [
+        46,
+        25
+      ]
+    },
+    {
+      "Id": 18,
+      "Name": "Jack",
+      "DisfavoredPeriods": [
+        16,
+        36,
+        3,
+        31,
+        30
+      ]
+    },
+    {
+      "Id": 19,
+      "Name": "Lucy",
+      "DisfavoredPeriods": [
+        43,
+        21,
+        15,
+        2
+      ]
+    },
+    {
+      "Id": 20,
+      "Name": "Jayme",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 21,
+      "Name": "Lena",
+      "DisfavoredPeriods": [
+        39,
+        44,
+        43
+      ]
+    },
+    {
+      "Id": 22,
+      "Name": "Victor",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 23,
+      "Name": "Marlene",
+      "DisfavoredPeriods": [
+        7,
+        21
+      ]
+    },
+    {
+      "Id": 24,
+      "Name": "Linda",
+      "DisfavoredPeriods": [
+        36,
+        42,
+        11,
+        38,
+        25
+      ]
+    },
+    {
+      "Id": 25,
+      "Name": "Marty",
+      "DisfavoredPeriods": [
+        13,
+        24,
+        46,
+        41,
+        15
+      ]
+    },
+    {
+      "Id": 26,
+      "Name": "Jane",
+      "DisfavoredPeriods": [
+        1
+      ]
+    },
+    {
+      "Id": 27,
+      "Name": "Glenn",
+      "DisfavoredPeriods": [
+        6,
+        45
+      ]
+    },
+    {
+      "Id": 28,
+      "Name": "Vernon",
+      "DisfavoredPeriods": [
+        16,
+        40,
+        8,
+        28
+      ]
+    },
+    {
+      "Id": 29,
+      "Name": "Michael",
+      "DisfavoredPeriods": [
+        36,
+        45,
+        40
+      ]
+    },
+    {
+      "Id": 30,
+      "Name": "Gracie",
+      "DisfavoredPeriods": [
+        31,
+        38
+      ]
+    },
+    {
+      "Id": 31,
+      "Name": "Rosa",
+      "DisfavoredPeriods": [
+        35,
+        29,
+        21,
+        14
+      ]
+    },
+    {
+      "Id": 32,
+      "Name": "Kristin",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 33,
+      "Name": "James",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 34,
+      "Name": "Andrew",
+      "DisfavoredPeriods": [
+        8,
+        47,
+        12,
+        24,
+        6
+      ]
+    },
+    {
+      "Id": 35,
+      "Name": "Alexis",
+      "DisfavoredPeriods": [
+        2,
+        22,
+        20,
+        7,
+        16
+      ]
+    },
+    {
+      "Id": 36,
+      "Name": "James",
+      "DisfavoredPeriods": [
+        7,
+        35,
+        38,
+        33
+      ]
+    },
+    {
+      "Id": 37,
+      "Name": "Gladys",
+      "DisfavoredPeriods": [
+        35,
+        8,
+        1,
+        2
+      ]
+    },
+    {
+      "Id": 38,
+      "Name": "Suzan",
+      "DisfavoredPeriods": [
+        11,
+        28,
+        20,
+        2,
+        16
+      ]
+    },
+    {
+      "Id": 39,
+      "Name": "Ana",
+      "DisfavoredPeriods": [
+        36,
+        12,
+        35
+      ]
+    },
+    {
+      "Id": 40,
+      "Name": "Deann",
+      "DisfavoredPeriods": [
+        9,
+        12,
+        27
+      ]
+    },
+    {
+      "Id": 41,
+      "Name": "Lorraine",
+      "DisfavoredPeriods": [
+        17,
+        43,
+        36
+      ]
+    },
+    {
+      "Id": 42,
+      "Name": "Sherman",
+      "DisfavoredPeriods": [
+        41,
+        44,
+        45,
+        34,
+        10
+      ]
+    },
+    {
+      "Id": 43,
+      "Name": "Harriet",
+      "DisfavoredPeriods": [
+        25
+      ]
+    },
+    {
+      "Id": 44,
+      "Name": "Hazel",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 45,
+      "Name": "Tommy",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 46,
+      "Name": "Christopher",
+      "DisfavoredPeriods": [
+        10,
+        17
+      ]
+    },
+    {
+      "Id": 47,
+      "Name": "Helen",
+      "DisfavoredPeriods": [
+        36,
+        37,
+        32
+      ]
+    },
+    {
+      "Id": 48,
+      "Name": "Stanley",
+      "DisfavoredPeriods": [
+        4
+      ]
+    },
+    {
+      "Id": 49,
+      "Name": "Laura",
+      "DisfavoredPeriods": [
+        2,
+        24,
+        4,
+        5
+      ]
+    },
+    {
+      "Id": 50,
+      "Name": "Saundra",
+      "DisfavoredPeriods": [
+        24,
+        25,
+        12,
+        4
+      ]
+    },
+    {
+      "Id": 51,
+      "Name": "Consuelo",
+      "DisfavoredPeriods": [
+        6,
+        23,
+        39
+      ]
+    },
+    {
+      "Id": 52,
+      "Name": "Isaac",
+      "DisfavoredPeriods": [
+        32,
+        47,
+        31,
+        44,
+        40
+      ]
+    },
+    {
+      "Id": 53,
+      "Name": "Karen",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 54,
+      "Name": "Anthony",
+      "DisfavoredPeriods": [
+        13,
+        32,
+        33,
+        10
+      ]
+    },
+    {
+      "Id": 55,
+      "Name": "Philip",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 56,
+      "Name": "Roxann",
+      "DisfavoredPeriods": [
+        17,
+        41
+      ]
+    },
+    {
+      "Id": 57,
+      "Name": "Samuel",
+      "DisfavoredPeriods": [
+        5,
+        22,
+        21,
+        24,
+        17
+      ]
+    },
+    {
+      "Id": 58,
+      "Name": "Russell",
+      "DisfavoredPeriods": [
+        44,
+        37
+      ]
+    },
+    {
+      "Id": 59,
+      "Name": "Connie",
+      "DisfavoredPeriods": [
+        18
+      ]
+    },
+    {
+      "Id": 60,
+      "Name": "Marvin",
+      "DisfavoredPeriods": [
+        39,
+        2,
+        1,
+        37,
+        31
+      ]
+    },
+    {
+      "Id": 61,
+      "Name": "Jeffrey",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 62,
+      "Name": "Juan",
+      "DisfavoredPeriods": [
+        45,
+        26,
+        18
+      ]
+    },
+    {
+      "Id": 63,
+      "Name": "Mai",
+      "DisfavoredPeriods": [
+        5,
+        41
+      ]
+    },
+    {
+      "Id": 64,
+      "Name": "Linda",
+      "DisfavoredPeriods": [
+        37,
+        3,
+        47,
+        21
+      ]
+    },
+    {
+      "Id": 65,
+      "Name": "Willa",
+      "DisfavoredPeriods": [
+        45,
+        16,
+        3,
+        28
+      ]
+    },
+    {
+      "Id": 66,
+      "Name": "Tanja",
+      "DisfavoredPeriods": [
+        40
+      ]
+    },
+    {
+      "Id": 67,
+      "Name": "Gerald",
+      "DisfavoredPeriods": [
+        5,
+        16,
+        31,
+        19
+      ]
+    },
+    {
+      "Id": 68,
+      "Name": "Ronald",
+      "DisfavoredPeriods": [
+        42,
+        6
+      ]
+    },
+    {
+      "Id": 69,
+      "Name": "Erica",
+      "DisfavoredPeriods": [
+        41,
+        17,
+        5,
+        34
+      ]
+    },
+    {
+      "Id": 70,
+      "Name": "Samuel",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 71,
+      "Name": "Albert",
+      "DisfavoredPeriods": []
+    },
+    {
+      "Id": 72,
+      "Name": "Betty",
+      "DisfavoredPeriods": [
+        11,
+        30,
+        35
+      ]
+    },
+    {
+      "Id": 73,
+      "Name": "Janet",
+      "DisfavoredPeriods": [
+        7,
+        10,
+        39,
+        43
+      ]
+    },
+    {
+      "Id": 74,
+      "Name": "Marcus",
+      "DisfavoredPeriods": [
+        9
+      ]
+    }
+  ]
+}
