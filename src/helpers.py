@@ -19,14 +19,6 @@ This section contains all helper methods, which aid in
 file manipulation, enumeration, system os paths, etc.
 """
 
-def room2supervisors(enum):
-    if not enum: return None
-    return {
-        "Small": 1,
-        "Medium": 2,
-        "Large": 3
-    }[enum]
-
 def read_file(filepath):
     try:
         with open(filepath) as file:

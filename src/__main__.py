@@ -1,4 +1,5 @@
 from helpers import *
+from enums import *
 
 """
 Parsing method -
@@ -15,6 +16,41 @@ def save_solution(filepath, data):
     folder = 'solutions'
     filename = os.path.basename(filepath)
     save_file(f'{folder}/SOLUTION-{filename}', data, folder)
+
+def expand_exams(courses, flat_courses, course):
+    exam_type = course['ExamType']
+    if exam_type == "WrittenAndOral":
+        written_course = course.copy();
+        written_course['ExamType'] = 'Written'
+        flat_courses.append(written_course)
+        oral_course = course.copy();
+        oral_course['ExamType'] = 'Oral'
+        flat_courses.append(oral_course)
+    else:
+        new_course = course.copy();
+        flat_courses.append(new_course)
+        flat_done = True
+
+def flat_map_courses(courses):
+    print(len(courses))
+    flat_courses = []
+
+    while (len(courses) != 0):
+        flat_done = False
+        course = courses.pop()
+        number_of_exams = course['NumberOfExams']
+
+        for i in range(0, number_of_exams):
+            course['NumberOfExams'] = 1;
+            expand_exams(courses, flat_courses, course)
+            flat_done = True
+
+        if not flat_done: flat_courses.append(course)
+
+    # Set possible rooms
+    # Set something else
+    print(len(flat_courses))
+    return flat_courses
 
 """
 Process method -
@@ -35,8 +71,9 @@ def process(data):
 
     # DO SOMETHING WITH THE DATA
     # THEN RETURN THE PROCESSED DATA
+    courses = flat_map_courses(courses)
     processed_data = data
-    return data
+    return courses
 
 def save_solution(filepath, data):
     folder = 'solutions'
