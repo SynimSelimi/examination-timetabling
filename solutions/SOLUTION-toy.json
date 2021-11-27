@@ -111,7 +111,7 @@
   },
   {
     "Course": "Algorithms",
-    "ExamType": "Oral",
+    "ExamType": "Written",
     "MinimumDistanceBetweenExams": 5,
     "NumberOfExams": 1,
     "RoomsRequested": {
