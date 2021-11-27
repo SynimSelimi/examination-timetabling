@@ -6,7 +6,8 @@
     "RoomsRequested": {
       "Number": 0
     },
-    "Teacher": "Andrea"
+    "Teacher": "Andrea",
+    "PossibleRooms": []
   },
   {
     "Course": "OpRes",
@@ -23,7 +24,11 @@
       "MinDistance": 1,
       "RoomForOral": true,
       "SameDay": true
-    }
+    },
+    "PossibleRooms": [
+      "G",
+      "H"
+    ]
   },
   {
     "Course": "OpRes",
@@ -40,7 +45,11 @@
       "MinDistance": 1,
       "RoomForOral": true,
       "SameDay": true
-    }
+    },
+    "PossibleRooms": [
+      "G",
+      "H"
+    ]
   },
   {
     "Course": "OpRes",
@@ -57,7 +66,11 @@
       "MinDistance": 1,
       "RoomForOral": true,
       "SameDay": true
-    }
+    },
+    "PossibleRooms": [
+      "G",
+      "H"
+    ]
   },
   {
     "Course": "OpRes",
@@ -74,7 +87,11 @@
       "MinDistance": 1,
       "RoomForOral": true,
       "SameDay": true
-    }
+    },
+    "PossibleRooms": [
+      "G",
+      "H"
+    ]
   },
   {
     "Course": "Programming",
@@ -85,7 +102,11 @@
       "Number": 2,
       "Type": "Large"
     },
-    "Teacher": "Sara"
+    "Teacher": "Sara",
+    "PossibleRooms": [
+      "AB",
+      "AC"
+    ]
   },
   {
     "Course": "Programming",
@@ -96,7 +117,11 @@
       "Number": 2,
       "Type": "Large"
     },
-    "Teacher": "Sara"
+    "Teacher": "Sara",
+    "PossibleRooms": [
+      "AB",
+      "AC"
+    ]
   },
   {
     "Course": "Algorithms",
@@ -107,7 +132,12 @@
       "Number": 1,
       "Type": "Large"
     },
-    "Teacher": "Luca"
+    "Teacher": "Luca",
+    "PossibleRooms": [
+      "A",
+      "B",
+      "C"
+    ]
   },
   {
     "Course": "Algorithms",
@@ -118,7 +148,12 @@
       "Number": 1,
       "Type": "Large"
     },
-    "Teacher": "Luca"
+    "Teacher": "Luca",
+    "PossibleRooms": [
+      "A",
+      "B",
+      "C"
+    ]
   },
   {
     "Course": "Databases",
@@ -135,7 +170,11 @@
       "MinDistance": 4,
       "RoomForOral": false,
       "SameDay": false
-    }
+    },
+    "PossibleRooms": [
+      "AB",
+      "AC"
+    ]
   },
   {
     "Course": "Databases",
@@ -152,7 +191,11 @@
       "MinDistance": 4,
       "RoomForOral": false,
       "SameDay": false
-    }
+    },
+    "PossibleRooms": [
+      "AB",
+      "AC"
+    ]
   },
   {
     "Course": "Databases",
@@ -169,7 +212,11 @@
       "MinDistance": 4,
       "RoomForOral": false,
       "SameDay": false
-    }
+    },
+    "PossibleRooms": [
+      "AB",
+      "AC"
+    ]
   },
   {
     "Course": "Databases",
@@ -186,6 +233,10 @@
       "MinDistance": 4,
       "RoomForOral": false,
       "SameDay": false
-    }
+    },
+    "PossibleRooms": [
+      "AB",
+      "AC"
+    ]
   }
 ]

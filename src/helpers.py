@@ -48,3 +48,7 @@ def random_range(threshold = 20, size = 5):
     random_size = random.randint(0, size)
     threshold_range = range(1, threshold)
     return random.sample(threshold_range, random_size)
+
+def map_filter(fun, dict):
+    def some(value): return value != None
+    list(map(fun, dict))

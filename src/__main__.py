@@ -47,10 +47,33 @@ def flat_map_courses(courses):
 
         if not flat_done: flat_courses.append(course)
 
-    # Set possible rooms
-    # Set something else
     print(len(flat_courses))
+
     return flat_courses
+
+def add_possible_rooms(courses, rooms):
+    for course in courses:
+        req_rooms = course['RoomsRequested']
+        room_numbers = req_rooms['Number']
+
+        if room_numbers == 0:
+            course['PossibleRooms'] = []
+        elif room_numbers == 1:
+            room_type = req_rooms['Type']
+            def fun(room):
+                match = room['Type'] == room_type
+                if match: return room['Room']
+                return None
+            course['PossibleRooms'] = list(filter(None, list(map(fun, rooms))))
+        elif room_numbers > 1:
+            room_type = req_rooms['Type']
+            def fun(room):
+                match = room.get('Members') and len(room['Members']) == room_numbers
+                if match: return room['Room']
+                return None
+            course['PossibleRooms'] = list(filter(None, list(map(fun, rooms))))
+
+    return courses
 
 """
 Process method -
@@ -72,6 +95,7 @@ def process(data):
     # DO SOMETHING WITH THE DATA
     # THEN RETURN THE PROCESSED DATA
     courses = flat_map_courses(courses)
+    courses = add_possible_rooms(courses, rooms)
     processed_data = data
     return courses
 
