@@ -52,3 +52,25 @@ def random_range(threshold = 20, size = 5):
 def map_filter(fun, dict):
     def some(value): return value != None
     list(map(fun, dict))
+
+"""
+Parsing method -
+This method contains the main instance parsing logic
+"""
+def parse(filepath = None):
+    filepath = filepath or get_filepath()
+    data = read_file(filepath)
+    if not data: return None
+
+    return data
+
+def save_solution(filepath, data):
+    folder = 'solutions'
+    filename = os.path.basename(filepath)
+    save_file(f'{folder}/SOLUTION-{filename}', data, folder)
+
+def flat_map(f, xs):
+    ys = []
+    for x in xs:
+        ys.extend(f(x))
+    return ys

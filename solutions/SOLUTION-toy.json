@@ -7,7 +7,9 @@
       "Number": 0
     },
     "Teacher": "Andrea",
-    "PossibleRooms": []
+    "PossibleRooms": [],
+    "PrimaryCourses": [],
+    "SecondaryCourses": []
   },
   {
     "Course": "OpRes",
@@ -28,48 +30,12 @@
     "PossibleRooms": [
       "G",
       "H"
-    ]
-  },
-  {
-    "Course": "OpRes",
-    "ExamType": "Oral",
-    "MinimumDistanceBetweenExams": 4,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 1,
-      "Type": "Small"
-    },
-    "Teacher": "Michele",
-    "WrittenOralSpecs": {
-      "MaxDistance": 1,
-      "MinDistance": 1,
-      "RoomForOral": true,
-      "SameDay": true
-    },
-    "PossibleRooms": [
-      "G",
-      "H"
-    ]
-  },
-  {
-    "Course": "OpRes",
-    "ExamType": "Written",
-    "MinimumDistanceBetweenExams": 4,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 1,
-      "Type": "Small"
-    },
-    "Teacher": "Michele",
-    "WrittenOralSpecs": {
-      "MaxDistance": 1,
-      "MinDistance": 1,
-      "RoomForOral": true,
-      "SameDay": true
-    },
-    "PossibleRooms": [
-      "G",
-      "H"
+    ],
+    "PrimaryCourses": [
+      "Databases"
+    ],
+    "SecondaryCourses": [
+      "Analytics"
     ]
   },
   {
@@ -91,6 +57,66 @@
     "PossibleRooms": [
       "G",
       "H"
+    ],
+    "PrimaryCourses": [
+      "Databases"
+    ],
+    "SecondaryCourses": [
+      "Analytics"
+    ]
+  },
+  {
+    "Course": "OpRes",
+    "ExamType": "Written",
+    "MinimumDistanceBetweenExams": 4,
+    "NumberOfExams": 1,
+    "RoomsRequested": {
+      "Number": 1,
+      "Type": "Small"
+    },
+    "Teacher": "Michele",
+    "WrittenOralSpecs": {
+      "MaxDistance": 1,
+      "MinDistance": 1,
+      "RoomForOral": true,
+      "SameDay": true
+    },
+    "PossibleRooms": [
+      "G",
+      "H"
+    ],
+    "PrimaryCourses": [
+      "Databases"
+    ],
+    "SecondaryCourses": [
+      "Analytics"
+    ]
+  },
+  {
+    "Course": "OpRes",
+    "ExamType": "Oral",
+    "MinimumDistanceBetweenExams": 4,
+    "NumberOfExams": 1,
+    "RoomsRequested": {
+      "Number": 1,
+      "Type": "Small"
+    },
+    "Teacher": "Michele",
+    "WrittenOralSpecs": {
+      "MaxDistance": 1,
+      "MinDistance": 1,
+      "RoomForOral": true,
+      "SameDay": true
+    },
+    "PossibleRooms": [
+      "G",
+      "H"
+    ],
+    "PrimaryCourses": [
+      "Databases"
+    ],
+    "SecondaryCourses": [
+      "Analytics"
     ]
   },
   {
@@ -106,7 +132,9 @@
     "PossibleRooms": [
       "AB",
       "AC"
-    ]
+    ],
+    "PrimaryCourses": [],
+    "SecondaryCourses": []
   },
   {
     "Course": "Programming",
@@ -121,6 +149,31 @@
     "PossibleRooms": [
       "AB",
       "AC"
+    ],
+    "PrimaryCourses": [],
+    "SecondaryCourses": []
+  },
+  {
+    "Course": "Algorithms",
+    "ExamType": "Written",
+    "MinimumDistanceBetweenExams": 5,
+    "NumberOfExams": 1,
+    "RoomsRequested": {
+      "Number": 1,
+      "Type": "Large"
+    },
+    "Teacher": "Luca",
+    "PossibleRooms": [
+      "A",
+      "B",
+      "C"
+    ],
+    "PrimaryCourses": [
+      "Databases"
+    ],
+    "SecondaryCourses": [
+      "OpRes",
+      "Analytics"
     ]
   },
   {
@@ -137,22 +190,13 @@
       "A",
       "B",
       "C"
-    ]
-  },
-  {
-    "Course": "Algorithms",
-    "ExamType": "Written",
-    "MinimumDistanceBetweenExams": 5,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 1,
-      "Type": "Large"
-    },
-    "Teacher": "Luca",
-    "PossibleRooms": [
-      "A",
-      "B",
-      "C"
+    ],
+    "PrimaryCourses": [
+      "Databases"
+    ],
+    "SecondaryCourses": [
+      "OpRes",
+      "Analytics"
     ]
   },
   {
@@ -174,6 +218,16 @@
     "PossibleRooms": [
       "AB",
       "AC"
+    ],
+    "PrimaryCourses": [
+      "OpRes",
+      "Databases",
+      "Algorithms"
+    ],
+    "SecondaryCourses": [
+      "Analytics",
+      "OpRes",
+      "Analytics"
     ]
   },
   {
@@ -195,6 +249,16 @@
     "PossibleRooms": [
       "AB",
       "AC"
+    ],
+    "PrimaryCourses": [
+      "OpRes",
+      "Databases",
+      "Algorithms"
+    ],
+    "SecondaryCourses": [
+      "Analytics",
+      "OpRes",
+      "Analytics"
     ]
   },
   {
@@ -216,6 +280,16 @@
     "PossibleRooms": [
       "AB",
       "AC"
+    ],
+    "PrimaryCourses": [
+      "OpRes",
+      "Databases",
+      "Algorithms"
+    ],
+    "SecondaryCourses": [
+      "Analytics",
+      "OpRes",
+      "Analytics"
     ]
   },
   {
@@ -237,6 +311,16 @@
     "PossibleRooms": [
       "AB",
       "AC"
+    ],
+    "PrimaryCourses": [
+      "OpRes",
+      "Databases",
+      "Algorithms"
+    ],
+    "SecondaryCourses": [
+      "Analytics",
+      "OpRes",
+      "Analytics"
     ]
   }
 ]
