@@ -1,6 +1,7 @@
 from helpers import *
 from enums import *
 from preprocess import *
+from solution import *
 
 """
 Process method -
@@ -19,19 +20,21 @@ def process(data):
         'Curricula', 'PrimaryPrimaryDistance'
     )
 
+    periods = list(range(0, periods))
     hard_constraints = list(filter(lambda val: val['Level'] == 'Forbidden', constraints))
+    period_constraints = list(filter(lambda val: val['Type'] == 'PeriodConstraint', hard_constraints))
+    event_period_constraints = list(filter(lambda val: val['Type'] == 'EventPeriodConstraint', hard_constraints))
 
     # DO SOMETHING WITH THE DATA
     # THEN RETURN THE PROCESSED DATA
+
+    periods = sieve_periods(periods, period_constraints)
     courses = flat_map_courses(courses)
     courses = add_possible_rooms(courses, rooms)
-    courses = add_possible_periods(courses, rooms)
+    courses = add_possible_periods(courses, periods, slots_per_day, event_period_constraints)
     courses = add_curricula_info(courses, curricula)
-    processed_data = data
-    return courses
 
-def solve(instances):
-    return instances
+    return courses
 
 """
 Main program -
@@ -42,7 +45,11 @@ def main():
 
     data = parse()
     instances = process(data)
-    solution = solve(instances)
+    # To Do add possible RoomPeriodConstraint to the busy roomPeriodSets
+    # To Do Take into account same day constraints
+    # To Do check MinimumDistanceBetweenExams
+    # To Do check MaxDistance MinDistance for WrittenOral
+    solution = Solution(instances).solve()
     save_solution(get_filepath(), solution)
 
     print("Solver completed.")

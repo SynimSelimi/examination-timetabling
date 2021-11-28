@@ -1,5 +1,9 @@
 # Examination Timetabling Problem
 
+### Dataset and Evaluation
+
+https://bitbucket.org/satt/examtimetablinguniuddata/
+
 ### Dependecies
 
 1. [Install Python](https://docs.python-guide.org/starting/install3/linux/)

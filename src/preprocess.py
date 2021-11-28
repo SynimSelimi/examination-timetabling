@@ -5,9 +5,11 @@ def expand_exams(courses, flat_courses, course):
     if exam_type == "WrittenAndOral":
         written_course = course.copy();
         written_course['ExamType'] = 'Written'
+        # written_course['ExamOrder'] = 0
         flat_courses.append(written_course)
         oral_course = course.copy();
         oral_course['ExamType'] = 'Oral'
+        # oral_course['ExamOrder'] = 1
         flat_courses.append(oral_course)
     else:
         new_course = course.copy();
@@ -24,6 +26,7 @@ def flat_map_courses(courses):
 
         for i in range(0, number_of_exams):
             course['NumberOfExams'] = 1;
+            course['ExamOrder'] = i
             expand_exams(courses, flat_courses, course)
             flat_done = True
 
@@ -76,7 +79,30 @@ def add_curricula_info(courses, curricula):
 
     return courses
 
-def add_possible_periods(courses, periods):
-    # To Do Take into account same day constraints
-    # To Do Take into account period constraints
+def sieve_periods(periods, period_constraints):
+    _periods = periods.copy()
+    for constraint in period_constraints:
+        periods.remove(constraint['Period'])
+
+    return periods
+
+def add_possible_periods(courses, periods, slots_per_day, constraints):
+    for course in courses:
+        _periods = periods.copy()
+        course_name = course['Course']
+        exam_type = course['ExamType']
+        exam_order = course.get('ExamOrder')
+        filter_fun = lambda x: \
+            (x.get('Part') == None or x['Part'] == exam_type) and \
+            (exam_order == None or x['Exam'] == exam_order) \
+            and x['Course'] == course_name
+        forbidden_periods = list(filter(filter_fun, constraints))
+        forbidden_periods = list(map(lambda x: x['Period'], forbidden_periods))
+
+        for f_period in forbidden_periods: 
+            if f_period in _periods: 
+                _periods.remove(f_period)
+
+        course['PossiblePeriods'] = _periods
+
     return courses

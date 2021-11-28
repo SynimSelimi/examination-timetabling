@@ -7,7 +7,29 @@
       "Number": 0
     },
     "Teacher": "Andrea",
+    "ExamOrder": 0,
     "PossibleRooms": [],
+    "PossiblePeriods": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
     "PrimaryCourses": [],
     "SecondaryCourses": []
   },
@@ -27,9 +49,31 @@
       "RoomForOral": true,
       "SameDay": true
     },
+    "ExamOrder": 0,
     "PossibleRooms": [
       "G",
       "H"
+    ],
+    "PossiblePeriods": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [
       "Databases"
@@ -54,9 +98,31 @@
       "RoomForOral": true,
       "SameDay": true
     },
+    "ExamOrder": 0,
     "PossibleRooms": [
       "G",
       "H"
+    ],
+    "PossiblePeriods": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [
       "Databases"
@@ -81,9 +147,31 @@
       "RoomForOral": true,
       "SameDay": true
     },
+    "ExamOrder": 1,
     "PossibleRooms": [
       "G",
       "H"
+    ],
+    "PossiblePeriods": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [
       "Databases"
@@ -108,9 +196,31 @@
       "RoomForOral": true,
       "SameDay": true
     },
+    "ExamOrder": 1,
     "PossibleRooms": [
       "G",
       "H"
+    ],
+    "PossiblePeriods": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [
       "Databases"
@@ -129,9 +239,31 @@
       "Type": "Large"
     },
     "Teacher": "Sara",
+    "ExamOrder": 0,
     "PossibleRooms": [
       "AB",
       "AC"
+    ],
+    "PossiblePeriods": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [],
     "SecondaryCourses": []
@@ -146,9 +278,31 @@
       "Type": "Large"
     },
     "Teacher": "Sara",
+    "ExamOrder": 1,
     "PossibleRooms": [
       "AB",
       "AC"
+    ],
+    "PossiblePeriods": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [],
     "SecondaryCourses": []
@@ -163,10 +317,32 @@
       "Type": "Large"
     },
     "Teacher": "Luca",
+    "ExamOrder": 0,
     "PossibleRooms": [
       "A",
       "B",
       "C"
+    ],
+    "PossiblePeriods": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [
       "Databases"
@@ -186,10 +362,32 @@
       "Type": "Large"
     },
     "Teacher": "Luca",
+    "ExamOrder": 1,
     "PossibleRooms": [
       "A",
       "B",
       "C"
+    ],
+    "PossiblePeriods": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [
       "Databases"
@@ -215,9 +413,29 @@
       "RoomForOral": false,
       "SameDay": false
     },
+    "ExamOrder": 0,
     "PossibleRooms": [
       "AB",
       "AC"
+    ],
+    "PossiblePeriods": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [
       "OpRes",
@@ -246,9 +464,30 @@
       "RoomForOral": false,
       "SameDay": false
     },
+    "ExamOrder": 0,
     "PossibleRooms": [
       "AB",
       "AC"
+    ],
+    "PossiblePeriods": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [
       "OpRes",
@@ -277,9 +516,30 @@
       "RoomForOral": false,
       "SameDay": false
     },
+    "ExamOrder": 1,
     "PossibleRooms": [
       "AB",
       "AC"
+    ],
+    "PossiblePeriods": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [
       "OpRes",
@@ -308,9 +568,30 @@
       "RoomForOral": false,
       "SameDay": false
     },
+    "ExamOrder": 1,
     "PossibleRooms": [
       "AB",
       "AC"
+    ],
+    "PossiblePeriods": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
     "PrimaryCourses": [
       "OpRes",
