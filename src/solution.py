@@ -12,18 +12,26 @@ class Solution:
         # To do add EventRoomConstraint to a temporary memory set
         # To Do check MinimumDistanceBetweenExams
         # To Do check MaxDistance MinDistance for WrittenOral (soft)
-        # To Do check PrimaryPrimaryDistance
+        # To Do check PrimaryPrimaryDistance (soft)
         # To Do check if courses have the same teacher (cannot be assigned same period)
         # To Do check if courses are primary (cannot be assigned same period)
         # To Do calculate cost
         self.cost = 0
         self.assignments = []
 
-        for instance in self.instances:
+        # dict(sorted(x.items(), key=lambda item: item[1]))
+
+        for course in self.instances:
             # To Do group by course and add events per course
-            course = instance['Course']
-            assignment = Assignment(course)
-            event = Event(0, 'Oral', 26, '306')
+            course_name = course['Course']
+            exam_type = course['ExamType']
+            exam_order = course['ExamOrder']
+            assignment = Assignment(course_name)
+            period = course.get('PossiblePeriods')
+            period = period[0] if len(period) > 0 else None
+            room = course.get('PossibleRooms')
+            room = room[0] if len(room) > 0 else None
+            event = Event(exam_order, exam_type, period, room)
             assignment.add_event(event)
             self.add_assignment(assignment)
 

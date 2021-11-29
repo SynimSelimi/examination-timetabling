@@ -24,13 +24,14 @@ def process(data):
     hard_constraints = list(filter(lambda val: val['Level'] == 'Forbidden', constraints))
     period_constraints = list(filter(lambda val: val['Type'] == 'PeriodConstraint', hard_constraints))
     event_period_constraints = list(filter(lambda val: val['Type'] == 'EventPeriodConstraint', hard_constraints))
+    event_room_constraints = list(filter(lambda val: val['Type'] == 'EventRoomConstraint', hard_constraints))
 
     # DO SOMETHING WITH THE DATA
     # THEN RETURN THE PROCESSED DATA
 
     periods = sieve_periods(periods, period_constraints)
     courses = flat_map_courses(courses)
-    courses = add_possible_rooms(courses, rooms)
+    courses = add_possible_rooms(courses, rooms, event_room_constraints)
     courses = add_possible_periods(courses, periods, event_period_constraints)
     courses = add_curricula_info(courses, curricula)
 

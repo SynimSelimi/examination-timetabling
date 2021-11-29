@@ -34,7 +34,8 @@ def flat_map_courses(courses):
 
     return flat_courses
 
-def add_possible_rooms(courses, rooms):
+# constraints are provided all as Undesired (soft)
+def add_possible_rooms(courses, rooms, constraints):
     for course in courses:
         req_rooms = course['RoomsRequested']
         room_numbers = req_rooms['Number']
