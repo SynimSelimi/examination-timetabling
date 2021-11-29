@@ -100,8 +100,13 @@
     },
     "ExamOrder": 0,
     "PossibleRooms": [
+      "A",
+      "B",
+      "C",
       "G",
-      "H"
+      "H",
+      "AB",
+      "AC"
     ],
     "PossiblePeriods": [
       0,
@@ -198,8 +203,13 @@
     },
     "ExamOrder": 1,
     "PossibleRooms": [
+      "A",
+      "B",
+      "C",
       "G",
-      "H"
+      "H",
+      "AB",
+      "AC"
     ],
     "PossiblePeriods": [
       0,
