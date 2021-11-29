@@ -9,8 +9,13 @@ class Solution:
     def solve(self):
         # To Do add possible RoomPeriodConstraint to the busy roomPeriodSets
         # To Do Take into account same day constraints
+        # To do add EventRoomConstraint to a temporary memory set
         # To Do check MinimumDistanceBetweenExams
-        # To Do check MaxDistance MinDistance for WrittenOral
+        # To Do check MaxDistance MinDistance for WrittenOral (soft)
+        # To Do check PrimaryPrimaryDistance
+        # To Do check if courses have the same teacher (cannot be assigned same period)
+        # To Do check if courses are primary (cannot be assigned same period)
+        # To Do calculate cost
         self.cost = 0
         self.assignments = []
 

@@ -90,7 +90,7 @@ def sieve_periods(periods, period_constraints):
 
     return periods
 
-def add_possible_periods(courses, periods, slots_per_day, constraints):
+def add_possible_periods(courses, periods, constraints):
     for course in courses:
         _periods = periods.copy()
         course_name = course['Course']

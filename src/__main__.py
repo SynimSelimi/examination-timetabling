@@ -31,7 +31,7 @@ def process(data):
     periods = sieve_periods(periods, period_constraints)
     courses = flat_map_courses(courses)
     courses = add_possible_rooms(courses, rooms)
-    courses = add_possible_periods(courses, periods, slots_per_day, event_period_constraints)
+    courses = add_possible_periods(courses, periods, event_period_constraints)
     courses = add_curricula_info(courses, curricula)
 
     return courses
