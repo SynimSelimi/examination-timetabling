@@ -45,12 +45,8 @@ def main():
 
     data = parse()
     instances = process(data)
-    # To Do add possible RoomPeriodConstraint to the busy roomPeriodSets
-    # To Do Take into account same day constraints
-    # To Do check MinimumDistanceBetweenExams
-    # To Do check MaxDistance MinDistance for WrittenOral
     solution = Solution(instances).solve()
-    save_solution(get_filepath(), solution)
+    save_solution(get_filepath(), instances)
 
     print("Solver completed.")
     print("Solution instances are in solutions.")

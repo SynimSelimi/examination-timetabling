@@ -36,10 +36,14 @@ def flat_map_courses(courses):
 
 def add_possible_rooms(courses, rooms):
     # To Do take into account room constraints
-    # To Do take into account RoomForOral
     for course in courses:
         req_rooms = course['RoomsRequested']
         room_numbers = req_rooms['Number']
+
+        # To Do take into account RoomForOral
+        is_oral = course['ExamType'] == 'Oral'
+        specs = course.get('WrittenOralSpecs')
+        room_for_oral = is_oral and specs and specs.get('RoomForOral')
 
         if room_numbers == 0:
             course['PossibleRooms'] = []
