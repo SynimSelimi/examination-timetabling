@@ -1,16 +1,17 @@
 ## Description
 
 **Paper** 10.1007/978-3-030-58942-4
+
 **Data** https://bitbucket.org/satt/examtimetablinguniuddata/src/master/
 
 ### Definition
 
 Our problem consists of scheduling an examination session at the end of a semester for a university campus. The problem is based on the following entities:
 
-- Courses, Exams, & Events: For each course, we have to schedule one or more exams within the session. Each exam might be a single event (either written or oral) or composed by two events, identified as the written part (first) and the oral part (second), to be handed out in this strict order.
-- Rooms & Roomsets: Some events require one or more rooms, others do not, as they take place in teacher’s office or in external rooms. Rooms are classified as small, medium, or large, and for each written event we set the number and the type of rooms requested (mixed requests are not considered). Due to logistic issues, not all combinations of homogeneous rooms can be assigned to a single event. The available ones, called roomsets, are explicitly listed in the input data. Oral events might require at most one room (of any size).
-- Days, Timeslots, & Periods: The session is divided in days and each day in divided in timeslots, with the same number of timeslots for each day. Each pair day/timeslot represents a period of the session.
-- Curricula: A curriculum is a set of courses that have students in common, which might enroll in the corresponding exams. The set of courses of a curriculum is split into primary courses, that are the ones taught in the current semester, and the secondary ones, that have been taught in the previous semester, but such that some students might still have to undertake them. The level of conflict between primary and secondary exams of a curriculum varies, as detailed below.
+- **Courses, Exams, & Events**: For each course, we have to schedule one or more exams within the session. Each exam might be a single event (either written or oral) or composed by two events, identified as the written part (first) and the oral part (second), to be handed out in this strict order.
+- **Rooms & Roomsets**: Some events require one or more rooms, others do not, as they take place in teacher’s office or in external rooms. Rooms are classified as small, medium, or large, and for each written event we set the number and the type of rooms requested (mixed requests are not considered). Due to logistic issues, not all combinations of homogeneous rooms can be assigned to a single event. The available ones, called roomsets, are explicitly listed in the input data. Oral events might require at most one room (of any size).
+- **Days, Timeslots, & Periods**: The session is divided in days and each day in divided in timeslots, with the same number of timeslots for each day. Each pair day/timeslot represents a period of the session.
+- **Curricula**: A curriculum is a set of courses that have students in common, which might enroll in the corresponding exams. The set of courses of a curriculum is split into primary courses, that are the ones taught in the current semester, and the secondary ones, that have been taught in the previous semester, but such that some students might still have to undertake them. The level of conflict between primary and secondary exams of a curriculum varies, as detailed below.
 
 ### Hard Constraints
 **H1. RoomRequest** 

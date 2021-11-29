@@ -2,7 +2,9 @@
 
 ### Dataset and Evaluation
 
-https://bitbucket.org/satt/examtimetablinguniuddata/
+**Definition** [Problem Definitions](./DEF.MD)
+
+**Repo** https://bitbucket.org/satt/examtimetablinguniuddata/
 
 ### Dependecies
 
