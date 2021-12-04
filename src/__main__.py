@@ -33,7 +33,7 @@ def process(data):
     courses = add_possible_periods(courses, periods, event_period_constraints)
     courses = add_curricula_info(courses, curricula)
 
-    return courses
+    return courses, hard_constraints
 
 """
 Main program -
@@ -44,8 +44,8 @@ def main():
     tprint("Running solver on instance:", get_filepath())
 
     data = parse()
-    instances = process(data)
-    solution = Solution(instances).solve()
+    instances, hard_constraints = process(data)
+    solution = Solution(instances, hard_constraints).solve()
     save_solution(get_filepath(), solution)
 
     end_time = time.time()

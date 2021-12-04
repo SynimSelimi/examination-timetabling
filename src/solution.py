@@ -2,13 +2,22 @@ import json
 from collections import defaultdict
 
 class Solution:
-    def __init__(self, instances):
+    def __init__(self, instances, hard_constraints):
         self.instances = instances
         self.cost = 0
         self.assignments = []
         self.course_assignment_ids = {}
         self.last_assignment_id = 0
         self.taken_period_room = defaultdict(dict)
+        self.hard_constraints = hard_constraints
+        self.room_period_constraints = list(filter(lambda val: val['Type'] == 'RoomPeriodConstraint', self.hard_constraints))
+
+        self.import_constraints()
+
+    def import_constraints(self):
+        for c in self.room_period_constraints:
+            room, period = c['Room'], c['Period']
+            self.taken_period_room[period][room] = 'Constraint'
 
     def available_room_period(self, rooms, periods, course_name):
         rooms = rooms.copy()
@@ -36,7 +45,7 @@ class Solution:
         return room, period
 
     # # # # # # # # # # # # 
-    # To Do add possible RoomPeriodConstraint to the busy roomPeriodSets
+    # To Do add possible RoomPeriodConstraint to the busy roomPeriodSets (solution in import_constraints, needs review)
     # To Do Take into account same day constraints
     # To do add EventRoomConstraint to a temporary memory set
     # To Do check MinimumDistanceBetweenExams
