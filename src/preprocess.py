@@ -1,6 +1,6 @@
 from helpers import *
 
-def expand_exams(courses, flat_courses, course):
+def expand_exams(flat_courses, course):
     exam_type = course['ExamType']
     if exam_type == "WrittenAndOral":
         written_course = course.copy();
@@ -14,7 +14,6 @@ def expand_exams(courses, flat_courses, course):
     else:
         new_course = course.copy();
         flat_courses.append(new_course)
-        flat_done = True
 
 def flat_map_courses(courses):
     flat_courses = []
@@ -36,7 +35,8 @@ def flat_map_courses(courses):
 
 # constraints are provided all as Undesired (soft)
 def add_possible_rooms(courses, rooms, constraints):
-    for course in courses:
+    _courses = courses.copy()
+    for course in _courses:
         req_rooms = course['RoomsRequested']
         room_numbers = req_rooms['Number']
 
@@ -63,15 +63,16 @@ def add_possible_rooms(courses, rooms, constraints):
                 return None
             course['PossibleRooms'] = list(filter(None, list(map(fun, rooms))))
 
-    return courses
+    return _courses
 
 def add_curricula_info(courses, curricula):
-    for course in courses:
+    _courses = courses.copy()
+    for course in _courses:
         course_name = course['Course']
         relevant_primaries = list(filter(lambda val : course_name in val['PrimaryCourses'], curricula))
         primary_courses = list(map(lambda val : val['PrimaryCourses'], relevant_primaries))
         relevant_secondaries = list(filter(lambda val : course_name in val['SecondaryCourses'], curricula))
-        secondary_courses = list(map(lambda val : val['SecondaryCourses'], relevant_primaries))
+        secondary_courses = list(map(lambda val : val['SecondaryCourses'], relevant_secondaries))
 
         primary_courses = flat_map(lambda x: x, primary_courses)
         secondary_courses = flat_map(lambda x: x, secondary_courses)
@@ -82,17 +83,18 @@ def add_curricula_info(courses, curricula):
         course['PrimaryCourses'] = primary_courses
         course['SecondaryCourses'] = secondary_courses
 
-    return courses
+    return _courses
 
 def sieve_periods(periods, period_constraints):
     _periods = periods.copy()
     for constraint in period_constraints:
-        periods.remove(constraint['Period'])
+        _periods.remove(constraint['Period'])
 
-    return periods
+    return _periods
 
-def add_possible_periods(courses, periods, constraints):
-    for course in courses:
+def add_possible_periods(courses, periods, event_period_constraints):
+    _courses = courses.copy()
+    for course in _courses:
         _periods = periods.copy()
         course_name = course['Course']
         exam_type = course['ExamType']
@@ -101,7 +103,7 @@ def add_possible_periods(courses, periods, constraints):
             (x.get('Part') == None or x['Part'] == exam_type) and \
             (exam_order == None or x['Exam'] == exam_order) \
             and x['Course'] == course_name
-        forbidden_periods = list(filter(filter_fun, constraints))
+        forbidden_periods = list(filter(filter_fun, event_period_constraints))
         forbidden_periods = list(map(lambda x: x['Period'], forbidden_periods))
 
         for f_period in forbidden_periods: 
@@ -110,4 +112,4 @@ def add_possible_periods(courses, periods, constraints):
 
         course['PossiblePeriods'] = _periods
 
-    return courses
+    return _courses

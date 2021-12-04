@@ -1,4 +1,3 @@
-import json
 from collections import defaultdict
 
 class Solution:
@@ -73,7 +72,7 @@ class Solution:
             rooms = course.get('PossibleRooms')
             periods = course.get('PossiblePeriods')
 
-            (room, period) = self.available_room_period(rooms, periods, course_name)
+            room, period = self.available_room_period(rooms, periods, course_name)
 
             event = Event(exam_order, exam_type, period, room, course_name)
             self.add_event(course_name, event)
