@@ -32,7 +32,6 @@ def process(data):
     courses = add_possible_rooms(courses, rooms, event_room_constraints)
     courses = add_possible_periods(courses, periods, event_period_constraints)
     courses = add_curricula_info(courses, curricula)
-    courses = group_by_course(courses)
 
     return courses
 

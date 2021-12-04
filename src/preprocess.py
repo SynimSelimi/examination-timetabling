@@ -111,6 +111,3 @@ def add_possible_periods(courses, periods, constraints):
         course['PossiblePeriods'] = _periods
 
     return courses
-
-def group_by_course(courses):
-    return courses
