@@ -21,28 +21,28 @@
           "Exam": 1,
           "Part": "Written",
           "Period": 0,
-          "Room": "3247",
+          "Room": "3248",
           "Course": "38278-38279-38280-38281-38282-38283"
         },
         {
           "Exam": 1,
           "Part": "Oral",
           "Period": 1,
-          "Room": "3272",
+          "Room": "3269",
           "Course": "38278-38279-38280-38281-38282-38283"
         },
         {
           "Exam": 2,
           "Part": "Written",
           "Period": 0,
-          "Room": "3247",
+          "Room": "3249",
           "Course": "38278-38279-38280-38281-38282-38283"
         },
         {
           "Exam": 2,
           "Part": "Oral",
           "Period": 1,
-          "Room": "3272",
+          "Room": "3266",
           "Course": "38278-38279-38280-38281-38282-38283"
         }
       ]
@@ -54,42 +54,42 @@
           "Exam": 0,
           "Part": "Written",
           "Period": 0,
-          "Room": "3247",
+          "Room": "3250",
           "Course": "38272-38273-38274-38275-38276-38277"
         },
         {
           "Exam": 0,
           "Part": "Oral",
           "Period": 1,
-          "Room": "3272",
+          "Room": "3265",
           "Course": "38272-38273-38274-38275-38276-38277"
         },
         {
           "Exam": 1,
           "Part": "Written",
           "Period": 0,
-          "Room": "3247",
+          "Room": "3262",
           "Course": "38272-38273-38274-38275-38276-38277"
         },
         {
           "Exam": 1,
           "Part": "Oral",
           "Period": 1,
-          "Room": "3272",
+          "Room": "3247",
           "Course": "38272-38273-38274-38275-38276-38277"
         },
         {
           "Exam": 2,
           "Part": "Written",
           "Period": 0,
-          "Room": "3247",
+          "Room": "3263",
           "Course": "38272-38273-38274-38275-38276-38277"
         },
         {
           "Exam": 2,
           "Part": "Oral",
           "Period": 1,
-          "Room": "3272",
+          "Room": "3248",
           "Course": "38272-38273-38274-38275-38276-38277"
         }
       ]
@@ -101,21 +101,21 @@
           "Exam": 0,
           "Part": "Oral",
           "Period": 0,
-          "Room": "3247",
+          "Room": "3264",
           "Course": "37552-37553-37554"
         },
         {
           "Exam": 1,
           "Part": "Oral",
           "Period": 0,
-          "Room": "3247",
+          "Room": "3261",
           "Course": "37552-37553-37554"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 1,
+          "Room": "3249",
           "Course": "37552-37553-37554"
         }
       ]
@@ -134,7 +134,7 @@
           "Exam": 1,
           "Part": "Written",
           "Period": 56,
-          "Room": "3254",
+          "Room": "3255",
           "Course": "37545-37546"
         }
       ]
@@ -153,7 +153,7 @@
           "Exam": 1,
           "Part": "Written",
           "Period": 56,
-          "Room": "3247",
+          "Room": "3248",
           "Course": "37529-37530"
         }
       ]
@@ -165,7 +165,7 @@
           "Exam": 0,
           "Part": "Written",
           "Period": 56,
-          "Room": "3247",
+          "Room": "3249",
           "Course": "37377"
         }
       ]
@@ -177,14 +177,14 @@
           "Exam": 0,
           "Part": "Written",
           "Period": 56,
-          "Room": "3247",
+          "Room": "3250",
           "Course": "35716-35717"
         },
         {
           "Exam": 1,
           "Part": "Written",
           "Period": 56,
-          "Room": "3247",
+          "Room": "3262",
           "Course": "35716-35717"
         }
       ]
@@ -196,14 +196,14 @@
           "Exam": 0,
           "Part": "Written",
           "Period": 56,
-          "Room": "3247",
+          "Room": "3263",
           "Course": "35714-35715"
         },
         {
           "Exam": 1,
           "Part": "Written",
           "Period": 56,
-          "Room": "3247",
+          "Room": "3264",
           "Course": "35714-35715"
         }
       ]
@@ -215,13 +215,13 @@
           "Exam": 0,
           "Part": "Written",
           "Period": 56,
-          "Room": "3247",
+          "Room": "3261",
           "Course": "35712-35713"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
+          "Period": 57,
           "Room": "3247",
           "Course": "35712-35713"
         }
@@ -241,7 +241,7 @@
           "Exam": 1,
           "Part": "Written",
           "Period": 56,
-          "Room": "3272",
+          "Room": "3266",
           "Course": "35710-35711"
         }
       ]
@@ -252,15 +252,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 57,
+          "Room": "3248",
           "Course": "35708-35709"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 57,
+          "Room": "3249",
           "Course": "35708-35709"
         }
       ]
@@ -271,15 +271,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 57,
+          "Room": "3250",
           "Course": "35702-35703"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 57,
+          "Room": "3262",
           "Course": "35702-35703"
         }
       ]
@@ -290,15 +290,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 57,
+          "Room": "3263",
           "Course": "35698-35699"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 57,
+          "Room": "3264",
           "Course": "35698-35699"
         }
       ]
@@ -309,14 +309,14 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 57,
+          "Room": "3261",
           "Course": "34321-34322"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
+          "Period": 58,
           "Room": "3247",
           "Course": "34321-34322"
         }
@@ -328,15 +328,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 58,
+          "Room": "3248",
           "Course": "34319-34320"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 58,
+          "Room": "3249",
           "Course": "34319-34320"
         }
       ]
@@ -347,15 +347,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 58,
+          "Room": "3250",
           "Course": "34315-34316"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 58,
+          "Room": "3262",
           "Course": "34315-34316"
         }
       ]
@@ -366,15 +366,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 58,
+          "Room": "3263",
           "Course": "34311-34312"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 58,
+          "Room": "3264",
           "Course": "34311-34312"
         }
       ]
@@ -385,22 +385,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 1,
+          "Room": "3250",
           "Course": "34303-34304-34305"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 1,
+          "Room": "3262",
           "Course": "34303-34304-34305"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 1,
+          "Room": "3263",
           "Course": "34303-34304-34305"
         }
       ]
@@ -411,14 +411,14 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 58,
+          "Room": "3261",
           "Course": "34299-34300"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
+          "Period": 59,
           "Room": "3247",
           "Course": "34299-34300"
         }
@@ -430,15 +430,15 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 59,
+          "Room": "3248",
           "Course": "34297-34298"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 59,
+          "Room": "3249",
           "Course": "34297-34298"
         }
       ]
@@ -449,15 +449,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 59,
+          "Room": "3250",
           "Course": "34295-34296"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 59,
+          "Room": "3262",
           "Course": "34295-34296"
         }
       ]
@@ -468,15 +468,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 59,
+          "Room": "3263",
           "Course": "34291-34292"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 59,
+          "Room": "3264",
           "Course": "34291-34292"
         }
       ]
@@ -487,14 +487,14 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 59,
+          "Room": "3261",
           "Course": "34286-34287"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
+          "Period": 60,
           "Room": "3247",
           "Course": "34286-34287"
         }
@@ -506,15 +506,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 60,
+          "Room": "3248",
           "Course": "34284-34285"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 60,
+          "Room": "3249",
           "Course": "34284-34285"
         }
       ]
@@ -526,13 +526,13 @@
           "Exam": 0,
           "Part": "Oral",
           "Period": 56,
-          "Room": "3254",
+          "Room": "3256",
           "Course": "34276-34277"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
+          "Period": 57,
           "Room": "3254",
           "Course": "34276-34277"
         }
@@ -544,15 +544,15 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 57,
+          "Room": "3255",
           "Course": "34271-34272"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 57,
+          "Room": "3256",
           "Course": "34271-34272"
         }
       ]
@@ -563,21 +563,21 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 1,
+          "Room": "3264",
           "Course": "34268-34269-34270"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 1,
+          "Room": "3261",
           "Course": "34268-34269-34270"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
+          "Period": 2,
           "Room": "3247",
           "Course": "34268-34269-34270"
         }
@@ -589,22 +589,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 2,
+          "Room": "3248",
           "Course": "34254-34255-34256"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 2,
+          "Room": "3249",
           "Course": "34254-34255-34256"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 2,
+          "Room": "3250",
           "Course": "34254-34255-34256"
         }
       ]
@@ -615,8 +615,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 60,
+          "Room": "3250",
           "Course": "34253"
         }
       ]
@@ -628,21 +628,21 @@
           "Exam": 0,
           "Part": "Oral",
           "Period": 2,
-          "Room": "3247",
+          "Room": "3262",
           "Course": "34250-34251-34252"
         },
         {
           "Exam": 1,
           "Part": "Oral",
           "Period": 2,
-          "Room": "3247",
+          "Room": "3263",
           "Course": "34250-34251-34252"
         },
         {
           "Exam": 2,
           "Part": "Oral",
           "Period": 2,
-          "Room": "3247",
+          "Room": "3264",
           "Course": "34250-34251-34252"
         }
       ]
@@ -653,22 +653,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 2,
+          "Room": "3261",
           "Course": "34247-34248-34249"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
+          "Period": 3,
           "Room": "3247",
           "Course": "34247-34248-34249"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 3,
+          "Room": "3248",
           "Course": "34247-34248-34249"
         }
       ]
@@ -679,8 +679,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 3,
+          "Room": "3249",
           "Course": "34243-37595"
         },
         {
@@ -698,15 +698,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 3,
+          "Room": "3250",
           "Course": "34242-37594"
         },
         {
           "Exam": 0,
           "Part": "Oral",
           "Period": 0,
-          "Room": "3272",
+          "Room": "3269",
           "Course": "34242-37594"
         }
       ]
@@ -717,15 +717,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 3,
+          "Room": "3262",
           "Course": "34241-37593"
         },
         {
           "Exam": 0,
           "Part": "Oral",
           "Period": 0,
-          "Room": "3272",
+          "Room": "3266",
           "Course": "34241-37593"
         }
       ]
@@ -736,22 +736,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 3,
+          "Room": "3263",
           "Course": "34228-34229-34230"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 3,
+          "Room": "3264",
           "Course": "34228-34229-34230"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 3,
+          "Room": "3261",
           "Course": "34228-34229-34230"
         }
       ]
@@ -762,22 +762,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
+          "Period": 4,
           "Room": "3247",
           "Course": "34222-34223-34224"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 4,
+          "Room": "3248",
           "Course": "34222-34223-34224"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 4,
+          "Room": "3249",
           "Course": "34222-34223-34224"
         }
       ]
@@ -788,15 +788,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 60,
+          "Room": "3262",
           "Course": "34217-34218"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 60,
+          "Room": "3263",
           "Course": "34217-34218"
         }
       ]
@@ -807,15 +807,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 60,
+          "Room": "3264",
           "Course": "34215-34216"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 60,
+          "Room": "3261",
           "Course": "34215-34216"
         }
       ]
@@ -826,15 +826,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 61,
           "Room": "3247",
           "Course": "34213-34214"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 61,
+          "Room": "3248",
           "Course": "34213-34214"
         }
       ]
@@ -845,15 +845,15 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 61,
+          "Room": "3249",
           "Course": "34211-34212"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 61,
+          "Room": "3250",
           "Course": "34211-34212"
         }
       ]
@@ -864,15 +864,15 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 61,
+          "Room": "3262",
           "Course": "34209-34210"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 61,
+          "Room": "3263",
           "Course": "34209-34210"
         }
       ]
@@ -883,15 +883,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 61,
+          "Room": "3264",
           "Course": "34207-34208"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 61,
+          "Room": "3261",
           "Course": "34207-34208"
         }
       ]
@@ -902,15 +902,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 62,
           "Room": "3247",
           "Course": "34205-34206"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 62,
+          "Room": "3248",
           "Course": "34205-34206"
         }
       ]
@@ -921,15 +921,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 58,
           "Room": "3254",
           "Course": "34198-34199"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 58,
+          "Room": "3255",
           "Course": "34198-34199"
         }
       ]
@@ -940,14 +940,14 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 58,
+          "Room": "3256",
           "Course": "34196-34197"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
+          "Period": 59,
           "Room": "3254",
           "Course": "34196-34197"
         }
@@ -959,15 +959,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 59,
+          "Room": "3255",
           "Course": "34194-34195"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 59,
+          "Room": "3256",
           "Course": "34194-34195"
         }
       ]
@@ -978,15 +978,15 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
+          "Period": 60,
           "Room": "3254",
           "Course": "34190-34191"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 60,
+          "Room": "3255",
           "Course": "34190-34191"
         }
       ]
@@ -1005,7 +1005,7 @@
           "Exam": 1,
           "Part": "Written",
           "Period": 57,
-          "Room": "3251",
+          "Room": "3252",
           "Course": "34188-34189"
         }
       ]
@@ -1016,22 +1016,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 4,
+          "Room": "3250",
           "Course": "34185-34186-34187"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 4,
+          "Room": "3262",
           "Course": "34185-34186-34187"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 4,
+          "Room": "3263",
           "Course": "34185-34186-34187"
         }
       ]
@@ -1042,14 +1042,14 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 60,
+          "Room": "3256",
           "Course": "34183-34184"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
+          "Period": 61,
           "Room": "3254",
           "Course": "34183-34184"
         }
@@ -1061,15 +1061,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 62,
+          "Room": "3249",
           "Course": "34172-34173"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 62,
+          "Room": "3250",
           "Course": "34172-34173"
         }
       ]
@@ -1080,22 +1080,22 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
+          "Period": 8,
           "Room": "3247",
           "Course": "34166-34167-34168"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 8,
+          "Room": "3248",
           "Course": "34166-34167-34168"
         },
         {
           "Exam": 2,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 8,
+          "Room": "3249",
           "Course": "34166-34167-34168"
         }
       ]
@@ -1106,15 +1106,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 62,
+          "Room": "3262",
           "Course": "34164-34165"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 62,
+          "Room": "3263",
           "Course": "34164-34165"
         }
       ]
@@ -1125,15 +1125,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 61,
+          "Room": "3255",
           "Course": "34162-34163"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 61,
+          "Room": "3256",
           "Course": "34162-34163"
         }
       ]
@@ -1144,21 +1144,21 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 4,
+          "Room": "3264",
           "Course": "34159-34160-34161"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 4,
+          "Room": "3261",
           "Course": "34159-34160-34161"
         },
         {
           "Exam": 2,
           "Part": "Written",
-          "Period": 0,
+          "Period": 5,
           "Room": "3247",
           "Course": "34159-34160-34161"
         }
@@ -1178,14 +1178,14 @@
           "Exam": 1,
           "Part": "Oral",
           "Period": 0,
-          "Room": "3254",
+          "Room": "3255",
           "Course": "34156-34157-34158"
         },
         {
           "Exam": 2,
           "Part": "Oral",
           "Period": 0,
-          "Room": "3254",
+          "Room": "3256",
           "Course": "34156-34157-34158"
         }
       ]
@@ -1196,22 +1196,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 5,
+          "Room": "3248",
           "Course": "34153-34154-34155"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 5,
+          "Room": "3249",
           "Course": "34153-34154-34155"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 5,
+          "Room": "3250",
           "Course": "34153-34154-34155"
         }
       ]
@@ -1222,22 +1222,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 2,
-          "Room": "3247",
+          "Period": 5,
+          "Room": "3262",
           "Course": "34150-34151-34152"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 2,
-          "Room": "3247",
+          "Period": 5,
+          "Room": "3263",
           "Course": "34150-34151-34152"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 2,
-          "Room": "3247",
+          "Period": 5,
+          "Room": "3264",
           "Course": "34150-34151-34152"
         }
       ]
@@ -1256,7 +1256,7 @@
           "Exam": 1,
           "Part": "Written",
           "Period": 62,
-          "Room": "3272",
+          "Room": "3266",
           "Course": "34145-34146"
         }
       ]
@@ -1267,15 +1267,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 62,
+          "Room": "3264",
           "Course": "34143-34144"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 62,
+          "Room": "3261",
           "Course": "34143-34144"
         }
       ]
@@ -1286,15 +1286,15 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
+          "Period": 63,
           "Room": "3247",
           "Course": "34139-34140"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 63,
+          "Room": "3248",
           "Course": "34139-34140"
         }
       ]
@@ -1305,15 +1305,15 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 63,
+          "Room": "3249",
           "Course": "34137-34138"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 63,
+          "Room": "3250",
           "Course": "34137-34138"
         }
       ]
@@ -1324,22 +1324,22 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 5,
+          "Room": "3261",
           "Course": "34131-34132-34133"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
+          "Period": 6,
           "Room": "3247",
           "Course": "34131-34132-34133"
         },
         {
           "Exam": 2,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 6,
+          "Room": "3248",
           "Course": "34131-34132-34133"
         }
       ]
@@ -1350,22 +1350,22 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 6,
+          "Room": "3249",
           "Course": "34125-34126-34127"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 6,
+          "Room": "3250",
           "Course": "34125-34126-34127"
         },
         {
           "Exam": 2,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 6,
+          "Room": "3262",
           "Course": "34125-34126-34127"
         }
       ]
@@ -1376,22 +1376,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 6,
+          "Room": "3263",
           "Course": "34122-34123-34124"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 6,
+          "Room": "3264",
           "Course": "34122-34123-34124"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 6,
+          "Room": "3261",
           "Course": "34122-34123-34124"
         }
       ]
@@ -1402,15 +1402,15 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 63,
+          "Room": "3262",
           "Course": "34120-34121"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 63,
+          "Room": "3263",
           "Course": "34120-34121"
         }
       ]
@@ -1421,15 +1421,15 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 63,
+          "Room": "3264",
           "Course": "34115-34116"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 63,
+          "Room": "3261",
           "Course": "34115-34116"
         }
       ]
@@ -1440,22 +1440,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 4,
+          "Period": 7,
           "Room": "3247",
           "Course": "34112-34113-34114"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 4,
-          "Room": "3247",
+          "Period": 7,
+          "Room": "3248",
           "Course": "34112-34113-34114"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 4,
-          "Room": "3247",
+          "Period": 7,
+          "Room": "3249",
           "Course": "34112-34113-34114"
         }
       ]
@@ -1466,22 +1466,22 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 7,
+          "Room": "3250",
           "Course": "34106-34107-34108"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 7,
+          "Room": "3262",
           "Course": "34106-34107-34108"
         },
         {
           "Exam": 2,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 7,
+          "Room": "3263",
           "Course": "34106-34107-34108"
         }
       ]
@@ -1492,22 +1492,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 7,
+          "Room": "3264",
           "Course": "34097-34098-34099"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 7,
+          "Room": "3261",
           "Course": "34097-34098-34099"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 8,
+          "Room": "3250",
           "Course": "34097-34098-34099"
         }
       ]
@@ -1518,15 +1518,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 62,
           "Room": "3254",
           "Course": "34093-34094"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 62,
+          "Room": "3255",
           "Course": "34093-34094"
         }
       ]
@@ -1537,22 +1537,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 2,
-          "Room": "3247",
+          "Period": 8,
+          "Room": "3262",
           "Course": "34087-34088-34089"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 2,
-          "Room": "3247",
+          "Period": 8,
+          "Room": "3263",
           "Course": "34087-34088-34089"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 2,
-          "Room": "3247",
+          "Period": 8,
+          "Room": "3264",
           "Course": "34087-34088-34089"
         }
       ]
@@ -1563,7 +1563,7 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 64,
           "Room": "3247",
           "Course": "34086"
         }
@@ -1575,8 +1575,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 64,
+          "Room": "3248",
           "Course": "34085"
         }
       ]
@@ -1587,8 +1587,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 64,
+          "Room": "3249",
           "Course": "34083"
         }
       ]
@@ -1599,8 +1599,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 64,
+          "Room": "3250",
           "Course": "34082"
         }
       ]
@@ -1611,8 +1611,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 64,
+          "Room": "3262",
           "Course": "34081"
         }
       ]
@@ -1623,8 +1623,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 64,
+          "Room": "3263",
           "Course": "34080"
         }
       ]
@@ -1635,8 +1635,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 64,
+          "Room": "3264",
           "Course": "34079"
         }
       ]
@@ -1647,8 +1647,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 64,
+          "Room": "3261",
           "Course": "34077"
         }
       ]
@@ -1659,7 +1659,7 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 65,
           "Room": "3247",
           "Course": "34076"
         }
@@ -1671,22 +1671,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 2,
-          "Room": "3247",
+          "Period": 8,
+          "Room": "3261",
           "Course": "34071-34072-34073"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 2,
+          "Period": 9,
           "Room": "3247",
           "Course": "34071-34072-34073"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 2,
-          "Room": "3247",
+          "Period": 9,
+          "Room": "3248",
           "Course": "34071-34072-34073"
         }
       ]
@@ -1697,8 +1697,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 65,
+          "Room": "3248",
           "Course": "34065"
         }
       ]
@@ -1709,8 +1709,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 65,
+          "Room": "3249",
           "Course": "34056"
         }
       ]
@@ -1721,8 +1721,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 65,
+          "Room": "3250",
           "Course": "34055"
         }
       ]
@@ -1733,22 +1733,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 9,
+          "Room": "3249",
           "Course": "34052-34053-34054"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 9,
+          "Room": "3250",
           "Course": "34052-34053-34054"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 9,
+          "Room": "3262",
           "Course": "34052-34053-34054"
         }
       ]
@@ -1759,8 +1759,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 65,
+          "Room": "3262",
           "Course": "34049"
         }
       ]
@@ -1771,8 +1771,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 65,
+          "Room": "3263",
           "Course": "34043"
         }
       ]
@@ -1783,8 +1783,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 65,
+          "Room": "3264",
           "Course": "34042"
         }
       ]
@@ -1795,8 +1795,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 65,
+          "Room": "3261",
           "Course": "34041"
         }
       ]
@@ -1807,7 +1807,7 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 70,
           "Room": "3247",
           "Course": "34039"
         }
@@ -1819,22 +1819,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 9,
+          "Room": "3263",
           "Course": "34029-34030-34031"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 9,
+          "Room": "3264",
           "Course": "34029-34030-34031"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 9,
+          "Room": "3261",
           "Course": "34029-34030-34031"
         }
       ]
@@ -1845,22 +1845,22 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 1,
+          "Period": 15,
           "Room": "3247",
           "Course": "34026-34027-34028"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 1,
-          "Room": "3247",
+          "Period": 15,
+          "Room": "3248",
           "Course": "34026-34027-34028"
         },
         {
           "Exam": 2,
           "Part": "Written",
-          "Period": 1,
-          "Room": "3247",
+          "Period": 15,
+          "Room": "3249",
           "Course": "34026-34027-34028"
         }
       ]
@@ -1871,8 +1871,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 62,
+          "Room": "3256",
           "Course": "34021"
         }
       ]
@@ -1883,7 +1883,7 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 63,
           "Room": "3254",
           "Course": "34020"
         }
@@ -1895,8 +1895,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 63,
+          "Room": "3255",
           "Course": "34017"
         }
       ]
@@ -1907,22 +1907,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
+          "Period": 14,
           "Room": "3247",
           "Course": "34011-34012-34013"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 14,
+          "Room": "3248",
           "Course": "34011-34012-34013"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 14,
+          "Room": "3249",
           "Course": "34011-34012-34013"
         }
       ]
@@ -1933,8 +1933,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 70,
+          "Room": "3248",
           "Course": "34007"
         }
       ]
@@ -1945,22 +1945,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
+          "Period": 1,
           "Room": "3254",
           "Course": "34002-34003-34004"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3254",
+          "Period": 1,
+          "Room": "3255",
           "Course": "34002-34003-34004"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3254",
+          "Period": 1,
+          "Room": "3256",
           "Course": "34002-34003-34004"
         }
       ]
@@ -1971,8 +1971,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 70,
+          "Room": "3249",
           "Course": "34001"
         }
       ]
@@ -1983,8 +1983,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 63,
+          "Room": "3256",
           "Course": "34000"
         }
       ]
@@ -1995,8 +1995,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 70,
+          "Room": "3250",
           "Course": "33999"
         }
       ]
@@ -2007,8 +2007,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 70,
+          "Room": "3262",
           "Course": "33998"
         }
       ]
@@ -2019,8 +2019,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 70,
+          "Room": "3263",
           "Course": "33997"
         }
       ]
@@ -2031,22 +2031,22 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 14,
+          "Room": "3250",
           "Course": "33994-33995-33996"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 14,
+          "Room": "3262",
           "Course": "33994-33995-33996"
         },
         {
           "Exam": 2,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 14,
+          "Room": "3263",
           "Course": "33994-33995-33996"
         }
       ]
@@ -2057,8 +2057,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 70,
+          "Room": "3264",
           "Course": "33993"
         }
       ]
@@ -2069,22 +2069,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 14,
+          "Room": "3264",
           "Course": "33987-33988-33989"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 14,
+          "Room": "3261",
           "Course": "33987-33988-33989"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 15,
+          "Room": "3250",
           "Course": "33987-33988-33989"
         }
       ]
@@ -2095,15 +2095,15 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 70,
+          "Room": "3261",
           "Course": "33982-33983"
         },
         {
           "Exam": 0,
           "Part": "Oral",
           "Period": 56,
-          "Room": "3272",
+          "Room": "3269",
           "Course": "33982-33983"
         }
       ]
@@ -2114,7 +2114,7 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 71,
           "Room": "3247",
           "Course": "33980-33981"
         },
@@ -2122,7 +2122,7 @@
           "Exam": 0,
           "Part": "Oral",
           "Period": 56,
-          "Room": "3272",
+          "Room": "3265",
           "Course": "33980-33981"
         }
       ]
@@ -2133,22 +2133,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 15,
+          "Room": "3262",
           "Course": "33977-33978-33979"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 15,
+          "Room": "3263",
           "Course": "33977-33978-33979"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 15,
+          "Room": "3264",
           "Course": "33977-33978-33979"
         }
       ]
@@ -2159,22 +2159,22 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 15,
+          "Room": "3261",
           "Course": "33971-33972-33973"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
+          "Period": 16,
           "Room": "3247",
           "Course": "33971-33972-33973"
         },
         {
           "Exam": 2,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 16,
+          "Room": "3248",
           "Course": "33971-33972-33973"
         }
       ]
@@ -2185,22 +2185,22 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 16,
+          "Room": "3249",
           "Course": "33965-33966-33967"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 16,
+          "Room": "3250",
           "Course": "33965-33966-33967"
         },
         {
           "Exam": 2,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 16,
+          "Room": "3262",
           "Course": "33965-33966-33967"
         }
       ]
@@ -2211,22 +2211,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 16,
+          "Room": "3263",
           "Course": "33961-33962-33963"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 16,
+          "Room": "3264",
           "Course": "33961-33962-33963"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 16,
+          "Room": "3261",
           "Course": "33961-33962-33963"
         }
       ]
@@ -2237,22 +2237,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
+          "Period": 17,
           "Room": "3247",
           "Course": "33958-33959-33960"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 17,
+          "Room": "3248",
           "Course": "33958-33959-33960"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 17,
+          "Room": "3249",
           "Course": "33958-33959-33960"
         }
       ]
@@ -2263,22 +2263,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 17,
+          "Room": "3250",
           "Course": "33955-33956-33957"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 17,
+          "Room": "3262",
           "Course": "33955-33956-33957"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 17,
+          "Room": "3263",
           "Course": "33955-33956-33957"
         }
       ]
@@ -2289,8 +2289,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 71,
+          "Room": "3248",
           "Course": "33951"
         }
       ]
@@ -2301,22 +2301,22 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 17,
+          "Room": "3264",
           "Course": "33948-33949-33950"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 17,
+          "Room": "3261",
           "Course": "33948-33949-33950"
         },
         {
           "Exam": 2,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 71,
+          "Room": "3249",
           "Course": "33948-33949-33950"
         }
       ]
@@ -2327,22 +2327,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 71,
+          "Room": "3250",
           "Course": "33945-33946-33947"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 71,
+          "Room": "3262",
           "Course": "33945-33946-33947"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 71,
+          "Room": "3263",
           "Course": "33945-33946-33947"
         }
       ]
@@ -2353,21 +2353,21 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 71,
+          "Room": "3264",
           "Course": "33942-33943-33944"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 71,
+          "Room": "3261",
           "Course": "33942-33943-33944"
         },
         {
           "Exam": 2,
           "Part": "Written",
-          "Period": 0,
+          "Period": 72,
           "Room": "3247",
           "Course": "33942-33943-33944"
         }
@@ -2379,22 +2379,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 72,
+          "Room": "3248",
           "Course": "33933-33934-33935"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 72,
+          "Room": "3249",
           "Course": "33933-33934-33935"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 72,
+          "Room": "3250",
           "Course": "33933-33934-33935"
         }
       ]
@@ -2405,22 +2405,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 72,
+          "Room": "3262",
           "Course": "33930-33931-33932"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 72,
+          "Room": "3263",
           "Course": "33930-33931-33932"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 72,
+          "Room": "3264",
           "Course": "33930-33931-33932"
         }
       ]
@@ -2431,22 +2431,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 72,
+          "Room": "3261",
           "Course": "33927-33928-33929"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
+          "Period": 73,
           "Room": "3247",
           "Course": "33927-33928-33929"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 73,
+          "Room": "3248",
           "Course": "33927-33928-33929"
         }
       ]
@@ -2457,7 +2457,7 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 64,
           "Room": "3254",
           "Course": "33926"
         }
@@ -2469,8 +2469,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 73,
+          "Room": "3249",
           "Course": "33925"
         }
       ]
@@ -2481,8 +2481,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 73,
+          "Room": "3250",
           "Course": "33924"
         }
       ]
@@ -2493,22 +2493,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 73,
+          "Room": "3262",
           "Course": "33912-33913-33914"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 73,
+          "Room": "3263",
           "Course": "33912-33913-33914"
         },
         {
           "Exam": 2,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 73,
+          "Room": "3264",
           "Course": "33912-33913-33914"
         }
       ]
@@ -2519,8 +2519,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 73,
+          "Room": "3261",
           "Course": "33908"
         }
       ]
@@ -2531,7 +2531,7 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 74,
           "Room": "3247",
           "Course": "33907"
         }
@@ -2543,8 +2543,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 64,
+          "Room": "3255",
           "Course": "33906"
         }
       ]
@@ -2555,7 +2555,7 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 57,
           "Room": "3272",
           "Course": "33904"
         }
@@ -2567,8 +2567,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3254",
+          "Period": 64,
+          "Room": "3256",
           "Course": "33903"
         }
       ]
@@ -2579,7 +2579,7 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 56,
+          "Period": 65,
           "Room": "3254",
           "Course": "33902"
         }
@@ -2591,8 +2591,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 56,
-          "Room": "3247",
+          "Period": 74,
+          "Room": "3248",
           "Course": "33901"
         }
       ]
@@ -2603,8 +2603,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "3247",
+          "Period": 74,
+          "Room": "3249",
           "Course": "33897"
         }
       ]

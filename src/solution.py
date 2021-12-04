@@ -1,4 +1,5 @@
 import json
+from collections import defaultdict
 
 class Solution:
     def __init__(self, instances):
@@ -7,17 +8,46 @@ class Solution:
         self.assignments = []
         self.course_assignment_ids = {}
         self.last_assignment_id = 0
+        self.taken_period_room = defaultdict(dict)
+
+    def available_room_period(self, rooms, periods, course_name):
+        rooms = rooms.copy()
+        periods = periods.copy()
+        room = None
+        period = None
+
+        def pairs(one, two):
+            for p in one:
+                for r in two:
+                    yield p, r
+
+        if len(rooms) == 0:
+            period = periods.pop(0)
+            room = None
+        else:
+            for p, r in pairs(periods, rooms):
+                    taken = self.taken_period_room.get(p, {}).get(r, {})
+                    if not taken:
+                        room = r
+                        period = p
+                        self.taken_period_room[period][room] = course_name
+                        break
+
+        return room, period
+
+    # # # # # # # # # # # # 
+    # To Do add possible RoomPeriodConstraint to the busy roomPeriodSets
+    # To Do Take into account same day constraints
+    # To do add EventRoomConstraint to a temporary memory set
+    # To Do check MinimumDistanceBetweenExams
+    # To Do check MaxDistance MinDistance for WrittenOral (soft)
+    # To Do check PrimaryPrimaryDistance (soft)
+    # To Do check if courses have the same teacher (cannot be assigned same period)
+    # To Do check if courses are primary (cannot be assigned same period)
+    # To Do calculate cost
+    # # # # # # # # # # # # 
 
     def solve(self):
-        # To Do add possible RoomPeriodConstraint to the busy roomPeriodSets
-        # To Do Take into account same day constraints
-        # To do add EventRoomConstraint to a temporary memory set
-        # To Do check MinimumDistanceBetweenExams
-        # To Do check MaxDistance MinDistance for WrittenOral (soft)
-        # To Do check PrimaryPrimaryDistance (soft)
-        # To Do check if courses have the same teacher (cannot be assigned same period)
-        # To Do check if courses are primary (cannot be assigned same period)
-        # To Do calculate cost
         self.cost = 0
         self.assignments = []
 
@@ -30,10 +60,12 @@ class Solution:
 
             exam_type = course['ExamType']
             exam_order = course['ExamOrder']
-            period = course.get('PossiblePeriods')
-            period = period[0] if len(period) > 0 else None
-            room = course.get('PossibleRooms')
-            room = room[0] if len(room) > 0 else None
+
+            rooms = course.get('PossibleRooms')
+            periods = course.get('PossiblePeriods')
+
+            (room, period) = self.available_room_period(rooms, periods, course_name)
+
             event = Event(exam_order, exam_type, period, room, course_name)
             self.add_event(course_name, event)
 

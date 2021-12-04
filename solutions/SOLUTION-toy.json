@@ -1,617 +1,121 @@
-[
-  {
-    "Course": "Analytics",
-    "ExamType": "Oral",
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 0
+{
+  "Assignments": [
+    {
+      "Course": "Analytics",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 0,
+          "Room": null,
+          "Course": "Analytics"
+        }
+      ]
     },
-    "Teacher": "Andrea",
-    "ExamOrder": 0,
-    "PossibleRooms": [],
-    "PossiblePeriods": [
-      0,
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [],
-    "SecondaryCourses": []
-  },
-  {
-    "Course": "OpRes",
-    "ExamType": "Written",
-    "MinimumDistanceBetweenExams": 4,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 1,
-      "Type": "Small"
+    {
+      "Course": "OpRes",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 0,
+          "Room": "G",
+          "Course": "OpRes"
+        },
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 0,
+          "Room": "A",
+          "Course": "OpRes"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 0,
+          "Room": "H",
+          "Course": "OpRes"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 0,
+          "Room": "B",
+          "Course": "OpRes"
+        }
+      ]
     },
-    "Teacher": "Michele",
-    "WrittenOralSpecs": {
-      "MaxDistance": 1,
-      "MinDistance": 1,
-      "RoomForOral": true,
-      "SameDay": true
+    {
+      "Course": "Programming",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 0,
+          "Room": "AB",
+          "Course": "Programming"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 0,
+          "Room": "AC",
+          "Course": "Programming"
+        }
+      ]
     },
-    "ExamOrder": 0,
-    "PossibleRooms": [
-      "G",
-      "H"
-    ],
-    "PossiblePeriods": [
-      0,
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [
-      "Databases"
-    ],
-    "SecondaryCourses": [
-      "Analytics"
-    ]
-  },
-  {
-    "Course": "OpRes",
-    "ExamType": "Oral",
-    "MinimumDistanceBetweenExams": 4,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 1,
-      "Type": "Small"
+    {
+      "Course": "Algorithms",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 0,
+          "Room": "C",
+          "Course": "Algorithms"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 1,
+          "Room": "A",
+          "Course": "Algorithms"
+        }
+      ]
     },
-    "Teacher": "Michele",
-    "WrittenOralSpecs": {
-      "MaxDistance": 1,
-      "MinDistance": 1,
-      "RoomForOral": true,
-      "SameDay": true
-    },
-    "ExamOrder": 0,
-    "PossibleRooms": [
-      "A",
-      "B",
-      "C",
-      "G",
-      "H",
-      "AB",
-      "AC"
-    ],
-    "PossiblePeriods": [
-      0,
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [
-      "Databases"
-    ],
-    "SecondaryCourses": [
-      "Analytics"
-    ]
-  },
-  {
-    "Course": "OpRes",
-    "ExamType": "Written",
-    "MinimumDistanceBetweenExams": 4,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 1,
-      "Type": "Small"
-    },
-    "Teacher": "Michele",
-    "WrittenOralSpecs": {
-      "MaxDistance": 1,
-      "MinDistance": 1,
-      "RoomForOral": true,
-      "SameDay": true
-    },
-    "ExamOrder": 1,
-    "PossibleRooms": [
-      "G",
-      "H"
-    ],
-    "PossiblePeriods": [
-      0,
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [
-      "Databases"
-    ],
-    "SecondaryCourses": [
-      "Analytics"
-    ]
-  },
-  {
-    "Course": "OpRes",
-    "ExamType": "Oral",
-    "MinimumDistanceBetweenExams": 4,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 1,
-      "Type": "Small"
-    },
-    "Teacher": "Michele",
-    "WrittenOralSpecs": {
-      "MaxDistance": 1,
-      "MinDistance": 1,
-      "RoomForOral": true,
-      "SameDay": true
-    },
-    "ExamOrder": 1,
-    "PossibleRooms": [
-      "A",
-      "B",
-      "C",
-      "G",
-      "H",
-      "AB",
-      "AC"
-    ],
-    "PossiblePeriods": [
-      0,
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [
-      "Databases"
-    ],
-    "SecondaryCourses": [
-      "Analytics"
-    ]
-  },
-  {
-    "Course": "Programming",
-    "ExamType": "Written",
-    "MinimumDistanceBetweenExams": 4,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 2,
-      "Type": "Large"
-    },
-    "Teacher": "Sara",
-    "ExamOrder": 0,
-    "PossibleRooms": [
-      "AB",
-      "AC"
-    ],
-    "PossiblePeriods": [
-      0,
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [],
-    "SecondaryCourses": []
-  },
-  {
-    "Course": "Programming",
-    "ExamType": "Written",
-    "MinimumDistanceBetweenExams": 4,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 2,
-      "Type": "Large"
-    },
-    "Teacher": "Sara",
-    "ExamOrder": 1,
-    "PossibleRooms": [
-      "AB",
-      "AC"
-    ],
-    "PossiblePeriods": [
-      0,
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [],
-    "SecondaryCourses": []
-  },
-  {
-    "Course": "Algorithms",
-    "ExamType": "Written",
-    "MinimumDistanceBetweenExams": 5,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 1,
-      "Type": "Large"
-    },
-    "Teacher": "Luca",
-    "ExamOrder": 0,
-    "PossibleRooms": [
-      "A",
-      "B",
-      "C"
-    ],
-    "PossiblePeriods": [
-      0,
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [
-      "Databases"
-    ],
-    "SecondaryCourses": [
-      "OpRes",
-      "Analytics"
-    ]
-  },
-  {
-    "Course": "Algorithms",
-    "ExamType": "Written",
-    "MinimumDistanceBetweenExams": 5,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 1,
-      "Type": "Large"
-    },
-    "Teacher": "Luca",
-    "ExamOrder": 1,
-    "PossibleRooms": [
-      "A",
-      "B",
-      "C"
-    ],
-    "PossiblePeriods": [
-      0,
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [
-      "Databases"
-    ],
-    "SecondaryCourses": [
-      "OpRes",
-      "Analytics"
-    ]
-  },
-  {
-    "Course": "Databases",
-    "ExamType": "Written",
-    "MinimumDistanceBetweenExams": 5,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 2,
-      "Type": "Large"
-    },
-    "Teacher": "Andrea",
-    "WrittenOralSpecs": {
-      "MaxDistance": 8,
-      "MinDistance": 4,
-      "RoomForOral": false,
-      "SameDay": false
-    },
-    "ExamOrder": 0,
-    "PossibleRooms": [
-      "AB",
-      "AC"
-    ],
-    "PossiblePeriods": [
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [
-      "OpRes",
-      "Databases",
-      "Algorithms"
-    ],
-    "SecondaryCourses": [
-      "Analytics",
-      "OpRes",
-      "Analytics"
-    ]
-  },
-  {
-    "Course": "Databases",
-    "ExamType": "Oral",
-    "MinimumDistanceBetweenExams": 5,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 2,
-      "Type": "Large"
-    },
-    "Teacher": "Andrea",
-    "WrittenOralSpecs": {
-      "MaxDistance": 8,
-      "MinDistance": 4,
-      "RoomForOral": false,
-      "SameDay": false
-    },
-    "ExamOrder": 0,
-    "PossibleRooms": [
-      "AB",
-      "AC"
-    ],
-    "PossiblePeriods": [
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [
-      "OpRes",
-      "Databases",
-      "Algorithms"
-    ],
-    "SecondaryCourses": [
-      "Analytics",
-      "OpRes",
-      "Analytics"
-    ]
-  },
-  {
-    "Course": "Databases",
-    "ExamType": "Written",
-    "MinimumDistanceBetweenExams": 5,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 2,
-      "Type": "Large"
-    },
-    "Teacher": "Andrea",
-    "WrittenOralSpecs": {
-      "MaxDistance": 8,
-      "MinDistance": 4,
-      "RoomForOral": false,
-      "SameDay": false
-    },
-    "ExamOrder": 1,
-    "PossibleRooms": [
-      "AB",
-      "AC"
-    ],
-    "PossiblePeriods": [
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [
-      "OpRes",
-      "Databases",
-      "Algorithms"
-    ],
-    "SecondaryCourses": [
-      "Analytics",
-      "OpRes",
-      "Analytics"
-    ]
-  },
-  {
-    "Course": "Databases",
-    "ExamType": "Oral",
-    "MinimumDistanceBetweenExams": 5,
-    "NumberOfExams": 1,
-    "RoomsRequested": {
-      "Number": 2,
-      "Type": "Large"
-    },
-    "Teacher": "Andrea",
-    "WrittenOralSpecs": {
-      "MaxDistance": 8,
-      "MinDistance": 4,
-      "RoomForOral": false,
-      "SameDay": false
-    },
-    "ExamOrder": 1,
-    "PossibleRooms": [
-      "AB",
-      "AC"
-    ],
-    "PossiblePeriods": [
-      1,
-      2,
-      3,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
-    ],
-    "PrimaryCourses": [
-      "OpRes",
-      "Databases",
-      "Algorithms"
-    ],
-    "SecondaryCourses": [
-      "Analytics",
-      "OpRes",
-      "Analytics"
-    ]
-  }
-]
+    {
+      "Course": "Databases",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 1,
+          "Room": "AB",
+          "Course": "Databases"
+        },
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 1,
+          "Room": "AC",
+          "Course": "Databases"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 2,
+          "Room": "AB",
+          "Course": "Databases"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 2,
+          "Room": "AC",
+          "Course": "Databases"
+        }
+      ]
+    }
+  ],
+  "Cost": 0
+}

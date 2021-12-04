@@ -6,8 +6,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2708"
         }
       ]
@@ -18,8 +18,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2707"
         }
       ]
@@ -30,8 +30,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2706"
         }
       ]
@@ -42,8 +42,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2705"
         }
       ]
@@ -54,8 +54,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2704"
         }
       ]
@@ -66,8 +66,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2703"
         }
       ]
@@ -78,8 +78,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2702"
         }
       ]
@@ -90,8 +90,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2701"
         }
       ]
@@ -102,8 +102,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2700"
         }
       ]
@@ -114,8 +114,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2699"
         }
       ]
@@ -126,8 +126,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2698"
         }
       ]
@@ -138,8 +138,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2697"
         }
       ]
@@ -150,8 +150,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2696"
         }
       ]
@@ -162,8 +162,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2695"
         }
       ]
@@ -174,8 +174,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2694"
         }
       ]
@@ -186,8 +186,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2693"
         }
       ]
@@ -198,8 +198,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2692"
         }
       ]
@@ -210,8 +210,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2691"
         }
       ]
@@ -222,8 +222,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2690"
         }
       ]
@@ -234,8 +234,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2689"
         }
       ]
@@ -246,8 +246,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2688"
         }
       ]
@@ -258,8 +258,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2687"
         }
       ]
@@ -270,8 +270,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2686"
         }
       ]
@@ -282,8 +282,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2684"
         }
       ]
@@ -294,8 +294,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2681"
         }
       ]
@@ -306,8 +306,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2680"
         }
       ]
@@ -318,8 +318,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2679"
         }
       ]
@@ -330,8 +330,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2678"
         }
       ]
@@ -342,8 +342,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2677"
         }
       ]
@@ -354,8 +354,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2676"
         }
       ]
@@ -366,8 +366,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2675"
         }
       ]
@@ -378,8 +378,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2674"
         }
       ]
@@ -390,8 +390,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2673"
         }
       ]
@@ -402,8 +402,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2672"
         }
       ]
@@ -414,8 +414,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2671"
         }
       ]
@@ -426,8 +426,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2669"
         }
       ]
@@ -438,8 +438,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2668"
         }
       ]
@@ -450,8 +450,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2667"
         }
       ]
@@ -462,8 +462,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2666"
         }
       ]
@@ -474,8 +474,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2665"
         }
       ]
@@ -486,8 +486,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2664"
         }
       ]
@@ -498,8 +498,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2663"
         }
       ]
@@ -510,8 +510,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2662"
         }
       ]
@@ -522,8 +522,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2661"
         }
       ]
@@ -534,8 +534,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2657"
         }
       ]
@@ -546,8 +546,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2656"
         }
       ]
@@ -558,8 +558,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2655"
         }
       ]
@@ -570,8 +570,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2654"
         }
       ]
@@ -582,8 +582,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2653"
         }
       ]
@@ -594,8 +594,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2652"
         }
       ]
@@ -606,8 +606,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2651"
         }
       ]
@@ -618,8 +618,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2650"
         }
       ]
@@ -666,8 +666,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2645"
         }
       ]
@@ -678,8 +678,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2644"
         }
       ]
@@ -690,8 +690,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2643"
         }
       ]
@@ -714,8 +714,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2641"
         }
       ]
@@ -726,8 +726,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2640"
         }
       ]
@@ -738,8 +738,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2639"
         }
       ]
@@ -750,8 +750,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2638"
         }
       ]
@@ -762,8 +762,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2637"
         }
       ]
@@ -774,8 +774,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2636"
         }
       ]
@@ -786,8 +786,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2634"
         }
       ]
@@ -798,8 +798,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2632"
         }
       ]
@@ -810,8 +810,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2631"
         }
       ]
@@ -822,8 +822,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2629"
         }
       ]
@@ -834,8 +834,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2628"
         }
       ]
@@ -846,8 +846,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2627"
         }
       ]
@@ -858,8 +858,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2626"
         }
       ]
@@ -870,8 +870,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2625"
         }
       ]
@@ -882,8 +882,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2624"
         }
       ]
@@ -894,8 +894,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2621"
         }
       ]
@@ -906,8 +906,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2620"
         }
       ]
@@ -918,8 +918,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2619"
         }
       ]
@@ -930,8 +930,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2618"
         }
       ]
@@ -942,8 +942,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2617"
         }
       ]
@@ -954,8 +954,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2616"
         }
       ]
@@ -966,8 +966,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2615"
         }
       ]
@@ -978,8 +978,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2614"
         }
       ]
@@ -990,8 +990,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2613"
         }
       ]
@@ -1002,8 +1002,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2612"
         }
       ]
@@ -1014,8 +1014,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2611"
         }
       ]
@@ -1026,8 +1026,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2610"
         }
       ]
@@ -1038,8 +1038,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2609"
         }
       ]
@@ -1050,8 +1050,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2608"
         }
       ]
@@ -1062,8 +1062,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2607"
         }
       ]
@@ -1074,8 +1074,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2606"
         }
       ]
@@ -1086,8 +1086,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2605"
         }
       ]
@@ -1098,8 +1098,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2604"
         }
       ]
@@ -1110,8 +1110,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2603"
         }
       ]
@@ -1122,8 +1122,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2598"
         }
       ]
@@ -1134,8 +1134,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2597"
         }
       ]
@@ -1146,8 +1146,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2596"
         }
       ]
@@ -1158,8 +1158,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2595"
         }
       ]
@@ -1170,8 +1170,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2591"
         }
       ]
@@ -1182,8 +1182,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2589"
         }
       ]
@@ -1194,8 +1194,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2587"
         }
       ]
@@ -1206,8 +1206,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2586"
         }
       ]
@@ -1218,8 +1218,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2585"
         }
       ]
@@ -1230,8 +1230,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2583"
         }
       ]
@@ -1242,8 +1242,8 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2582"
         }
       ]
@@ -1254,8 +1254,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2581"
         }
       ]
@@ -1266,8 +1266,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2579"
         }
       ]
@@ -1278,8 +1278,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2578"
         }
       ]
@@ -1290,8 +1290,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2577"
         }
       ]
@@ -1302,8 +1302,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2576"
         }
       ]
@@ -1314,8 +1314,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2575"
         }
       ]
@@ -1326,8 +1326,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2574"
         }
       ]
@@ -1338,8 +1338,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2572"
         }
       ]
@@ -1350,8 +1350,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2571"
         }
       ]
@@ -1362,8 +1362,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2570"
         }
       ]
@@ -1374,8 +1374,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2568"
         }
       ]
@@ -1386,8 +1386,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2566"
         }
       ]
@@ -1398,8 +1398,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2565"
         }
       ]
@@ -1410,8 +1410,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2564"
         }
       ]
@@ -1422,8 +1422,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2563"
         }
       ]
@@ -1434,8 +1434,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2562"
         }
       ]
@@ -1446,8 +1446,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2561"
         }
       ]
@@ -1458,8 +1458,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2560"
         }
       ]
@@ -1470,8 +1470,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2559"
         }
       ]
@@ -1482,8 +1482,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2558"
         }
       ]
@@ -1494,8 +1494,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2557"
         }
       ]
@@ -1506,8 +1506,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2556"
         }
       ]
@@ -1518,8 +1518,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2555"
         }
       ]
@@ -1530,8 +1530,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2554"
         }
       ]
@@ -1542,8 +1542,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2553"
         }
       ]
@@ -1554,8 +1554,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2552"
         }
       ]
@@ -1566,8 +1566,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2551"
         }
       ]
@@ -1578,8 +1578,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2550"
         }
       ]
@@ -1590,8 +1590,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2549"
         }
       ]
@@ -1602,8 +1602,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2548"
         }
       ]
@@ -1614,8 +1614,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2547"
         }
       ]
@@ -1626,8 +1626,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2546"
         }
       ]
@@ -1638,8 +1638,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2545"
         }
       ]
@@ -1650,8 +1650,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2544"
         }
       ]
@@ -1662,8 +1662,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2543"
         }
       ]
@@ -1674,8 +1674,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2542"
         }
       ]
@@ -1686,8 +1686,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2541"
         }
       ]
@@ -1698,8 +1698,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2540"
         }
       ]
@@ -1710,8 +1710,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2538"
         }
       ]
@@ -1722,8 +1722,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2537"
         }
       ]
@@ -1734,8 +1734,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2536"
         }
       ]
@@ -1746,8 +1746,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2534"
         }
       ]
@@ -1770,8 +1770,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2532"
         }
       ]
@@ -1782,8 +1782,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2531"
         }
       ]
@@ -1794,8 +1794,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2528"
         }
       ]
@@ -1806,8 +1806,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2527"
         }
       ]
@@ -1818,8 +1818,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2526"
         }
       ]
@@ -1830,8 +1830,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2525"
         }
       ]
@@ -1842,8 +1842,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2524"
         }
       ]
@@ -1854,8 +1854,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2523"
         }
       ]
@@ -1866,8 +1866,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2522"
         }
       ]
@@ -1878,8 +1878,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2521"
         }
       ]
@@ -1890,8 +1890,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2520"
         }
       ]
@@ -1902,8 +1902,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2519"
         }
       ]
@@ -1914,8 +1914,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2518"
         }
       ]
@@ -1926,8 +1926,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2517"
         }
       ]
@@ -1938,8 +1938,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2516"
         }
       ]
@@ -1950,8 +1950,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2515"
         }
       ]
@@ -1962,8 +1962,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2514"
         }
       ]
@@ -1974,8 +1974,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2513"
         }
       ]
@@ -1986,8 +1986,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2512"
         }
       ]
@@ -1998,8 +1998,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2511"
         }
       ]
@@ -2010,8 +2010,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2510"
         }
       ]
@@ -2022,8 +2022,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2509"
         }
       ]
@@ -2034,8 +2034,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2508"
         }
       ]
@@ -2046,8 +2046,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2507"
         }
       ]
@@ -2058,8 +2058,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2506"
         }
       ]
@@ -2070,8 +2070,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2505"
         }
       ]
@@ -2082,8 +2082,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2504"
         }
       ]
@@ -2094,8 +2094,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2503"
         }
       ]
@@ -2106,8 +2106,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2502"
         }
       ]
@@ -2118,8 +2118,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2501"
         }
       ]
@@ -2130,8 +2130,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2500"
         }
       ]
@@ -2142,8 +2142,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2499"
         }
       ]
@@ -2154,8 +2154,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2498"
         }
       ]
@@ -2166,8 +2166,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2497"
         }
       ]
@@ -2178,8 +2178,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2496"
         }
       ]
@@ -2190,8 +2190,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2495"
         }
       ]
@@ -2202,8 +2202,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2494"
         }
       ]
@@ -2214,8 +2214,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2493"
         }
       ]
@@ -2226,8 +2226,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2492"
         }
       ]
@@ -2238,8 +2238,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2491"
         }
       ]
@@ -2250,8 +2250,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2490"
         }
       ]
@@ -2262,8 +2262,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2489"
         }
       ]
@@ -2274,8 +2274,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2488"
         }
       ]
@@ -2286,8 +2286,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2487"
         }
       ]
@@ -2298,8 +2298,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2486"
         }
       ]
@@ -2310,8 +2310,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2485"
         }
       ]
@@ -2322,8 +2322,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2484"
         }
       ]
@@ -2334,8 +2334,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2483"
         }
       ]
@@ -2346,8 +2346,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2482"
         }
       ]
@@ -2358,8 +2358,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2481"
         }
       ]
@@ -2370,8 +2370,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2480"
         }
       ]
@@ -2382,8 +2382,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2479"
         }
       ]
@@ -2394,8 +2394,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2478"
         }
       ]
@@ -2406,8 +2406,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2477"
         }
       ]
@@ -2418,8 +2418,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2476"
         }
       ]
@@ -2430,8 +2430,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2475"
         }
       ]
@@ -2442,8 +2442,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2474"
         }
       ]
@@ -2454,8 +2454,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2473"
         }
       ]
@@ -2466,8 +2466,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2472"
         }
       ]
@@ -2478,8 +2478,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2471"
         }
       ]
@@ -2490,8 +2490,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2470"
         }
       ]
@@ -2502,8 +2502,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2469"
         }
       ]
@@ -2514,8 +2514,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2468"
         }
       ]
@@ -2526,8 +2526,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2467"
         }
       ]
@@ -2538,8 +2538,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2466"
         }
       ]
@@ -2550,8 +2550,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2465"
         }
       ]
@@ -2562,8 +2562,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2464"
         }
       ]
@@ -2574,8 +2574,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2463"
         }
       ]
@@ -2586,8 +2586,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2462"
         }
       ]
@@ -2598,8 +2598,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2461"
         }
       ]
@@ -2610,8 +2610,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2460"
         }
       ]
@@ -2622,8 +2622,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2459"
         }
       ]
@@ -2634,8 +2634,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2458"
         }
       ]
@@ -2646,8 +2646,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2457"
         }
       ]
@@ -2658,8 +2658,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2456"
         }
       ]
@@ -2670,8 +2670,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2455"
         }
       ]
@@ -2682,8 +2682,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2454"
         }
       ]
@@ -2694,8 +2694,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2453"
         }
       ]
@@ -2706,8 +2706,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2451"
         }
       ]
@@ -2718,8 +2718,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2450"
         }
       ]
@@ -2730,8 +2730,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2449"
         }
       ]
@@ -2742,8 +2742,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2448"
         }
       ]
@@ -2754,8 +2754,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2447"
         }
       ]
@@ -2766,8 +2766,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2446"
         }
       ]
@@ -2778,8 +2778,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2445"
         }
       ]
@@ -2790,8 +2790,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2444"
         }
       ]
@@ -2802,8 +2802,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2442"
         }
       ]
@@ -2814,8 +2814,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2441"
         }
       ]
@@ -2826,8 +2826,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2440"
         }
       ]
@@ -2838,8 +2838,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2439"
         }
       ]
@@ -2850,8 +2850,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2438"
         }
       ]
@@ -2862,8 +2862,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2437"
         }
       ]
@@ -2874,8 +2874,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "327",
+          "Period": null,
+          "Room": null,
           "Course": "2436"
         }
       ]
@@ -2886,8 +2886,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2435"
         }
       ]
@@ -2898,8 +2898,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2434"
         }
       ]
@@ -2910,8 +2910,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2433"
         }
       ]
@@ -2922,8 +2922,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2432"
         }
       ]
@@ -2934,8 +2934,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2431"
         }
       ]
@@ -2946,8 +2946,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2430"
         }
       ]
@@ -2958,8 +2958,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2429"
         }
       ]
@@ -2970,8 +2970,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2428"
         }
       ]
@@ -2982,8 +2982,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2427"
         }
       ]
@@ -2994,8 +2994,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2426"
         }
       ]
@@ -3006,8 +3006,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2425"
         }
       ]
@@ -3018,8 +3018,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2424"
         }
       ]
@@ -3030,8 +3030,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2423"
         }
       ]
@@ -3042,8 +3042,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2422"
         }
       ]
@@ -3054,8 +3054,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2421"
         }
       ]
@@ -3066,8 +3066,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2420"
         }
       ]
@@ -3078,8 +3078,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2419"
         }
       ]
@@ -3090,8 +3090,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "436",
+          "Period": 16,
+          "Room": null,
           "Course": "2418"
         }
       ]
@@ -3102,8 +3102,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2417"
         }
       ]
@@ -3114,8 +3114,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2416"
         }
       ]
@@ -3126,8 +3126,8 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "340",
+          "Period": 28,
+          "Room": null,
           "Course": "2414"
         }
       ]
