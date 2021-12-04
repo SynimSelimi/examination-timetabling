@@ -1,3 +1,4 @@
+import time
 from helpers import *
 from enums import *
 from preprocess import *
@@ -42,6 +43,7 @@ Main program -
 This section runs the solution
 """
 def main():
+    start_time = time.time()
     print("Running solver on instance:", get_filepath())
 
     data = parse()
@@ -49,9 +51,10 @@ def main():
     solution = Solution(instances).solve()
     save_solution(get_filepath(), instances)
 
-    print("Solver completed.")
-    print("Solution instances are in solutions.")
+    end_time = time.time()
 
+    print("Solver completed. Check solutions folder.")
+    print(f"Completed in {end_time-start_time:.2f}s.")
 """
 Execution
 """
