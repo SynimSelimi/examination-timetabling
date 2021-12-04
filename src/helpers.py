@@ -1,3 +1,4 @@
+import time
 import json
 import os
 import sys
@@ -74,3 +75,7 @@ def flat_map(f, xs):
     for x in xs:
         ys.extend(f(x))
     return ys
+
+def tprint(*msg):
+    now = time.strftime("%H:%M:%S")
+    print(f"[{now}]", *msg)

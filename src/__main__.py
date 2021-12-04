@@ -41,7 +41,7 @@ This section runs the solution
 """
 def main():
     start_time = time.time()
-    print("Running solver on instance:", get_filepath())
+    tprint("Running solver on instance:", get_filepath())
 
     data = parse()
     instances = process(data)
@@ -50,8 +50,8 @@ def main():
 
     end_time = time.time()
 
-    print("Solver completed. Check solutions folder.")
-    print(f"Completed in {end_time-start_time:.2f}s.")
+    tprint("Solver completed. Check solutions folder.")
+    tprint(f"Completed in {end_time-start_time:.2f}s.")
 """
 Execution
 """
