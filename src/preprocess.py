@@ -26,7 +26,7 @@ def flat_map_courses(courses):
         for i in range(0, number_of_exams):
             course['NumberOfExams'] = 1;
             course['ExamOrder'] = i
-            expand_exams(courses, flat_courses, course)
+            expand_exams(flat_courses, course)
             flat_done = True
 
         if not flat_done: flat_courses.append(course)
