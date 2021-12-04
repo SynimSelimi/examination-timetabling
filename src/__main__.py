@@ -27,14 +27,12 @@ def process(data):
     event_period_constraints = list(filter(lambda val: val['Type'] == 'EventPeriodConstraint', hard_constraints))
     event_room_constraints = list(filter(lambda val: val['Type'] == 'EventRoomConstraint', hard_constraints))
 
-    # DO SOMETHING WITH THE DATA
-    # THEN RETURN THE PROCESSED DATA
-
     periods = sieve_periods(periods, period_constraints)
     courses = flat_map_courses(courses)
     courses = add_possible_rooms(courses, rooms, event_room_constraints)
     courses = add_possible_periods(courses, periods, event_period_constraints)
     courses = add_curricula_info(courses, curricula)
+    courses = group_by_course(courses)
 
     return courses
 
@@ -49,7 +47,7 @@ def main():
     data = parse()
     instances = process(data)
     solution = Solution(instances).solve()
-    save_solution(get_filepath(), instances)
+    save_solution(get_filepath(), solution)
 
     end_time = time.time()
 
