@@ -18,7 +18,7 @@ class Solution:
             room, period = c['Room'], c['Period']
             self.taken_period_room[period][room] = 'Constraint'
 
-    def available_room_period(self, rooms, periods, course_name):
+    def available_room_period(self, rooms, periods, course):
         rooms = rooms.copy()
         periods = periods.copy()
         room = None
@@ -31,14 +31,19 @@ class Solution:
 
         if len(rooms) == 0:
             period = periods.pop(0)
-            room = None
         else:
             for p, r in pairs(periods, rooms):
                     taken = self.taken_period_room.get(p, {}).get(r, {})
-                    if not taken:
+                    period_course = self.taken_period_room.get(p, {}).values()
+
+                    conflict = period_course \
+                        and any(item in course["PrimaryCourses"] for item in period_course) \
+                        and any(item in course["SameTeacherCourses"] for item in period_course)
+
+                    if not taken and not conflict:
                         room = r
                         period = p
-                        self.taken_period_room[period][room] = course_name
+                        self.taken_period_room[period][room] = course['Course']
                         break
 
         return room, period
@@ -72,7 +77,7 @@ class Solution:
             rooms = course.get('PossibleRooms')
             periods = course.get('PossiblePeriods')
 
-            room, period = self.available_room_period(rooms, periods, course_name)
+            room, period = self.available_room_period(rooms, periods, course)
 
             event = Event(exam_order, exam_type, period, room, course_name)
             self.add_event(course_name, event)

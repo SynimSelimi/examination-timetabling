@@ -1,4 +1,5 @@
 from helpers import *
+from collections import defaultdict
 
 def expand_exams(flat_courses, course):
     exam_type = course['ExamType']
@@ -84,6 +85,18 @@ def add_curricula_info(courses, curricula):
         course['SecondaryCourses'] = secondary_courses
 
     return _courses
+
+def add_same_teacher_courses(courses):
+    _courses = courses.copy()
+    course_per_teacher = defaultdict(list)  
+
+    for course in _courses:
+        course_per_teacher[course['Teacher']].append(course['Course']) 
+
+    for course in _courses:
+        course['SameTeacherCourses'] = course_per_teacher[course['Teacher']]    
+
+    return _courses    
 
 def sieve_periods(periods, period_constraints):
     _periods = periods.copy()
