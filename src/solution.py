@@ -1,3 +1,4 @@
+import random
 from collections import defaultdict
 
 class Solution:
@@ -36,9 +37,10 @@ class Solution:
                     taken = self.taken_period_room.get(p, {}).get(r, {})
                     period_course = self.taken_period_room.get(p, {}).values()
 
-                    conflict = period_course \
-                        and any(item in course["PrimaryCourses"] for item in period_course) \
-                        and any(item in course["SameTeacherCourses"] for item in period_course)
+                    primary_course_conflicts = any(item in course["PrimaryCourses"] for item in period_course)
+                    same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in period_course)
+
+                    conflict = period_course and ( primary_course_conflicts or same_teacher_conflicts )
 
                     if not taken and not conflict:
                         room = r
@@ -60,6 +62,33 @@ class Solution:
     # To Do calculate cost
     # # # # # # # # # # # # 
 
+    def multiple_exams_constraint_propagation(self, course, courses, period):
+        name = course['Course']
+        exam_type = course['ExamType']
+        exam_nr = course['ExamOrder']
+
+        # related_courses = list(filter(lambda x: x['Course'] == name and x['ExamOrder'] > exam_nr, courses))
+
+        for _course in courses:
+            if _course['Course'] == name and _course['ExamOrder'] < exam_nr:
+                periods = _course['PossiblePeriods']
+                _course['PossiblePeriods'] = list(filter(lambda x: x < period, periods))
+            elif _course['Course'] == name and _course['ExamOrder'] >= exam_nr:
+                periods = _course['PossiblePeriods']
+                _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
+
+    def two_part_constraint_propagation(self, course, courses, period):
+        name = course['Course']
+        exam_type = course['ExamType']
+        if exam_type == 'Oral': return
+
+        # related_courses = list(filter(lambda x: x['Course'] == name and x['ExamType'] == 'Written', courses))
+
+        for _course in courses:
+            if _course['Course'] == name and _course['ExamOrder'] == 'Written':
+                periods = _course['PossiblePeriods']
+                _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
+
     def solve(self):
         self.cost = 0
         self.assignments = []
@@ -67,22 +96,39 @@ class Solution:
         # dict(sorted(x.items(), key=lambda item: item[1]))
         courses = self.instances.copy()
 
+        random.shuffle(courses)
         while len(courses) > 0:
-            course = courses.pop(0)
-            course_name = course['Course']
+            _courses = courses.pop(0)
+            for course in _courses:
+                course_name = course['Course']
 
-            exam_type = course['ExamType']
-            exam_order = course['ExamOrder']
+                exam_type = course['ExamType']
+                exam_order = course['ExamOrder']
+                two_part = course.get('TwoPart')
+                multiple_exams = course.get('MultipleExams')
 
-            rooms = course.get('PossibleRooms')
-            periods = course.get('PossiblePeriods')
+                rooms = course.get('PossibleRooms')
+                periods = course.get('PossiblePeriods')
 
-            room, period = self.available_room_period(rooms, periods, course)
+                room, period = self.available_room_period(rooms, periods, course)
+                if period == None:
+                    print("Impossible encountered. Retrying...")
+                    return None
 
-            event = Event(exam_order, exam_type, period, room, course_name)
-            self.add_event(course_name, event)
+                if multiple_exams == True: self.multiple_exams_constraint_propagation(course, _courses, period)
+                if two_part == True: self.two_part_constraint_propagation(course, _courses, period)
+
+                event = Event(exam_order, exam_type, period, room, course_name)
+                self.add_event(course_name, event)
 
         return self.export()
+
+    @staticmethod
+    def try_solving(instances, hard_constraints):
+        solution = None
+        while solution == None:
+            solution = Solution(instances, hard_constraints).solve()
+        return solution
 
     def add_event(self, course_name, event):
         if course_name not in self.course_assignment_ids.keys():

@@ -33,26 +33,46 @@ def process(data):
     courses = add_possible_periods(courses, periods, event_period_constraints)
     courses = add_curricula_info(courses, curricula)
     courses = add_same_teacher_courses(courses)
+    courses = group_by_course(courses)
 
     return courses, hard_constraints
 
 """
-Main program -
-This section runs the solution
+Solve one instance -
+This section contains the main logic to solve one instance
 """
-def main():
+def run_solver(instance_path):
     start_time = time.time()
-    tprint("Running solver on instance:", get_filepath())
+    tprint("Running solver on instance:", instance_path)
 
-    data = parse()
+    data = parse(instance_path)
     instances, hard_constraints = process(data)
-    solution = Solution(instances, hard_constraints).solve()
-    save_solution(get_filepath(), solution)
+    solution = Solution.try_solving(instances, hard_constraints)
+    save_solution(instance_path, solution)
 
     end_time = time.time()
 
     tprint("Solver completed. Check solutions folder.")
     tprint(f"Completed in {end_time-start_time:.2f}s.")
+
+"""
+Solve all instances -
+This section contains the main logic to solve all instances,
+which are present in the instances folder
+"""
+def solve_all_instances(folder = 'instances'):
+    for _, _, files in os.walk(folder):
+        print("Solving all instances.")
+        for filename in files: run_solver(f'{folder}/{filename}')
+
+"""
+Main program -
+This section runs the solver
+"""
+def main():
+    # solve_all_instances()
+    run_solver(get_filepath())
+
 """
 Execution
 """

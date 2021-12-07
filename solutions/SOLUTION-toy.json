@@ -1,18 +1,6 @@
 {
   "Assignments": [
     {
-      "Course": "Analytics",
-      "Events": [
-        {
-          "Exam": 0,
-          "Part": "Oral",
-          "Period": 0,
-          "Room": null,
-          "Course": "Analytics"
-        }
-      ]
-    },
-    {
       "Course": "OpRes",
       "Events": [
         {
@@ -25,22 +13,22 @@
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 0,
+          "Period": 1,
           "Room": "A",
           "Course": "OpRes"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
-          "Room": "H",
+          "Period": 2,
+          "Room": "G",
           "Course": "OpRes"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 0,
-          "Room": "B",
+          "Period": 3,
+          "Room": "A",
           "Course": "OpRes"
         }
       ]
@@ -58,8 +46,8 @@
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 0,
-          "Room": "AC",
+          "Period": 1,
+          "Room": "AB",
           "Course": "Programming"
         }
       ]
@@ -71,15 +59,27 @@
           "Exam": 0,
           "Part": "Written",
           "Period": 0,
-          "Room": "C",
+          "Room": "A",
           "Course": "Algorithms"
         },
         {
           "Exam": 1,
           "Part": "Written",
           "Period": 1,
-          "Room": "A",
+          "Room": "B",
           "Course": "Algorithms"
+        }
+      ]
+    },
+    {
+      "Course": "Analytics",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 0,
+          "Room": null,
+          "Course": "Analytics"
         }
       ]
     },
@@ -89,29 +89,29 @@
         {
           "Exam": 0,
           "Part": "Written",
-          "Period": 1,
+          "Period": 5,
           "Room": "AB",
           "Course": "Databases"
         },
         {
           "Exam": 0,
           "Part": "Oral",
-          "Period": 1,
-          "Room": "AC",
+          "Period": 6,
+          "Room": "AB",
           "Course": "Databases"
         },
         {
           "Exam": 1,
           "Part": "Written",
-          "Period": 2,
+          "Period": 7,
           "Room": "AB",
           "Course": "Databases"
         },
         {
           "Exam": 1,
           "Part": "Oral",
-          "Period": 2,
-          "Room": "AC",
+          "Period": 8,
+          "Room": "AB",
           "Course": "Databases"
         }
       ]
