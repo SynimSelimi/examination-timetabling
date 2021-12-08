@@ -82,6 +82,8 @@ class Solution:
     # To Do check if courses have the same teacher (cannot be assigned same period)
     # To Do check if courses are primary (cannot be assigned same period)
     # To Do calculate cost
+    # !!To Do add roomset assignments to taken_period_room as separate room assignments
+    # !!To Do check precedence room issues in D5-1-17.json
     # # # # # # # # # # # # 
 
     def multiple_exams_constraint_propagation(self, course, courses, period):
