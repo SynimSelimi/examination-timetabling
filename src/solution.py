@@ -31,7 +31,22 @@ class Solution:
                     yield p, r
 
         if len(rooms) == 0:
-            period = periods.pop(0)
+            for p in periods:
+                    no_room = self.taken_period_room.get(p, {}).get('noRoom', [])
+                    taken = self.taken_period_room.get(p, {}).get('noRoom', [])
+                    period_course = self.taken_period_room.get(p, {}).get('noRoom', [])
+
+                    primary_course_conflicts = any(item in course["PrimaryCourses"] for item in period_course)
+                    same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in period_course)
+
+                    conflict = period_course and ( primary_course_conflicts or same_teacher_conflicts )
+
+                    if not taken and not conflict:
+                        period = p
+                        if len(no_room) == 0:
+                            self.taken_period_room[period]['noRoom'] = []
+                        self.taken_period_room[period]['noRoom'].append(course['Course'])
+                        break
         else:
             for p, r in pairs(periods, rooms):
                     taken = self.taken_period_room.get(p, {}).get(r, {})

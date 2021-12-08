@@ -49,10 +49,12 @@ def add_possible_rooms(courses, rooms, constraints):
         specs = course.get('WrittenOralSpecs')
         room_for_oral = is_oral and specs and specs.get('RoomForOral')
 
-        if room_numbers == 0:
-            course['PossibleRooms'] = []
-        elif room_for_oral:
+        course['PossibleRooms'] = []
+
+        if is_oral and room_for_oral:
             course['PossibleRooms'] = list(filter(None, list(map(lambda x: x['Room'], rooms))))
+        elif is_oral and not room_for_oral:
+            course['PossibleRooms'] = []
         elif room_numbers == 1:
             room_type = req_rooms['Type']
             def fun(room):
