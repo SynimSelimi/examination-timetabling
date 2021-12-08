@@ -32,30 +32,37 @@ class Solution:
 
         if len(rooms) == 0:
             for p in periods:
-                    no_room = self.taken_period_room.get(p, {}).get('noRoom', [])
-                    taken = self.taken_period_room.get(p, {}).get('noRoom', [])
-                    period_course = self.taken_period_room.get(p, {}).get('noRoom', [])
+                    conflict_courses = []
+                    period_course = self.taken_period_room.get(p, {}).values()
+                    no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
+                    conflict_courses.extend(period_course)
+                    conflict_courses.extend(no_room_courses)
 
-                    primary_course_conflicts = any(item in course["PrimaryCourses"] for item in period_course)
-                    same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in period_course)
+                    primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
+                    same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
+ 
+                    conflict = conflict_courses and (primary_course_conflicts or same_teacher_conflicts)
 
-                    conflict = period_course and ( primary_course_conflicts or same_teacher_conflicts )
-
-                    if not taken and not conflict:
+                    if not conflict:
                         period = p
-                        if len(no_room) == 0:
+                        if len(no_room_courses) == 0:
                             self.taken_period_room[period]['noRoom'] = []
                         self.taken_period_room[period]['noRoom'].append(course['Course'])
                         break
         else:
             for p, r in pairs(periods, rooms):
+                    conflict_courses = []
                     taken = self.taken_period_room.get(p, {}).get(r, {})
+                    no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
                     period_course = self.taken_period_room.get(p, {}).values()
 
-                    primary_course_conflicts = any(item in course["PrimaryCourses"] for item in period_course)
-                    same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in period_course)
+                    conflict_courses.extend(period_course)
+                    conflict_courses.extend(no_room_courses)
 
-                    conflict = period_course and ( primary_course_conflicts or same_teacher_conflicts )
+                    primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
+                    same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
+
+                    conflict = conflict_courses and ( primary_course_conflicts or same_teacher_conflicts )
 
                     if not taken and not conflict:
                         room = r
@@ -100,7 +107,7 @@ class Solution:
         # related_courses = list(filter(lambda x: x['Course'] == name and x['ExamType'] == 'Written', courses))
 
         for _course in courses:
-            if _course['Course'] == name and _course['ExamOrder'] == 'Written':
+            if _course['Course'] == name and _course['ExamOrder'] == 'Oral':
                 periods = _course['PossiblePeriods']
                 _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
 
@@ -111,7 +118,7 @@ class Solution:
         # dict(sorted(x.items(), key=lambda item: item[1]))
         courses = self.instances.copy()
 
-        random.shuffle(courses)
+        # random.shuffle(courses)
         while len(courses) > 0:
             _courses = courses.pop(0)
             for course in _courses:
