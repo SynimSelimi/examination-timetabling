@@ -4,16 +4,18 @@ from collections import defaultdict
 def expand_exams(flat_courses, course):
     exam_type = course['ExamType']
     if exam_type == "WrittenAndOral":
-        written_course = course.copy();
+        written_course = course.copy()
         written_course['ExamType'] = 'Written'
+        written_course['TwoPart'] = True
         # written_course['ExamOrder'] = 0
         flat_courses.append(written_course)
-        oral_course = course.copy();
+        oral_course = course.copy()
         oral_course['ExamType'] = 'Oral'
+        oral_course['TwoPart'] = True
         # oral_course['ExamOrder'] = 1
         flat_courses.append(oral_course)
     else:
-        new_course = course.copy();
+        new_course = course.copy()
         flat_courses.append(new_course)
 
 def flat_map_courses(courses):
@@ -24,8 +26,10 @@ def flat_map_courses(courses):
         course = courses.pop()
         number_of_exams = course['NumberOfExams']
 
+        if number_of_exams > 1: course['MultipleExams'] = True
+
         for i in range(0, number_of_exams):
-            course['NumberOfExams'] = 1;
+            course['NumberOfExams'] = 1
             course['ExamOrder'] = i
             expand_exams(flat_courses, course)
             flat_done = True
@@ -43,12 +47,14 @@ def add_possible_rooms(courses, rooms, constraints):
 
         is_oral = course['ExamType'] == 'Oral'
         specs = course.get('WrittenOralSpecs')
-        room_for_oral = is_oral and specs and specs.get('RoomForOral')
+        room_for_oral = specs and specs.get('RoomForOral')
 
-        if room_numbers == 0:
-            course['PossibleRooms'] = []
-        elif room_for_oral:
+        course['PossibleRooms'] = []
+
+        if is_oral and room_for_oral:
             course['PossibleRooms'] = list(filter(None, list(map(lambda x: x['Room'], rooms))))
+        elif is_oral and specs and not room_for_oral:
+            course['PossibleRooms'] = []
         elif room_numbers == 1:
             room_type = req_rooms['Type']
             def fun(room):
@@ -126,3 +132,18 @@ def add_possible_periods(courses, periods, event_period_constraints):
         course['PossiblePeriods'] = _periods
 
     return _courses
+
+def group_by_course(courses):
+    _courses = courses.copy()
+    grouped_courses = []
+
+    while len(_courses) > 0:
+        new_course = []
+        _course = _courses.pop(0)
+        related_courses = list(filter(lambda x: x['Course'] == _course['Course'], _courses))
+        for r_course in related_courses: _courses.remove(r_course)
+        new_course.append(_course)
+        new_course.extend(related_courses)
+        grouped_courses.append(new_course)
+
+    return grouped_courses 

@@ -1,3 +1,4 @@
+import random
 from collections import defaultdict
 
 class Solution:
@@ -30,15 +31,38 @@ class Solution:
                     yield p, r
 
         if len(rooms) == 0:
-            period = periods.pop(0)
+            for p in periods:
+                    conflict_courses = []
+                    period_course = self.taken_period_room.get(p, {}).values()
+                    no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
+                    conflict_courses.extend(period_course)
+                    conflict_courses.extend(no_room_courses)
+
+                    primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
+                    same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
+ 
+                    conflict = conflict_courses and (primary_course_conflicts or same_teacher_conflicts)
+
+                    if not conflict:
+                        period = p
+                        if len(no_room_courses) == 0:
+                            self.taken_period_room[period]['noRoom'] = []
+                        self.taken_period_room[period]['noRoom'].append(course['Course'])
+                        break
         else:
             for p, r in pairs(periods, rooms):
+                    conflict_courses = []
                     taken = self.taken_period_room.get(p, {}).get(r, {})
+                    no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
                     period_course = self.taken_period_room.get(p, {}).values()
 
-                    conflict = period_course \
-                        and any(item in course["PrimaryCourses"] for item in period_course) \
-                        and any(item in course["SameTeacherCourses"] for item in period_course)
+                    conflict_courses.extend(period_course)
+                    conflict_courses.extend(no_room_courses)
+
+                    primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
+                    same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
+
+                    conflict = conflict_courses and ( primary_course_conflicts or same_teacher_conflicts )
 
                     if not taken and not conflict:
                         room = r
@@ -58,7 +82,36 @@ class Solution:
     # To Do check if courses have the same teacher (cannot be assigned same period)
     # To Do check if courses are primary (cannot be assigned same period)
     # To Do calculate cost
+    # !!To Do add roomset assignments to taken_period_room as separate room assignments
+    # !!To Do check precedence room issues in D5-1-17.json
     # # # # # # # # # # # # 
+
+    def multiple_exams_constraint_propagation(self, course, courses, period):
+        name = course['Course']
+        exam_type = course['ExamType']
+        exam_nr = course['ExamOrder']
+
+        # related_courses = list(filter(lambda x: x['Course'] == name and x['ExamOrder'] > exam_nr, courses))
+
+        for _course in courses:
+            if _course['Course'] == name and _course['ExamOrder'] < exam_nr:
+                periods = _course['PossiblePeriods']
+                _course['PossiblePeriods'] = list(filter(lambda x: x < period, periods))
+            elif _course['Course'] == name and _course['ExamOrder'] >= exam_nr:
+                periods = _course['PossiblePeriods']
+                _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
+
+    def two_part_constraint_propagation(self, course, courses, period):
+        name = course['Course']
+        exam_type = course['ExamType']
+        if exam_type == 'Oral': return
+
+        # related_courses = list(filter(lambda x: x['Course'] == name and x['ExamType'] == 'Written', courses))
+
+        for _course in courses:
+            if _course['Course'] == name and _course['ExamOrder'] == 'Oral':
+                periods = _course['PossiblePeriods']
+                _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
 
     def solve(self):
         self.cost = 0
@@ -67,22 +120,39 @@ class Solution:
         # dict(sorted(x.items(), key=lambda item: item[1]))
         courses = self.instances.copy()
 
+        # random.shuffle(courses)
         while len(courses) > 0:
-            course = courses.pop(0)
-            course_name = course['Course']
+            _courses = courses.pop(0)
+            for course in _courses:
+                course_name = course['Course']
 
-            exam_type = course['ExamType']
-            exam_order = course['ExamOrder']
+                exam_type = course['ExamType']
+                exam_order = course['ExamOrder']
+                two_part = course.get('TwoPart')
+                multiple_exams = course.get('MultipleExams')
 
-            rooms = course.get('PossibleRooms')
-            periods = course.get('PossiblePeriods')
+                rooms = course.get('PossibleRooms')
+                periods = course.get('PossiblePeriods')
 
-            room, period = self.available_room_period(rooms, periods, course)
+                room, period = self.available_room_period(rooms, periods, course)
+                if period == None:
+                    print("Impossible encountered. Retrying...")
+                    return None
 
-            event = Event(exam_order, exam_type, period, room, course_name)
-            self.add_event(course_name, event)
+                if multiple_exams == True: self.multiple_exams_constraint_propagation(course, _courses, period)
+                if two_part == True: self.two_part_constraint_propagation(course, _courses, period)
+
+                event = Event(exam_order, exam_type, period, room, course_name)
+                self.add_event(course_name, event)
 
         return self.export()
+
+    @staticmethod
+    def try_solving(instances, hard_constraints):
+        solution = None
+        while solution == None:
+            solution = Solution(instances, hard_constraints).solve()
+        return solution
 
     def add_event(self, course_name, event):
         if course_name not in self.course_assignment_ids.keys():
