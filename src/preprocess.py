@@ -52,7 +52,11 @@ def add_possible_rooms(courses, rooms, constraints):
         course['PossibleRooms'] = []
 
         if is_oral and room_for_oral:
-            course['PossibleRooms'] = list(filter(None, list(map(lambda x: x['Room'], rooms))))
+            def fun(room):
+                match = room['Type'] != "Composite"
+                if match: return room['Room']
+                return None
+            course['PossibleRooms'] = list(filter(None, list(map(fun, rooms))))
         elif is_oral and specs and not room_for_oral:
             course['PossibleRooms'] = []
         elif room_numbers == 1:
@@ -66,7 +70,7 @@ def add_possible_rooms(courses, rooms, constraints):
             room_type = req_rooms['Type']
             def fun(room):
                 match = room.get('Members') and len(room['Members']) == room_numbers
-                if match: return room['Room']
+                if match: return room['Room'] + ":" + ",".join(room['Members'])
                 return None
             course['PossibleRooms'] = list(filter(None, list(map(fun, rooms))))
 
@@ -97,12 +101,12 @@ def add_same_teacher_courses(courses):
     course_per_teacher = defaultdict(list)  
 
     for course in _courses:
-        course_per_teacher[course['Teacher']].append(course['Course']) 
+        course_per_teacher[course['Teacher']].append(course['Course'])
 
     for course in _courses:
-        course['SameTeacherCourses'] = course_per_teacher[course['Teacher']]    
+        course['SameTeacherCourses'] = list((filter(lambda x: x != course["Course"], list(set(course_per_teacher[course['Teacher']])))))
 
-    return _courses    
+    return _courses
 
 def sieve_periods(periods, period_constraints):
     _periods = periods.copy()
