@@ -1,6 +1,7 @@
 import random
 from collections import defaultdict
 
+
 class Solution:
     def __init__(self, instances, hard_constraints):
         self.instances = instances
@@ -10,7 +11,8 @@ class Solution:
         self.last_assignment_id = 0
         self.taken_period_room = defaultdict(dict)
         self.hard_constraints = hard_constraints
-        self.room_period_constraints = list(filter(lambda val: val['Type'] == 'RoomPeriodConstraint', self.hard_constraints))
+        self.room_period_constraints = list(
+            filter(lambda val: val['Type'] == 'RoomPeriodConstraint', self.hard_constraints))
 
         self.import_constraints()
 
@@ -32,47 +34,67 @@ class Solution:
 
         if len(rooms) == 0:
             for p in periods:
-                    conflict_courses = []
-                    period_course = self.taken_period_room.get(p, {}).values()
-                    no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
-                    conflict_courses.extend(period_course)
-                    conflict_courses.extend(no_room_courses)
+                conflict_courses = []
+                period_course = self.taken_period_room.get(p, {}).values()
+                no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
+                conflict_courses.extend(period_course)
+                conflict_courses.extend(no_room_courses)
 
-                    primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
-                    same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
- 
-                    conflict = conflict_courses and (primary_course_conflicts or same_teacher_conflicts)
+                primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
+                same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
 
-                    if not conflict:
-                        period = p
-                        if len(no_room_courses) == 0:
-                            self.taken_period_room[period]['noRoom'] = []
-                        self.taken_period_room[period]['noRoom'].append(course['Course'])
-                        break
+                conflict = conflict_courses and (primary_course_conflicts or same_teacher_conflicts)
+
+                if not conflict:
+                    period = p
+                    if len(no_room_courses) == 0:
+                        self.taken_period_room[period]['noRoom'] = []
+                    self.taken_period_room[period]['noRoom'].append(course['Course'])
+                    break
         else:
             for p, r in pairs(periods, rooms):
-                    conflict_courses = []
+                compositeConflict = False
+
+                conflict_courses = []
+                if ":" in r:
+                    comroms = r.split(':')[1].split(',')
+                    for c in comroms:
+                        if self.taken_period_room.get(p, {}).get(c, {}):
+                            compositeConflict = True
+                            break
+                    taken = False
+                else:
                     taken = self.taken_period_room.get(p, {}).get(r, {})
-                    no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
-                    period_course = self.taken_period_room.get(p, {}).values()
 
-                    conflict_courses.extend(period_course)
-                    conflict_courses.extend(no_room_courses)
+                if compositeConflict:
+                    continue
 
-                    primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
-                    same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
+                no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
+                period_course = self.taken_period_room.get(p, {}).values()
 
-                    conflict = conflict_courses and ( primary_course_conflicts or same_teacher_conflicts )
+                conflict_courses.extend(period_course)
+                conflict_courses.extend(no_room_courses)
 
-                    if not taken and not conflict:
+                primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
+                same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
+
+                conflict = conflict_courses and (primary_course_conflicts or same_teacher_conflicts)
+
+                if not taken and not conflict:
+                    period = p
+                    if ":" in r:
+                        room = r.split(":")[0]
+                        comroms = r.split(':')[1].split(',')
+                        for c in comroms:
+                            self.taken_period_room[period][c] = course['Course']
+                    else:
                         room = r
-                        period = p
                         self.taken_period_room[period][room] = course['Course']
-                        break
+                    break
 
         return room, period
 
-    # # # # # # # # # # # # 
+    # # # # # # # # # # # #
     # To Do add possible RoomPeriodConstraint to the busy roomPeriodSets (solution in import_constraints, needs review)
     # To Do Take into account same day constraints
     # To do add EventRoomConstraint to a temporary memory set
@@ -84,7 +106,7 @@ class Solution:
     # To Do calculate cost
     # !!To Do add roomset assignments to taken_period_room as separate room assignments
     # !!To Do check precedence room issues in D5-1-17.json
-    # # # # # # # # # # # # 
+    # # # # # # # # # # # #
 
     def multiple_exams_constraint_propagation(self, course, courses, period):
         name = course['Course']
@@ -163,7 +185,7 @@ class Solution:
         else:
             assignment_id = self.course_assignment_ids[course_name]
             assignment = self.assignments[assignment_id]
-            
+
         assignment.add_event(event)
 
     def export(self):
@@ -178,6 +200,7 @@ class Solution:
 
     def import_data(self, data):
         pass
+
 
 class Assignment:
     def __init__(self, course):
@@ -197,6 +220,7 @@ class Assignment:
             'Course': self.course,
             'Events': export_events
         }
+
 
 class Event:
     def __init__(self, exam, part, period, room, course):
