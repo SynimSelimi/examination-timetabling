@@ -53,7 +53,7 @@ class Solution:
                     break
         else:
             for p, r in pairs(periods, rooms):
-                compositeConflict = False
+                composite_conflict = False
 
                 conflict_courses = []
                 if ":" in r:
