@@ -104,7 +104,8 @@ def add_same_teacher_courses(courses):
         course_per_teacher[course['Teacher']].append(course['Course'])
 
     for course in _courses:
-        course['SameTeacherCourses'] = list((filter(lambda x: x != course["Course"], list(set(course_per_teacher[course['Teacher']])))))
+        unique_teacher_courses = list(set(course_per_teacher[course['Teacher']]))
+        course['SameTeacherCourses'] = list(filter(lambda x: x != course["Course"], unique_teacher_courses))
 
     return _courses
 
