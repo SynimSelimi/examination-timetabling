@@ -60,13 +60,13 @@ class Solution:
                     comroms = r.split(':')[1].split(',')
                     for c in comroms:
                         if self.taken_period_room.get(p, {}).get(c, {}):
-                            compositeConflict = True
+                            composite_conflict = True
                             break
                     taken = False
                 else:
                     taken = self.taken_period_room.get(p, {}).get(r, {})
 
-                if compositeConflict:
+                if composite_conflict:
                     continue
 
                 no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
