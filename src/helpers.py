@@ -79,3 +79,28 @@ def flat_map(f, xs):
 def tprint(*msg):
     now = time.strftime("%H:%M:%S")
     print(f"[{now}]", *msg)
+
+def ordered_shuffle(courses):
+    _courses = courses.copy()
+    random.shuffle(_courses)
+    ordered_courses = sorted(_courses, key=len, reverse=True)
+    return ordered_courses
+
+def grouped_shuffle(courses):
+    _courses = courses.copy()
+    shuffled_courses = []
+    light_courses = []
+    heavy_courses = []
+
+    while len(_courses) > 0:
+        _course = _courses.pop(0)
+        if len(_course) > 2:
+            heavy_courses.append(_course)
+        else:
+            light_courses.append(_course)
+
+    random.shuffle(heavy_courses)
+    random.shuffle(light_courses)
+    shuffled_courses = heavy_courses + light_courses
+
+    return shuffled_courses

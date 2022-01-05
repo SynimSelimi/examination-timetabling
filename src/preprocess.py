@@ -125,7 +125,7 @@ def add_possible_periods(courses, periods, event_period_constraints):
         exam_order = course.get('ExamOrder')
         filter_fun = lambda x: \
             (x.get('Part') == None or x['Part'] == exam_type) and \
-            (exam_order == None or x['Exam'] == exam_order) \
+            x['Exam'] == exam_order \
             and x['Course'] == course_name
         forbidden_periods = list(filter(filter_fun, event_period_constraints))
         forbidden_periods = list(map(lambda x: x['Period'], forbidden_periods))
@@ -137,6 +137,11 @@ def add_possible_periods(courses, periods, event_period_constraints):
         course['PossiblePeriods'] = _periods
 
     return _courses
+
+def order_course_by_constraints(courses):
+    _courses = courses.copy()
+    ordered_courses = sorted(_courses, key=len, reverse=True)
+    return ordered_courses
 
 def group_by_course(courses):
     _courses = courses.copy()

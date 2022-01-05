@@ -1,4 +1,6 @@
 import random
+import time
+from helpers import grouped_shuffle, save_file
 from collections import defaultdict
 
 
@@ -14,6 +16,7 @@ class Solution:
         self.room_period_constraints = list(
             filter(lambda val: val['Type'] == 'RoomPeriodConstraint', self.hard_constraints)
         )
+        self.last_period = None
 
         self.import_constraints()
 
@@ -32,6 +35,16 @@ class Solution:
             for p in one:
                 for r in two:
                     yield p, r
+
+        # two_part = course.get('TwoPart')
+        # min_distance_of_exams = two_part and course.get('MinimumDistanceBetweenExams')
+        # specs = course.get('WrittenOralSpecs')
+        # min_two_part_distance = specs and specs.get('MinDistance')
+
+        # if min_distance_of_exams:
+        #     periods.sort(key=lambda x: random.randint(0,1), reverse=True)
+
+        # periods = sorted(periods, key=lambda x: x)
 
         if len(rooms) == 0:
             for p in periods:
@@ -102,12 +115,10 @@ class Solution:
     # To Do check MaxDistance MinDistance for WrittenOral (soft)
     # To Do check PrimaryPrimaryDistance (soft)
     # To Do calculate cost
-    # !!To Do add roomset assignments to taken_period_room as separate room assignments
-    # !!To Do check precedence room issues in D5-1-17.json
     # # # # # # # # # # # #
 
     # #####################
-    # STILL INVALID
+    # INVALID
     # D3-2-16.json +
     # D3-3-16.json +
     # D3-3-18.json +
@@ -130,59 +141,100 @@ class Solution:
         exam_type = course['ExamType']
         exam_nr = course['ExamOrder']
 
-        # related_courses = list(filter(lambda x: x['Course'] == name and x['ExamOrder'] > exam_nr, courses))
-
         for _course in courses:
-            if _course['Course'] == name and _course['ExamOrder'] < exam_nr:
-                periods = _course['PossiblePeriods']
-                _course['PossiblePeriods'] = list(filter(lambda x: x < period, periods))
-            elif _course['Course'] == name and _course['ExamOrder'] >= exam_nr:
+            if _course['Course'] == name and int(_course['ExamOrder']) > int(exam_nr):
                 periods = _course['PossiblePeriods']
                 _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
 
     def two_part_constraint_propagation(self, course, courses, period):
         name = course['Course']
         exam_type = course['ExamType']
-        if exam_type == 'Oral': return
-
-        # related_courses = list(filter(lambda x: x['Course'] == name and x['ExamType'] == 'Written', courses))
+        exam_nr = course['ExamOrder']
+        if exam_type != 'Written': return
 
         for _course in courses:
-            if _course['Course'] == name and _course['ExamType'] == 'Oral':
+            if _course['Course'] == name and _course['ExamOrder'] == exam_nr and _course['ExamType'] == 'Oral':
                 periods = _course['PossiblePeriods']
                 _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
+
+    def distribute_periods(self, periods, len_courses):
+        if (self.last_period == None): return periods
+
+        def rotate_array(a,d):
+            temp = a.copy()
+            n=len(temp)
+            temp[:]=temp[d:n]+temp[0:d]
+            return temp
+
+        # shifted_periods = rotate_array(periods, int(index * (len(periods) / total_courses)))
+        shifted_periods = rotate_array(periods, int(-len_courses/3))
+        return shifted_periods
+
+    def reorder(self, courses):
+        _courses = courses.copy()
+        reordered_courses = []
+
+        while len(_courses) > 0:
+            _course = _courses.pop(0)
+            if len(_course) != 0:
+                _flat_course = _course.pop(0)
+                reordered_courses.append(_flat_course)
+                _courses.append(_course)
+
+        return reordered_courses
 
     def solve(self):
         self.cost = 0
         self.assignments = []
 
-        # dict(sorted(x.items(), key=lambda item: item[1]))
         courses = self.instances.copy()
 
         random.shuffle(courses)
+        courses = self.reorder(courses)
+        print(len(courses))
+
+        # courses = sorted(courses, key=lambda x: x['ExamOrder'])
+        # courses = sorted(courses, key=lambda x: x['ExamType'] != 'Oral')
+        # courses = grouped_shuffle(courses)
         while len(courses) > 0:
-            _courses = courses.pop(0)
-            for course in _courses:
-                course_name = course['Course']
+            # _courses = courses.pop(0)
+            # for course in _courses:
+            course = courses.pop(0)
+            course_name = course['Course']
+            # print(course_name)
 
-                exam_type = course['ExamType']
-                exam_order = course['ExamOrder']
-                two_part = course.get('TwoPart')
-                multiple_exams = course.get('MultipleExams')
+            exam_type = course['ExamType']
+            exam_order = course['ExamOrder']
+            two_part = course.get('TwoPart')
+            multiple_exams = course.get('MultipleExams')
 
-                rooms = course.get('PossibleRooms')
-                periods = course.get('PossiblePeriods')
+            rooms = course.get('PossibleRooms')
+            periods = course.get('PossiblePeriods')
+            # periods = self.distribute_periods(periods, len(courses))
 
-                room, period = self.available_room_period(rooms, periods, course)
-                if period == None:
-                    print("Impossible encountered. Retrying...")
-                    return None
+            # if random.randint(0,1) == 0:
+            #     periods = list(filter(lambda x: x % 2 == 0, periods))
+            # else:
+            #     periods = list(filter(lambda x: x % 2 == 1, periods))
 
-                if multiple_exams == True: self.multiple_exams_constraint_propagation(course, _courses, period)
-                if two_part == True: self.two_part_constraint_propagation(course, _courses, period)
+            room, period = self.available_room_period(rooms, periods, course)
 
-                event = Event(exam_order, exam_type, period, room, course_name)
-                self.add_event(course_name, event)
+            if period == None:
+                percentage = '{0:.2f}%'.format((len(self.instances) - len(courses)) * 100 / len(self.instances))
+                print("Retrying... ", percentage)
+                # print(course['Course'], percentage, periods, rooms)
+                # err
+                # print(course['Course'], period, room, percentage)
+                # time.sleep(.1)
+                # save_file('stuck.json', self.taken_period_room, '.')
+                return None
+
+            self.last_period = period
+            if multiple_exams == True: self.multiple_exams_constraint_propagation(course, courses, period)
+            if two_part == True: self.two_part_constraint_propagation(course, courses, period)
+
+            event = Event(exam_order, exam_type, period, room, course_name)
+            self.add_event(course_name, event)
 
         return self.export()
 

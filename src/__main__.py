@@ -34,6 +34,7 @@ def process(data):
     courses = add_curricula_info(courses, curricula)
     courses = add_same_teacher_courses(courses)
     courses = group_by_course(courses)
+    # courses = order_course_by_constraints(courses)
 
     return courses, hard_constraints
 
@@ -47,6 +48,7 @@ def run_solver(instance_path):
 
     data = parse(instance_path)
     instances, hard_constraints = process(data)
+    save_file("preprocess.json", instances, ".")
     solution = Solution.try_solving(instances, hard_constraints)
     save_solution(instance_path, solution)
 
