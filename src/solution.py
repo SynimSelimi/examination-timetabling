@@ -106,6 +106,25 @@ class Solution:
     # !!To Do check precedence room issues in D5-1-17.json
     # # # # # # # # # # # #
 
+    # #####################
+    # STILL INVALID
+    # D3-2-16.json
+    # D3-3-16.json
+    # D3-3-18.json
+    # D4-1-17.json
+    # D4-3-17.json
+    # D4-3-18.json
+    # D5-1-17.json
+    # D5-1-18.json
+    # D5-3-18.json
+    # NOT RUNNING
+    # D6-1-16.json
+    # D6-1-17.json
+    # D6-1-18.json
+    # D6-2-*
+    # D6-3-*
+    # #####################
+
     def multiple_exams_constraint_propagation(self, course, courses, period):
         name = course['Course']
         exam_type = course['ExamType']
@@ -140,7 +159,7 @@ class Solution:
         # dict(sorted(x.items(), key=lambda item: item[1]))
         courses = self.instances.copy()
 
-        # random.shuffle(courses)
+        random.shuffle(courses)
         while len(courses) > 0:
             _courses = courses.pop(0)
             for course in _courses:
