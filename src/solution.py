@@ -108,15 +108,15 @@ class Solution:
 
     # #####################
     # STILL INVALID
-    # D3-2-16.json
-    # D3-3-16.json
-    # D3-3-18.json
-    # D4-1-17.json
-    # D4-3-17.json
-    # D4-3-18.json
-    # D5-1-17.json
-    # D5-1-18.json
-    # D5-3-18.json
+    # D3-2-16.json +
+    # D3-3-16.json +
+    # D3-3-18.json +
+    # D4-1-17.json +
+    # D4-3-17.json +
+    # D4-3-18.json +
+    # D5-1-17.json +
+    # D5-1-18.json +
+    # D5-3-18.json +
     # NOT RUNNING
     # D6-1-16.json
     # D6-1-17.json
@@ -148,7 +148,7 @@ class Solution:
         # related_courses = list(filter(lambda x: x['Course'] == name and x['ExamType'] == 'Written', courses))
 
         for _course in courses:
-            if _course['Course'] == name and _course['ExamOrder'] == 'Oral':
+            if _course['Course'] == name and _course['ExamType'] == 'Oral':
                 periods = _course['PossiblePeriods']
                 _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
 
