@@ -12,7 +12,8 @@ class Solution:
         self.taken_period_room = defaultdict(dict)
         self.hard_constraints = hard_constraints
         self.room_period_constraints = list(
-            filter(lambda val: val['Type'] == 'RoomPeriodConstraint', self.hard_constraints))
+            filter(lambda val: val['Type'] == 'RoomPeriodConstraint', self.hard_constraints)
+        )
 
         self.import_constraints()
 
@@ -53,25 +54,25 @@ class Solution:
                     break
         else:
             for p, r in pairs(periods, rooms):
-                composite_conflict = False
+                taken = False
+                is_composite = ":" in r
 
-                conflict_courses = []
-                if ":" in r:
-                    comroms = r.split(':')[1].split(',')
-                    for c in comroms:
+                if is_composite:
+                    com_rooms = r.split(':')[1].split(',')
+                    for c in com_rooms:
                         if self.taken_period_room.get(p, {}).get(c, {}):
-                            composite_conflict = True
+                            taken = True
                             break
-                    taken = False
                 else:
                     taken = self.taken_period_room.get(p, {}).get(r, {})
 
-                if composite_conflict:
+                if taken:
                     continue
 
                 no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
                 period_course = self.taken_period_room.get(p, {}).values()
 
+                conflict_courses = []
                 conflict_courses.extend(period_course)
                 conflict_courses.extend(no_room_courses)
 
@@ -82,10 +83,10 @@ class Solution:
 
                 if not taken and not conflict:
                     period = p
-                    if ":" in r:
+                    if is_composite:
                         room = r.split(":")[0]
-                        comroms = r.split(':')[1].split(',')
-                        for c in comroms:
+                        com_rooms = r.split(':')[1].split(',')
+                        for c in com_rooms:
                             self.taken_period_room[period][c] = course['Course']
                     else:
                         room = r
@@ -95,14 +96,11 @@ class Solution:
         return room, period
 
     # # # # # # # # # # # #
-    # To Do add possible RoomPeriodConstraint to the busy roomPeriodSets (solution in import_constraints, needs review)
     # To Do Take into account same day constraints
     # To do add EventRoomConstraint to a temporary memory set
-    # To Do check MinimumDistanceBetweenExams
+    # To Do check MinimumDistanceBetweenExams (soft)
     # To Do check MaxDistance MinDistance for WrittenOral (soft)
     # To Do check PrimaryPrimaryDistance (soft)
-    # To Do check if courses have the same teacher (cannot be assigned same period)
-    # To Do check if courses are primary (cannot be assigned same period)
     # To Do calculate cost
     # !!To Do add roomset assignments to taken_period_room as separate room assignments
     # !!To Do check precedence room issues in D5-1-17.json
