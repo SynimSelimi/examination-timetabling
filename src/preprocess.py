@@ -32,6 +32,7 @@ def flat_map_courses(courses):
         for i in range(0, number_of_exams):
             course['NumberOfExams'] = 1
             course['ExamOrder'] = i
+            course['PredecessorAllocated'] = True if i == 0 else False
             expand_exams(flat_courses, course)
             flat_done = True
 
