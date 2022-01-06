@@ -12,6 +12,7 @@ def expand_exams(flat_courses, course):
         oral_course = course.copy()
         oral_course['ExamType'] = 'Oral'
         oral_course['TwoPart'] = True
+        oral_course['WrittenAllocated'] = False
         # oral_course['ExamOrder'] = 1
         flat_courses.append(oral_course)
     else:
@@ -69,7 +70,8 @@ def add_possible_rooms(courses, rooms, constraints):
         elif room_numbers > 1:
             room_type = req_rooms['Type']
             def fun(room):
-                match = room.get('Members') and len(room['Members']) == room_numbers
+                match = room.get('Members') and len(room['Members']) == room_numbers and \
+                    any(_room['Type'] == room_type and _room['Room'] == room['Members'][0] for _room in rooms)
                 if match: return room['Room'] + ":" + ",".join(room['Members'])
                 return None
             course['PossibleRooms'] = list(filter(None, list(map(fun, rooms))))
@@ -155,5 +157,17 @@ def group_by_course(courses):
         new_course.append(_course)
         new_course.extend(related_courses)
         grouped_courses.append(new_course)
+
+    return grouped_courses
+
+
+def group_by_exams_and_parts(courses):
+    # matrix = [ExamOrder{i} = [One Part + Written TwoPart, Oral TwoPart]]
+    _courses = courses.copy()
+    grouped_courses = []
+    orders = set(map(lambda x:x['ExamOrder'], _courses))
+    for order in orders:
+        order_courses = list(filter(lambda x: x['ExamOrder'] == order, _courses))
+        grouped_courses.append(order_courses)
 
     return grouped_courses 

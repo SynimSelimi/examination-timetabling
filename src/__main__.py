@@ -33,7 +33,8 @@ def process(data):
     courses = add_possible_periods(courses, periods, event_period_constraints)
     courses = add_curricula_info(courses, curricula)
     courses = add_same_teacher_courses(courses)
-    courses = group_by_course(courses)
+    courses = group_by_exams_and_parts(courses)
+    # courses = group_by_course(courses)
     # courses = order_course_by_constraints(courses)
 
     return courses, hard_constraints
@@ -72,8 +73,8 @@ Main program -
 This section runs the solver
 """
 def main():
-    # solve_all_instances()
-    run_solver(get_filepath())
+    solve_all_instances()
+    # run_solver(get_filepath())
 
 """
 Execution
