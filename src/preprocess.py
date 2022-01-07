@@ -171,4 +171,4 @@ def group_by_exams_and_parts(courses):
         order_courses = list(filter(lambda x: x['ExamOrder'] == order, _courses))
         grouped_courses.append(order_courses)
 
-    return grouped_courses 
+    return grouped_courses

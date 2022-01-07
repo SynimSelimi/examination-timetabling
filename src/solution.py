@@ -1,6 +1,6 @@
 import random
 import time
-from helpers import grouped_shuffle, save_file
+from helpers import grouped_shuffle, save_file, flat_map
 from collections import defaultdict
 
 
@@ -149,7 +149,7 @@ class Solution:
                 periods = _course['PossiblePeriods']
                 _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
             if _course['Course'] == name and int(_course['ExamOrder']) == int(exam_nr) + 1:
-                _course['PredecessorAllocated'] = True if not two_part or (two_part and exam_type == 'Oral') else False
+                _course['PredecessorAllocated'] = True if not two_part or (two_part and exam_type == 'Oral' and course['WrittenAllocated'] == True) else False
 
     def two_part_constraint_propagation(self, course, courses, period):
         name = course['Course']
@@ -191,20 +191,34 @@ class Solution:
 
         return _courses
 
+    # def shuffle_by_exams_and_parts(self, courses):
+    #     _courses = courses.copy()
+    #     random.shuffle(_courses)
+
+    #     flat_courses = flat_map(lambda x: x, _courses)
+    #     grouped_courses = []
+    #     orders = set(map(lambda x:x['ExamOrder'], flat_courses))
+    #     for order in orders:
+    #         order_courses = list(filter(lambda x: x['ExamOrder'] == order, flat_courses))
+    #         order_courses = sorted(order_courses, key=lambda x: x['ExamType'] == 'Oral')
+    #         grouped_courses.append(order_courses)
+
+        return grouped_courses
+
     def solve(self):
         self.cost = 0
         self.assignments = []
 
-        grouped_courses = self.instances.copy()
-        total_events = 0
-        courses = []
-        for group in grouped_courses:
-            total_events += len(group)
-            random.shuffle(group)
-            group_courses = group.copy()
-            if random.randint(0,2) > 0:
-                group_courses = sorted(group_courses, key=lambda x: x['ExamType'] == 'Oral')
-            courses += group_courses
+        courses = self.instances.copy()
+        # grouped_courses = self.shuffle_by_exams_and_parts(instances)
+        total_events = len(courses)
+        # courses = []
+        # for group in grouped_courses:
+        #     total_events += len(group)
+        #     group_courses = group.copy()
+            # random.shuffle(group_courses)
+            # group_courses = sorted(group_courses, key=lambda x: x['ExamType'] == 'Oral')
+            # courses += group_courses
         # courses = self.reorder(courses)
         # print(len(courses))
 
@@ -213,7 +227,7 @@ class Solution:
         # courses = grouped_shuffle(courses)
         # for group in grouped_courses:
         #     courses = group.copy()
-        # random.shuffle(courses)
+        random.shuffle(courses)
         # courses = sorted(courses, key=lambda x: x['ExamType'] == 'Oral')
             # original_length = len(courses)
             # infused = False
@@ -232,7 +246,7 @@ class Solution:
             predecessor_allocated = course.get('PredecessorAllocated')
             multiple_exams = course.get('MultipleExams')
 
-            if reallocations > 100:
+            if reallocations > 200:
                 return None
 
             if two_part and exam_type == 'Oral' and not written_allocated:
@@ -268,8 +282,6 @@ class Solution:
             if period == None:
                 percentage = '{0:.2f}%'.format((total_events - len(courses)) * 100 / total_events)
                 print("Retrying... ", percentage, end="\r")
-                # print(course['Course'], percentage, periods, rooms)
-                # err
                 # print(course['Course'], period, room, percentage)
                 # time.sleep(.1)
                 # save_file('stuck.json', self.taken_period_room, '.')
@@ -288,14 +300,14 @@ class Solution:
     def try_solving(instances, hard_constraints):
         solution = None
         attempt = 0
-        while solution == None:
+        while solution == None and attempt < 300:
             solution = Solution(instances, hard_constraints).solve()
             attempt += 1
 
-        return solution
-        # if attempt < 300:
-        # else:
-        #     return None
+        if attempt < 300:
+            return solution
+        else:
+            return None
 
     def add_event(self, course_name, event):
         if course_name not in self.course_assignment_ids.keys():
