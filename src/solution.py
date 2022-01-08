@@ -5,7 +5,7 @@ from collections import defaultdict
 import copy
 
 class Solution:
-    def __init__(self, instances, hard_constraints):
+    def __init__(self, instances, hard_constraints, attempts = 0):
         self.instances = instances
         self.cost = 0
         self.assignments = []
@@ -16,8 +16,24 @@ class Solution:
         self.room_period_constraints = list(
             filter(lambda val: val['Type'] == 'RoomPeriodConstraint', self.hard_constraints)
         )
-        self.last_period = None
         self.import_constraints()
+        
+        self.last_period = None
+        self.attempts = attempts
+        
+        self.optimizations = []
+        self.calibrate_optimizations();
+
+    def calibrate_optimizations(self):
+        all_optimizations = [
+            'MinimumDistanceBetweenExams',
+            'MinDistance'
+        ]
+        if (self.attempts < 50):
+            self.optimizations = all_optimizations
+        elif (self.attempts < 100):
+            random_select = random.randint(0, len(all_optimizations) - 1)
+            self.optimizations = all_optimizations[random_select]
 
     def import_constraints(self):
         for c in self.room_period_constraints:
@@ -34,16 +50,6 @@ class Solution:
             for p in one:
                 for r in two:
                     yield p, r
-
-        # two_part = course.get('TwoPart')
-        # min_distance_of_exams = two_part and course.get('MinimumDistanceBetweenExams')
-        # specs = course.get('WrittenOralSpecs')
-        # min_two_part_distance = specs and specs.get('MinDistance')
-
-        # if min_distance_of_exams:
-        #     periods.sort(key=lambda x: random.randint(0,1), reverse=True)
-
-        # periods = sorted(periods, key=lambda x: x)
 
         if len(rooms) == 0:
             for p in periods:
@@ -108,10 +114,10 @@ class Solution:
         return room, period
 
     # # # # # # # # # # # #
-    # To Do Take into account same day constraints (soft)
-    # To do add EventRoomConstraint to a temporary memory set (soft)
     # To Do check MinimumDistanceBetweenExams (soft), simply add to propagation period
     # To Do check MaxDistance MinDistance for WrittenOral (soft), simply add to propagation period
+    # To Do Take into account same day constraints (soft)
+    # To do add EventRoomConstraint to a temporary memory set (soft)
     # To Do check PrimaryPrimaryDistance (soft)
     # To Do calculate cost
     # # # # # # # # # # # #
@@ -121,11 +127,18 @@ class Solution:
         exam_type = course['ExamType']
         exam_nr = course['ExamOrder']
         two_part = course.get('TwoPart')
+        supplement = 0
 
         for _course in courses:
             if _course['Course'] == name and int(_course['ExamOrder']) > int(exam_nr):
                 periods = _course['PossiblePeriods']
-                _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
+                min_distance = course['MinimumDistanceBetweenExams']
+
+                # Optimization
+                if "MinimumDistanceBetweenExams" in self.optimizations and len(periods) > 0 and max(periods) > period + min_distance:
+                    supplement += min_distance
+
+                _course['PossiblePeriods'] = list(filter(lambda x: x > period + supplement, periods))
             if _course['Course'] == name and int(_course['ExamOrder']) == (int(exam_nr) + 1):
                 _course['PredecessorAllocated'] = two_part != True or (two_part == True and exam_type == 'Oral' and course['WrittenAllocated'] == True)
 
@@ -134,12 +147,19 @@ class Solution:
         exam_type = course['ExamType']
         exam_nr = course['ExamOrder']
         if exam_type != 'Written': return
+        supplement = 0
 
         for _course in courses:
             if _course['Course'] == name and _course['ExamOrder'] == exam_nr and _course['ExamType'] == 'Oral':
                 _course['WrittenAllocated'] = True
                 periods = _course['PossiblePeriods']
-                _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
+                min_distance = course['WrittenOralSpecs']['MinDistance']
+
+                # Optimization
+                if "MinDistance" in self.optimizations and len(periods) > 0 and max(periods) > period + min_distance:
+                    supplement += min_distance
+
+                _course['PossiblePeriods'] = list(filter(lambda x: x > period + supplement, periods))
 
     def distribute_periods(self, periods):
         def rotate_array(a,d):
@@ -185,9 +205,11 @@ class Solution:
         grouped_courses = self.instances.copy()
         total_events = 0
         courses = []
-        to_group = random.randint(0,1) == 0
-        smart_injection = random.randint(0,1) == 0
-        randomize_rooms = random.randint(0,1) == 0
+        to_group = bool(random.getrandbits(1))
+        smart_injection = bool(random.getrandbits(1))
+        randomize_rooms = bool(random.getrandbits(1))
+        distribute_periods = bool(random.getrandbits(1))
+
         for group in grouped_courses:
             total_events += len(group)
             group_courses = group.copy()
@@ -227,13 +249,13 @@ class Solution:
             rooms = course.get('PossibleRooms')
             if randomize_rooms == True: random.shuffle(rooms)
             periods = course.get('PossiblePeriods')
-            if exam_order % 2 == 1: periods = self.distribute_periods(periods)
+            if exam_order % 2 == 1 and distribute_periods: periods = self.distribute_periods(periods)
 
             room, period = self.available_room_period(rooms, periods, course)
 
             if period == None:
                 percentage = '{0:.2f}%'.format((total_events - len(courses)) * 100 / total_events)
-                print("Retrying... ", percentage, end="\r")
+                print("Retrying... ", f"{self.attempts} ", percentage, end="\r")
                 return None
 
             self.last_period = period
@@ -261,11 +283,11 @@ class Solution:
     def try_solving(instances, hard_constraints):
         solution = None
         attempt = 0
-        while solution == None and attempt < 700:
-            solution = Solution(copy.deepcopy(instances), hard_constraints).solve()
+        while solution == None and attempt < 1000:
+            solution = Solution(copy.deepcopy(instances), hard_constraints, attempt).solve()
             attempt += 1
 
-        if attempt < 100:
+        if attempt < 1000:
             return solution
         else:
             print("Could not solve in time!")
