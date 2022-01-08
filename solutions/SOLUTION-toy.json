@@ -1,0 +1,121 @@
+{
+  "Assignments": [
+    {
+      "Course": "Databases",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 1,
+          "Room": "AC",
+          "Course": "Databases"
+        },
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 3,
+          "Room": null,
+          "Course": "Databases"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 13,
+          "Room": "AB",
+          "Course": "Databases"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 18,
+          "Room": null,
+          "Course": "Databases"
+        }
+      ]
+    },
+    {
+      "Course": "Algorithms",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 0,
+          "Room": "B",
+          "Course": "Algorithms"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 11,
+          "Room": "B",
+          "Course": "Algorithms"
+        }
+      ]
+    },
+    {
+      "Course": "OpRes",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 0,
+          "Room": "G",
+          "Course": "OpRes"
+        },
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 2,
+          "Room": "G",
+          "Course": "OpRes"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 12,
+          "Room": "G",
+          "Course": "OpRes"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 17,
+          "Room": "H",
+          "Course": "OpRes"
+        }
+      ]
+    },
+    {
+      "Course": "Programming",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 0,
+          "Room": "AC",
+          "Course": "Programming"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 11,
+          "Room": "AC",
+          "Course": "Programming"
+        }
+      ]
+    },
+    {
+      "Course": "Analytics",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 0,
+          "Room": null,
+          "Course": "Analytics"
+        }
+      ]
+    }
+  ],
+  "Cost": 0
+}

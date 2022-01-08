@@ -242,17 +242,17 @@ class Solution:
             self.last_period = period
             if multiple_exams == True: self.multiple_exams_constraint_propagation(course, courses, period)
             if two_part == True: self.two_part_constraint_propagation(course, courses, period)
-            if smart_injection == True:
-                def swap(list, pos1, pos2): list[pos1], list[pos2] = list[pos2], list[pos1]
-                for _course in courses:
-                    if _course['Course'] == course_name and multiple_exams and int(_course['ExamOrder']) > int(exam_order):
-                        _course_index = courses.index(_course)
-                        swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
-                        print("\t\t\tsmart_injection at", reallocations, end="\r")
-                    if _course['Course'] == course_name and _course['ExamOrder'] == exam_order and two_part and course['ExamType'] == 'Written' and _course['ExamType'] == 'Oral':
-                        _course_index = courses.index(_course)
-                        swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
-                        print("\t\t\tsmart_injection at", reallocations, end="\r")
+            # if smart_injection == True:
+            #     def swap(list, pos1, pos2): list[pos1], list[pos2] = list[pos2], list[pos1]
+            #     for _course in courses:
+            #         if _course['Course'] == course_name and multiple_exams and int(_course['ExamOrder']) > int(exam_order):
+            #             _course_index = courses.index(_course)
+            #             swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
+            #             print("\t\t\tsmart_injection at", reallocations, end="\r")
+            #         if _course['Course'] == course_name and _course['ExamOrder'] == exam_order and two_part and course['ExamType'] == 'Written' and _course['ExamType'] == 'Oral':
+            #             _course_index = courses.index(_course)
+            #             swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
+            #             print("\t\t\tsmart_injection at", reallocations, end="\r")
 
             event = Event(exam_order, exam_type, period, room, course_name)
             self.add_event(course_name, event)
