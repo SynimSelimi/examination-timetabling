@@ -2,7 +2,7 @@ import random
 import time
 from helpers import grouped_shuffle, save_file, flat_map
 from collections import defaultdict
-
+import copy
 
 class Solution:
     def __init__(self, instances, hard_constraints):
@@ -148,8 +148,8 @@ class Solution:
             if _course['Course'] == name and int(_course['ExamOrder']) > int(exam_nr):
                 periods = _course['PossiblePeriods']
                 _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
-            if _course['Course'] == name and int(_course['ExamOrder']) == int(exam_nr) + 1:
-                _course['PredecessorAllocated'] = True if not two_part or (two_part and exam_type == 'Oral' and course['WrittenAllocated'] == True) else False
+            if _course['Course'] == name and int(_course['ExamOrder']) == (int(exam_nr) + 1):
+                _course['PredecessorAllocated'] = two_part != True or (two_part == True and exam_type == 'Oral' and course['WrittenAllocated'] == True)
 
     def two_part_constraint_propagation(self, course, courses, period):
         name = course['Course']
@@ -203,22 +203,24 @@ class Solution:
     #         order_courses = sorted(order_courses, key=lambda x: x['ExamType'] == 'Oral')
     #         grouped_courses.append(order_courses)
 
-        return grouped_courses
+    #     return grouped_courses
 
     def solve(self):
         self.cost = 0
         self.assignments = []
 
-        courses = self.instances.copy()
+        grouped_courses = self.instances.copy()
         # grouped_courses = self.shuffle_by_exams_and_parts(instances)
-        total_events = len(courses)
-        # courses = []
-        # for group in grouped_courses:
-        #     total_events += len(group)
-        #     group_courses = group.copy()
-            # random.shuffle(group_courses)
-            # group_courses = sorted(group_courses, key=lambda x: x['ExamType'] == 'Oral')
-            # courses += group_courses
+        total_events = 0
+        courses = []
+        to_group = random.randint(0,1) == 0
+        for group in grouped_courses:
+            total_events += len(group)
+            group_courses = group.copy()
+            random.shuffle(group_courses)
+            if to_group:
+                group_courses = sorted(group_courses, key=lambda x: x['ExamType'] == 'Oral')
+            courses += group_courses
         # courses = self.reorder(courses)
         # print(len(courses))
 
@@ -227,11 +229,12 @@ class Solution:
         # courses = grouped_shuffle(courses)
         # for group in grouped_courses:
         #     courses = group.copy()
-        random.shuffle(courses)
+        # random.shuffle(courses)
         # courses = sorted(courses, key=lambda x: x['ExamType'] == 'Oral')
             # original_length = len(courses)
             # infused = False
         reallocations = 0
+
         while len(courses) > 0:
             # _courses = courses.pop(0)
             # for course in _courses:
@@ -246,17 +249,17 @@ class Solution:
             predecessor_allocated = course.get('PredecessorAllocated')
             multiple_exams = course.get('MultipleExams')
 
-            if reallocations > 200:
+            if reallocations > 250:
                 return None
 
-            if two_part and exam_type == 'Oral' and not written_allocated:
-                print(random.randint(0,11), end="\r")
+            if two_part == True and exam_type == 'Oral' and written_allocated == False:
+                print(reallocations, end="\r")
                 courses.insert(int(len(courses)/2), course)
                 reallocations += 1
                 continue
 
-            if multiple_exams and not predecessor_allocated:
-                print(random.randint(0,11), end="\r")
+            if multiple_exams == True and predecessor_allocated == False:
+                print(reallocations, end="\r")
                 courses.insert(int(len(courses)/2), course)
                 reallocations += 1
                 continue
@@ -270,7 +273,7 @@ class Solution:
 
             rooms = course.get('PossibleRooms')
             periods = course.get('PossiblePeriods')
-            # periods = self.distribute_periods(periods, len(courses))
+            periods = self.distribute_periods(periods, len(courses))
 
             # if random.randint(0,1) == 0:
             #     periods = list(filter(lambda x: x % 2 == 0, periods))
@@ -301,12 +304,13 @@ class Solution:
         solution = None
         attempt = 0
         while solution == None and attempt < 300:
-            solution = Solution(instances, hard_constraints).solve()
+            solution = Solution(copy.deepcopy(instances), hard_constraints).solve()
             attempt += 1
 
         if attempt < 300:
             return solution
         else:
+            print("Could not solve in time!")
             return None
 
     def add_event(self, course_name, event):
