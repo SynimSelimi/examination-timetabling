@@ -12,6 +12,7 @@ def expand_exams(flat_courses, course):
         oral_course = course.copy()
         oral_course['ExamType'] = 'Oral'
         oral_course['TwoPart'] = True
+        oral_course['WrittenAllocated'] = False
         # oral_course['ExamOrder'] = 1
         flat_courses.append(oral_course)
     else:
@@ -31,6 +32,7 @@ def flat_map_courses(courses):
         for i in range(0, number_of_exams):
             course['NumberOfExams'] = 1
             course['ExamOrder'] = i
+            course['PredecessorAllocated'] = True if i == 0 else False
             expand_exams(flat_courses, course)
             flat_done = True
 
@@ -69,7 +71,8 @@ def add_possible_rooms(courses, rooms, constraints):
         elif room_numbers > 1:
             room_type = req_rooms['Type']
             def fun(room):
-                match = room.get('Members') and len(room['Members']) == room_numbers
+                match = room.get('Members') and len(room['Members']) == room_numbers and \
+                    any(_room['Type'] == room_type and _room['Room'] == room['Members'][0] for _room in rooms)
                 if match: return room['Room'] + ":" + ",".join(room['Members'])
                 return None
             course['PossibleRooms'] = list(filter(None, list(map(fun, rooms))))
@@ -125,7 +128,7 @@ def add_possible_periods(courses, periods, event_period_constraints):
         exam_order = course.get('ExamOrder')
         filter_fun = lambda x: \
             (x.get('Part') == None or x['Part'] == exam_type) and \
-            (exam_order == None or x['Exam'] == exam_order) \
+            x['Exam'] == exam_order \
             and x['Course'] == course_name
         forbidden_periods = list(filter(filter_fun, event_period_constraints))
         forbidden_periods = list(map(lambda x: x['Period'], forbidden_periods))
@@ -137,6 +140,11 @@ def add_possible_periods(courses, periods, event_period_constraints):
         course['PossiblePeriods'] = _periods
 
     return _courses
+
+def order_course_by_constraints(courses):
+    _courses = courses.copy()
+    ordered_courses = sorted(_courses, key=len, reverse=True)
+    return ordered_courses
 
 def group_by_course(courses):
     _courses = courses.copy()
@@ -151,4 +159,15 @@ def group_by_course(courses):
         new_course.extend(related_courses)
         grouped_courses.append(new_course)
 
-    return grouped_courses 
+    return grouped_courses
+
+def group_by_exams_and_parts(courses):
+    # matrix = [ExamOrder{i} = [One Part + Written TwoPart, Oral TwoPart]]
+    _courses = courses.copy()
+    grouped_courses = []
+    orders = set(map(lambda x:x['ExamOrder'], _courses))
+    for order in orders:
+        order_courses = list(filter(lambda x: x['ExamOrder'] == order, _courses))
+        grouped_courses.append(order_courses)
+
+    return grouped_courses
