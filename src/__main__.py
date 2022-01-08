@@ -73,8 +73,8 @@ Main program -
 This section runs the solver
 """
 def main():
-    # solve_all_instances()
-    run_solver(get_filepath())
+    if solve_all_arg(): solve_all_instances()
+    else: run_solver(get_filepath())
 
 """
 Execution

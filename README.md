@@ -27,6 +27,8 @@
 
 `python3 src instances/D5-1-17.json`
 
+`python3 src all`
+
 `python3 src/module`
 
 `python3 src/.../code.py`

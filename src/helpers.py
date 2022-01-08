@@ -104,3 +104,6 @@ def grouped_shuffle(courses):
     shuffled_courses = heavy_courses + light_courses
 
     return shuffled_courses
+
+def solve_all_arg():
+    return len(sys.argv) > 1 and sys.argv[1] == 'all'

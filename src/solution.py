@@ -261,7 +261,7 @@ class Solution:
     def try_solving(instances, hard_constraints):
         solution = None
         attempt = 0
-        while solution == None and attempt < 500:
+        while solution == None and attempt < 700:
             solution = Solution(copy.deepcopy(instances), hard_constraints).solve()
             attempt += 1
 
