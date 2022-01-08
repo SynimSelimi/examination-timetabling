@@ -161,7 +161,6 @@ def group_by_course(courses):
 
     return grouped_courses
 
-
 def group_by_exams_and_parts(courses):
     # matrix = [ExamOrder{i} = [One Part + Written TwoPart, Oral TwoPart]]
     _courses = courses.copy()

@@ -199,11 +199,8 @@ class Solution:
         reallocations = 0
 
         while len(courses) > 0:
-            # _courses = courses.pop(0)
-            # for course in _courses:
             course = courses.pop(0)
             course_name = course['Course']
-            # print(course_name)
 
             exam_type = course['ExamType']
             exam_order = course['ExamOrder']
@@ -242,6 +239,7 @@ class Solution:
             self.last_period = period
             if multiple_exams == True: self.multiple_exams_constraint_propagation(course, courses, period)
             if two_part == True: self.two_part_constraint_propagation(course, courses, period)
+            
             # if smart_injection == True:
             #     def swap(list, pos1, pos2): list[pos1], list[pos2] = list[pos2], list[pos1]
             #     for _course in courses:
