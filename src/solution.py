@@ -17,7 +17,6 @@ class Solution:
             filter(lambda val: val['Type'] == 'RoomPeriodConstraint', self.hard_constraints)
         )
         self.last_period = None
-
         self.import_constraints()
 
     def import_constraints(self):
@@ -117,26 +116,6 @@ class Solution:
     # To Do calculate cost
     # # # # # # # # # # # #
 
-    # #####################
-    # INVALID
-    # D3-2-16.json +
-    # D3-3-16.json +
-    # D3-3-18.json +
-    # D4-1-17.json +
-    # D4-3-17.json +
-    # D4-3-18.json +
-    # D5-1-17.json +
-    # D5-1-18.json +
-    # D5-3-18.json +
-    # NOT RUNNING (due to order of allocating courses)
-    # D6-1-16.json +
-    # D6-1-17.json +
-    # D6-1-18.json +
-    # D6-2-* +
-    # D6-3-* +
-    # D6-2-17.json
-    # #####################
-
     def multiple_exams_constraint_propagation(self, course, courses, period):
         name = course['Course']
         exam_type = course['ExamType']
@@ -162,18 +141,15 @@ class Solution:
                 periods = _course['PossiblePeriods']
                 _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
 
-    # def distribute_periods(self, periods, len_courses):
-    #     if (self.last_period == None): return periods
+    def distribute_periods(self, periods):
+        def rotate_array(a,d):
+            temp = a.copy()
+            n=len(temp)
+            temp[:]=temp[d:n]+temp[0:d]
+            return temp
 
-    #     def rotate_array(a,d):
-    #         temp = a.copy()
-    #         n=len(temp)
-    #         temp[:]=temp[d:n]+temp[0:d]
-    #         return temp
-
-    #     # shifted_periods = rotate_array(periods, int(index * (len(periods) / total_courses)))
-    #     shifted_periods = rotate_array(periods, int(-len_courses/3))
-    #     return shifted_periods
+        shifted_periods = rotate_array(periods, -int(len(periods)/2))
+        return shifted_periods
 
     # def reorder(self, courses):
     #     _courses = courses.copy()
@@ -210,13 +186,15 @@ class Solution:
         total_events = 0
         courses = []
         to_group = random.randint(0,1) == 0
+        smart_injection = random.randint(0,1) == 0
+        randomize_rooms = random.randint(0,1) == 0
         for group in grouped_courses:
             total_events += len(group)
             group_courses = group.copy()
             random.shuffle(group_courses)
             if to_group:
                 group_courses = sorted(group_courses, key=lambda x: x['ExamType'] == 'Oral')
-            courses += group_courses
+            courses.extend(group_courses)
 
         reallocations = 0
 
@@ -238,19 +216,21 @@ class Solution:
                 return None
 
             if two_part == True and exam_type == 'Oral' and written_allocated == False:
-                print(reallocations, end="\r")
-                courses.insert(int(len(courses)/2), course)
+                # print(reallocations, end="\r")
+                courses.insert(random.randint(int(len(courses)/2), len(courses)), course)
                 reallocations += 1
                 continue
 
             if multiple_exams == True and predecessor_allocated == False:
-                print(reallocations, end="\r")
-                courses.insert(int(len(courses)/2), course)
+                # print(reallocations, end="\r")
+                courses.insert(random.randint(int(len(courses)/2), len(courses)), course)
                 reallocations += 1
                 continue
 
             rooms = course.get('PossibleRooms')
+            if randomize_rooms == True: random.shuffle(rooms)
             periods = course.get('PossiblePeriods')
+            if exam_order % 2 == 1: periods = self.distribute_periods(periods)
 
             room, period = self.available_room_period(rooms, periods, course)
 
@@ -262,6 +242,17 @@ class Solution:
             self.last_period = period
             if multiple_exams == True: self.multiple_exams_constraint_propagation(course, courses, period)
             if two_part == True: self.two_part_constraint_propagation(course, courses, period)
+            if smart_injection == True:
+                def swap(list, pos1, pos2): list[pos1], list[pos2] = list[pos2], list[pos1]
+                for _course in courses:
+                    if _course['Course'] == course_name and multiple_exams and int(_course['ExamOrder']) > int(exam_order):
+                        _course_index = courses.index(_course)
+                        swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
+                        print("\t\t\tsmart_injection at", reallocations, end="\r")
+                    if _course['Course'] == course_name and _course['ExamOrder'] == exam_order and two_part and course['ExamType'] == 'Written' and _course['ExamType'] == 'Oral':
+                        _course_index = courses.index(_course)
+                        swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
+                        print("\t\t\tsmart_injection at", reallocations, end="\r")
 
             event = Event(exam_order, exam_type, period, room, course_name)
             self.add_event(course_name, event)
@@ -272,7 +263,7 @@ class Solution:
     def try_solving(instances, hard_constraints):
         solution = None
         attempt = 0
-        while solution == None and attempt < 100:
+        while solution == None and attempt < 500:
             solution = Solution(copy.deepcopy(instances), hard_constraints).solve()
             attempt += 1
 
