@@ -109,10 +109,10 @@ class Solution:
         return room, period
 
     # # # # # # # # # # # #
-    # To Do Take into account same day constraints
-    # To do add EventRoomConstraint to a temporary memory set
-    # To Do check MinimumDistanceBetweenExams (soft)
-    # To Do check MaxDistance MinDistance for WrittenOral (soft)
+    # To Do Take into account same day constraints (soft)
+    # To do add EventRoomConstraint to a temporary memory set (soft)
+    # To Do check MinimumDistanceBetweenExams (soft), simply add to propagation period
+    # To Do check MaxDistance MinDistance for WrittenOral (soft), simply add to propagation period
     # To Do check PrimaryPrimaryDistance (soft)
     # To Do calculate cost
     # # # # # # # # # # # #
@@ -129,11 +129,12 @@ class Solution:
     # D5-1-18.json +
     # D5-3-18.json +
     # NOT RUNNING (due to order of allocating courses)
-    # D6-1-16.json
-    # D6-1-17.json
-    # D6-1-18.json
-    # D6-2-*
-    # D6-3-*
+    # D6-1-16.json +
+    # D6-1-17.json +
+    # D6-1-18.json +
+    # D6-2-* +
+    # D6-3-* +
+    # D6-2-17.json
     # #####################
 
     def multiple_exams_constraint_propagation(self, course, courses, period):
@@ -142,8 +143,6 @@ class Solution:
         exam_nr = course['ExamOrder']
         two_part = course.get('TwoPart')
 
-        # for group in grouped_courses:
-        #     courses = group.copy()
         for _course in courses:
             if _course['Course'] == name and int(_course['ExamOrder']) > int(exam_nr):
                 periods = _course['PossiblePeriods']
@@ -157,39 +156,37 @@ class Solution:
         exam_nr = course['ExamOrder']
         if exam_type != 'Written': return
 
-        # for group in grouped_courses:
-        #     courses = group.copy()
         for _course in courses:
             if _course['Course'] == name and _course['ExamOrder'] == exam_nr and _course['ExamType'] == 'Oral':
                 _course['WrittenAllocated'] = True
                 periods = _course['PossiblePeriods']
                 _course['PossiblePeriods'] = list(filter(lambda x: x > period, periods))
 
-    def distribute_periods(self, periods, len_courses):
-        if (self.last_period == None): return periods
+    # def distribute_periods(self, periods, len_courses):
+    #     if (self.last_period == None): return periods
 
-        def rotate_array(a,d):
-            temp = a.copy()
-            n=len(temp)
-            temp[:]=temp[d:n]+temp[0:d]
-            return temp
+    #     def rotate_array(a,d):
+    #         temp = a.copy()
+    #         n=len(temp)
+    #         temp[:]=temp[d:n]+temp[0:d]
+    #         return temp
 
-        # shifted_periods = rotate_array(periods, int(index * (len(periods) / total_courses)))
-        shifted_periods = rotate_array(periods, int(-len_courses/3))
-        return shifted_periods
+    #     # shifted_periods = rotate_array(periods, int(index * (len(periods) / total_courses)))
+    #     shifted_periods = rotate_array(periods, int(-len_courses/3))
+    #     return shifted_periods
 
-    def reorder(self, courses):
-        _courses = courses.copy()
-        reordered_courses = []
+    # def reorder(self, courses):
+    #     _courses = courses.copy()
+    #     reordered_courses = []
 
-        # while len(_courses) > 0:
-        #     _course = _courses.pop(0)
-        #     if len(_course) != 0:
-        #         _flat_course = _course.pop(0)
-        #         reordered_courses.append(_flat_course)
-        #         _courses.append(_course)
+    #     while len(_courses) > 0:
+    #         _course = _courses.pop(0)
+    #         if len(_course) != 0:
+    #             _flat_course = _course.pop(0)
+    #             reordered_courses.append(_flat_course)
+    #             _courses.append(_course)
 
-        return _courses
+    #     return _courses
 
     # def shuffle_by_exams_and_parts(self, courses):
     #     _courses = courses.copy()
@@ -210,7 +207,6 @@ class Solution:
         self.assignments = []
 
         grouped_courses = self.instances.copy()
-        # grouped_courses = self.shuffle_by_exams_and_parts(instances)
         total_events = 0
         courses = []
         to_group = random.randint(0,1) == 0
@@ -221,18 +217,7 @@ class Solution:
             if to_group:
                 group_courses = sorted(group_courses, key=lambda x: x['ExamType'] == 'Oral')
             courses += group_courses
-        # courses = self.reorder(courses)
-        # print(len(courses))
 
-        # courses = sorted(courses, key=lambda x: x['ExamOrder'])
-        # courses = sorted(courses, key=lambda x: x['ExamType'] != 'Oral')
-        # courses = grouped_shuffle(courses)
-        # for group in grouped_courses:
-        #     courses = group.copy()
-        # random.shuffle(courses)
-        # courses = sorted(courses, key=lambda x: x['ExamType'] == 'Oral')
-            # original_length = len(courses)
-            # infused = False
         reallocations = 0
 
         while len(courses) > 0:
@@ -264,30 +249,14 @@ class Solution:
                 reallocations += 1
                 continue
 
-            # if len(courses) > original_length / 2 and not infused:
-            #     current_index = grouped_courses.index(group)
-            #     if len(grouped_courses) < current_index:
-            #         courses.insert(int(len(courses)/2), group[current_index+1][:int(len(group[current_index+1])/2)])
-            #         group[current_index+1] = group[current_index+1][int(len(group[current_index+1])/2):]
-            #         infused = True
-
             rooms = course.get('PossibleRooms')
             periods = course.get('PossiblePeriods')
-            periods = self.distribute_periods(periods, len(courses))
-
-            # if random.randint(0,1) == 0:
-            #     periods = list(filter(lambda x: x % 2 == 0, periods))
-            # else:
-            #     periods = list(filter(lambda x: x % 2 == 1, periods))
 
             room, period = self.available_room_period(rooms, periods, course)
 
             if period == None:
                 percentage = '{0:.2f}%'.format((total_events - len(courses)) * 100 / total_events)
                 print("Retrying... ", percentage, end="\r")
-                # print(course['Course'], period, room, percentage)
-                # time.sleep(.1)
-                # save_file('stuck.json', self.taken_period_room, '.')
                 return None
 
             self.last_period = period
@@ -303,11 +272,11 @@ class Solution:
     def try_solving(instances, hard_constraints):
         solution = None
         attempt = 0
-        while solution == None and attempt < 300:
+        while solution == None and attempt < 100:
             solution = Solution(copy.deepcopy(instances), hard_constraints).solve()
             attempt += 1
 
-        if attempt < 300:
+        if attempt < 100:
             return solution
         else:
             print("Could not solve in time!")
