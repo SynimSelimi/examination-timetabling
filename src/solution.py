@@ -51,6 +51,16 @@ class Solution:
                 for r in two:
                     yield p, r
 
+        # two_part = course.get('TwoPart')
+        # min_distance_of_exams = two_part and course.get('MinimumDistanceBetweenExams')
+        # specs = course.get('WrittenOralSpecs')
+        # min_two_part_distance = specs and specs.get('MinDistance')
+
+        # if min_distance_of_exams:
+        #     periods.sort(key=lambda x: random.randint(0,1), reverse=True)
+
+        # periods = sorted(periods, key=lambda x: x)
+
         if len(rooms) == 0:
             for p in periods:
                 conflict_courses = []
