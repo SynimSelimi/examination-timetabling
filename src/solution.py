@@ -240,17 +240,17 @@ class Solution:
             if multiple_exams == True: self.multiple_exams_constraint_propagation(course, courses, period)
             if two_part == True: self.two_part_constraint_propagation(course, courses, period)
             
-            # if smart_injection == True:
-            #     def swap(list, pos1, pos2): list[pos1], list[pos2] = list[pos2], list[pos1]
-            #     for _course in courses:
-            #         if _course['Course'] == course_name and multiple_exams and int(_course['ExamOrder']) > int(exam_order):
-            #             _course_index = courses.index(_course)
-            #             swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
-            #             print("\t\t\tsmart_injection at", reallocations, end="\r")
-            #         if _course['Course'] == course_name and _course['ExamOrder'] == exam_order and two_part and course['ExamType'] == 'Written' and _course['ExamType'] == 'Oral':
-            #             _course_index = courses.index(_course)
-            #             swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
-            #             print("\t\t\tsmart_injection at", reallocations, end="\r")
+            if smart_injection == True:
+                def swap(list, pos1, pos2): list[pos1], list[pos2] = list[pos2], list[pos1]
+                for _course in courses:
+                    if _course['Course'] == course_name and multiple_exams and int(_course['ExamOrder']) > int(exam_order):
+                        _course_index = courses.index(_course)
+                        swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
+                        print("\t\t\tsmart_injection at", reallocations, end="\r")
+                    if _course['Course'] == course_name and _course['ExamOrder'] == exam_order and two_part and course['ExamType'] == 'Written' and _course['ExamType'] == 'Oral':
+                        _course_index = courses.index(_course)
+                        swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
+                        print("\t\t\tsmart_injection at", reallocations, end="\r")
 
             event = Event(exam_order, exam_type, period, room, course_name)
             self.add_event(course_name, event)
@@ -260,9 +260,11 @@ class Solution:
     @staticmethod
     def try_solving(instances, hard_constraints):
         solution = None
+        results = None
         attempt = 0
-        while solution == None and attempt < 700:
-            solution = Solution(copy.deepcopy(instances), hard_constraints).solve()
+        while results == None and attempt < 700:
+            solution = Solution(copy.deepcopy(instances), hard_constraints)
+            results = solution.solve()
             attempt += 1
 
         if attempt < 100:
@@ -270,6 +272,87 @@ class Solution:
         else:
             print("Could not solve in time!")
             return None
+
+    def new_available_room(self, rooms, current_room, period, course):
+        rooms = rooms.copy()
+        random.shuffle(rooms)
+        room = None
+
+        if len(rooms) == 0:
+            return room
+        else:
+            for r in rooms:
+                taken = False
+                is_composite = ":" in r
+
+                if is_composite:
+                    com_rooms = r.split(':')[1].split(',')
+                    for c in com_rooms:
+                        if self.taken_period_room.get(period, {}).get(c, {}):
+                            taken = True
+                            break
+                else:
+                    taken = self.taken_period_room.get(period, {}).get(r, {})
+
+                if taken:
+                    continue
+
+                no_room_courses = self.taken_period_room.get(period, {}).get('noRoom', [])
+                period_course = self.taken_period_room.get(period, {}).values()
+
+                conflict_courses = []
+                conflict_courses.extend(period_course)
+                conflict_courses.extend(no_room_courses)
+
+                primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
+                same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
+
+                conflict = conflict_courses and (primary_course_conflicts or same_teacher_conflicts)
+
+                if not taken and not conflict:
+                    if is_composite:
+                        room = r.split(":")[0]
+                        com_rooms = r.split(':')[1].split(',')
+                        for c in com_rooms:
+                            self.taken_period_room[period][c] = course['Course']
+                    else:
+                        room = r
+                        self.taken_period_room[period][room] = course['Course']
+                    break
+
+        if current_room != None and room != None:
+            is_composite = ":" in current_room
+            if is_composite:
+                com_rooms = current_room.split(':')[1].split(',')
+                for c in com_rooms:
+                    self.taken_period_room[period][c] = None
+            else:
+                self.taken_period_room[period][current_room] = None
+
+        return room
+
+    def mutate_rooms(self):
+        rooms_to_change = 50
+        changed_rooms = 0
+
+        courses = []
+        grouped_courses = self.instances.copy()
+        for group in grouped_courses:
+            group_courses = group.copy()
+            courses.extend(group_courses)
+
+        for assignment in self.assignments:
+            if rooms_to_change == changed_rooms: break
+            for event in assignment.events:
+                course = [x for x in courses if x['Course'] == assignment.course and x['ExamType'] == event.part and x['ExamOrder'] == event.exam][0]
+                rooms = course['PossibleRooms']
+                new_room = self.new_available_room(rooms, event.room, event.period, course)
+                if new_room != None:
+                    event.room = new_room
+                    changed_rooms += 1
+                    print("CHANGED ROOMS ", changed_rooms, end="\r")
+        print("\n")
+        return self.export()
 
     def add_event(self, course_name, event):
         if course_name not in self.course_assignment_ids.keys():

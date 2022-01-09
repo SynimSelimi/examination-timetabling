@@ -51,7 +51,9 @@ def run_solver(instance_path):
     instances, hard_constraints = process(data)
     # save_file("preprocess.json", instances, ".")
     solution = Solution.try_solving(instances, hard_constraints)
-    save_solution(instance_path, solution)
+    save_solution(instance_path, solution.export())
+    solution.mutate_rooms()
+    save_solution(f"{instance_path}", solution.export(), True)
 
     end_time = time.time()
 
