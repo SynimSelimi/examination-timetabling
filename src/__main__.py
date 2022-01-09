@@ -53,7 +53,7 @@ def run_solver(instance_path):
     solution = Solution.try_solving(instances, hard_constraints)
     save_solution(instance_path, solution.export())
     solution.mutate_rooms()
-    save_solution(f"{instance_path}", solution.export(), True)
+    save_solution(instance_path, solution.export(), True)
 
     end_time = time.time()
 
