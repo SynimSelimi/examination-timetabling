@@ -3,9 +3,10 @@ import time
 from helpers import flat_map
 from collections import defaultdict
 import copy
+from validation import validate
 
 class Solution:
-    def __init__(self, instances, hard_constraints):
+    def __init__(self, instances, hard_constraints, constraints):
         self.instances = instances
         self.cost = 0
         self.assignments = []
@@ -13,6 +14,7 @@ class Solution:
         self.last_assignment_id = 0
         self.taken_period_room = defaultdict(dict)
         self.hard_constraints = hard_constraints
+        self.constraints = constraints
         self.room_period_constraints = list(
             filter(lambda val: val['Type'] == 'RoomPeriodConstraint', self.hard_constraints)
         )
@@ -255,14 +257,15 @@ class Solution:
             event = Event(exam_order, exam_type, period, room, course_name)
             self.add_event(course_name, event)
 
+        self.cost = validate(self)
         return self.export()
 
     @staticmethod
-    def try_solving(instances, hard_constraints):
+    def try_solving(instances, hard_constraints, constraints):
         solution = None
         attempt = 0
         while solution == None and attempt < 700:
-            solution = Solution(copy.deepcopy(instances), hard_constraints).solve()
+            solution = Solution(copy.deepcopy(instances), hard_constraints, constraints).solve()
             attempt += 1
 
         if attempt < 100:
