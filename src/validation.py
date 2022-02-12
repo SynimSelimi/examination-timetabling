@@ -19,7 +19,6 @@ def up_ip(assignments, undesired, preferred):
   undesired_periods = list(map(lambda x: x['Period'], undesired))
   preferred_periods = list(map(lambda x: x['Period'], undesired))
 
-  print(undesired_periods)
   for assignment in assignments:
     for event in assignment.events:
       if event.period in undesired_periods:
