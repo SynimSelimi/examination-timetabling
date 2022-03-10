@@ -21,6 +21,14 @@
 - [Getting started with Pypy Article](https://towardsdatascience.com/getting-started-with-pypy-ef4ba5cb431c)
 - [PyPy: Faster Python With Minimal Effort](https://realpython.com/pypy-faster-python/)
 
+### Running on virtual env
+
+```
+python3 -m venv venv
+source venv/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
 ### Running with Python3
 
 `python3 src`
