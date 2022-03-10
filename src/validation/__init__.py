@@ -6,7 +6,8 @@ import json
 import os
 import sys
 import numpy as np
-import pandas as pd
+# FIXME
+# import pandas as pd
 import warnings
 from helpers import log
 
@@ -78,6 +79,8 @@ def validate_solution(instance_file, solution_file, instance_format, solution_fo
             with open(output, 'w') as f:
                 f.write(json.dumps(result, indent=4))
 
+# FIXME
+# REQUIRES PANDAS, works with Python3 as of now
 def instance_features(instances, output):
     '''
    Computes a table of instance features from a directory, according

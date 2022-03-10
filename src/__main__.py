@@ -54,11 +54,11 @@ def run_solver(instance_path):
     solution = Solution.try_solving(instances, hard_constraints)
     solution_path = save_solution(instance_path, solution)
 
+    end_time = time.time()
+    
     validation_results = validate_solution(instance_path, solution_path, None, None, None, False)
     print("VALID", validation_results['valid'])
     print("COST", validation_results['cost'])
-
-    end_time = time.time()
 
     tprint("Solver completed. Check solutions folder.")
     tprint(f"Completed in {end_time-start_time:.2f}s.")
