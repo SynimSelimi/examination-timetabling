@@ -3,7 +3,6 @@ from helpers import *
 from enums import *
 from preprocess import *
 from solution import *
-from validation import validate_solution
 
 """
 Process method -
@@ -51,14 +50,10 @@ def run_solver(instance_path):
     data = parse(instance_path)
     instances, hard_constraints = process(data)
     # save_file("preprocess.json", instances, ".")
-    solution = Solution.try_solving(instances, hard_constraints)
+    solution = Solution.try_solving(instances, hard_constraints, instance_path)
     solution_path = save_solution(instance_path, solution)
 
     end_time = time.time()
-    
-    validation_results = validate_solution(instance_path, solution_path, None, None, None, False)
-    print("VALID", validation_results['valid'])
-    print("COST", validation_results['cost'])
 
     tprint("Solver completed. Check solutions folder.")
     tprint(f"Completed in {end_time-start_time:.2f}s.")

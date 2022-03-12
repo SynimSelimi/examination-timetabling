@@ -48,7 +48,7 @@ def validate_instance(instance_file, instance_format, output):
             with open(output, 'w') as f:
                 f.write(json.dumps(result, indent=4, cls=NpEncoder))
 
-def validate_solution(instance_file, solution_file, instance_format, solution_format, output, ignore_forbidden):
+def validate_solution(instance_file, solution_json, instance_format, solution_format, output, ignore_forbidden):
     '''
         Validates a solution against an instance and computes a few solution features.
 
@@ -60,15 +60,17 @@ def validate_solution(instance_file, solution_file, instance_format, solution_fo
     with open(instance_file) as f:
         inst_content = f.read()
 
-    # open solution file
-    with open(solution_file) as f:
-        sol_content = f.read()
+    # # open solution file
+    # with open(solution_file) as f:
+    #     sol_content = f.read()
 
     if not instance_format:
         instance_format = instance_file.split(".")[-1]
 
-    if not solution_format:
-        solution_format = solution_file.split(".")[-1]
+    # if not solution_format:
+    #     solution_format = solution_file.split(".")[-1]
+
+    sol_content = json.dumps(solution_json)
 
     # activate validator, print result
     result = SolutionValidator.validate(inst_content, instance_format, sol_content, solution_format, ignore_forbidden)
