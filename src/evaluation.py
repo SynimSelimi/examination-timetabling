@@ -16,8 +16,8 @@ def up_ip(assignments, undesired, preferred):
   cost = 0
   undesired_periods = list(filter(lambda val: val['Type'] == 'PeriodConstraint', undesired))
   preferred_periods = list(filter(lambda val: val['Type'] == 'PeriodConstraint', preferred))
-  undesired_periods = list(map(lambda x: x['Period'], undesired))
-  preferred_periods = list(map(lambda x: x['Period'], undesired))
+  undesired_periods = list(map(lambda x: x.get('Period'), undesired))
+  preferred_periods = list(map(lambda x: x.get('Period'), undesired))
 
   for assignment in assignments:
     for event in assignment.events:
@@ -51,7 +51,7 @@ def ssc():
 def ssd():
   return 0
 
-def validate(solution):
+def evaluate(solution):
   assignments = solution.assignments
   constraints = solution.constraints
   undesired_constraints = list(filter(lambda val: val['Level'] == 'Undesired', constraints))

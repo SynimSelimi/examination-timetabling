@@ -1,12 +1,15 @@
 import random
 import time
+import json
 from helpers import flat_map
+from validation import validate_solution
 from collections import defaultdict
 import copy
-from validation import validate
+from evaluation import evaluate
 
 class Solution:
-    def __init__(self, instances, hard_constraints, constraints):
+    def __init__(self, instances, hard_constraints, with_validation = True, instance_path = None, constraints = None):
+
         self.instances = instances
         self.cost = 0
         self.assignments = []
@@ -18,7 +21,10 @@ class Solution:
         self.room_period_constraints = list(
             filter(lambda val: val['Type'] == 'RoomPeriodConstraint', self.hard_constraints)
         )
+        self.validation_results = {}
+        self.with_validation = with_validation
         self.last_period = None
+        self.instance_path = instance_path
         self.import_constraints()
 
     def import_constraints(self):
@@ -257,22 +263,32 @@ class Solution:
             event = Event(exam_order, exam_type, period, room, course_name)
             self.add_event(course_name, event)
 
-        self.cost = validate(self)
+        self.cost = evaluate(self)
+        if self.with_validation: self.validate()
         return self.export()
 
     @staticmethod
-    def try_solving(instances, hard_constraints, constraints):
+    def try_solving(instances, hard_constraints, instance_path = None, constraints = None):
         solution = None
         attempt = 0
         while solution == None and attempt < 700:
-            solution = Solution(copy.deepcopy(instances), hard_constraints, constraints).solve()
-            attempt += 1
+            solution = Solution(
+                copy.deepcopy(instances), hard_constraints, 
+                instance_path=instance_path, constraints=constraints
+            ).solve()
 
         if attempt < 100:
             return solution
         else:
             print("Could not solve in time!")
             return None
+
+    def validate(self):
+        start_time = time.time()
+        validation_results = validate_solution(self.instance_path, self.export(), None, None, None, False)
+        end_time = time.time()
+        validation_results['finished_for'] = f"{end_time-start_time:.2f}s."
+        self.validation_results = validation_results
 
     def add_event(self, course_name, event):
         if course_name not in self.course_assignment_ids.keys():
@@ -293,7 +309,8 @@ class Solution:
 
         return {
             'Assignments': assignments,
-            'Cost': self.cost
+            'Cost': self.cost,
+            'Validation': self.validation_results
         }
 
     def import_data(self, data):

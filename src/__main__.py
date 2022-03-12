@@ -50,7 +50,7 @@ def run_solver(instance_path):
     data = parse(instance_path)
     instances, hard_constraints, constraints = process(data)
     # save_file("preprocess.json", instances, ".")
-    solution = Solution.try_solving(instances, hard_constraints, constraints)
+    solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
     save_solution(instance_path, solution)
 
     end_time = time.time()
