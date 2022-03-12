@@ -110,7 +110,7 @@ def grouped_shuffle(courses):
 def solve_all_arg():
     return len(sys.argv) > 1 and sys.argv[1] == 'all'
 
-def log(filename = 'validation_logs'):
+def log(filename = None, disabled = True):
     if (filename is not None):
         logging.basicConfig(
             filename=filename,
@@ -119,4 +119,5 @@ def log(filename = 'validation_logs'):
             level=logging.INFO
         )
     log = logging.getLogger('costs')
+    log.disabled = disabled
     return log

@@ -7,7 +7,7 @@ from collections import defaultdict
 import copy
 
 class Solution:
-    def __init__(self, instances, hard_constraints, with_validation = True, instance_data = None):
+    def __init__(self, instances, hard_constraints, with_validation = True, instance_path = None):
         self.instances = instances
         self.cost = 0
         self.assignments = []
@@ -21,7 +21,7 @@ class Solution:
         self.validation_results = {}
         self.with_validation = with_validation
         self.last_period = None
-        self.instance_data = instance_data
+        self.instance_path = instance_path
         self.import_constraints()
 
     def import_constraints(self):
@@ -264,11 +264,11 @@ class Solution:
         return self.export()
 
     @staticmethod
-    def try_solving(instances, hard_constraints, instance_data = None):
+    def try_solving(instances, hard_constraints, instance_path = None):
         solution = None
         attempt = 0
         while solution == None and attempt < 700:
-            solution = Solution(copy.deepcopy(instances), hard_constraints, instance_data=instance_data).solve()
+            solution = Solution(copy.deepcopy(instances), hard_constraints, instance_path=instance_path).solve()
             attempt += 1
 
         if attempt < 100:
@@ -279,7 +279,7 @@ class Solution:
 
     def validate(self):
         start_time = time.time()
-        validation_results = validate_solution(self.instance_data, self.export(), None, None, None, False)
+        validation_results = validate_solution(self.instance_path, self.export(), None, None, None, False)
         end_time = time.time()
         validation_results['finished_for'] = f"{end_time-start_time:.2f}s."
         self.validation_results = validation_results
