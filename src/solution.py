@@ -452,6 +452,7 @@ class Solution:
         if self.with_validation: self.validate()
         return self.export()
 
+    # FIXME instances/D6-3-17.json and other instances generating invalid file formats
     def validate(self):
         start_time = time.time()
         validation_results = validate_solution(self.instance_path, self.export(), None, None, None, False)
