@@ -370,14 +370,14 @@ class Solution:
         changed_courses = 0
         pending_course_events = []
 
-        total_events = 0
         courses = []
+        total_events = 0
         randomize_rooms = random.randint(0,1) == 0
         reallocations = 0
 
-        courses = []
         grouped_courses = self.instances.copy()
         for group in grouped_courses:
+            total_events += len(group)
             group_courses = group.copy()
             courses.extend(group_courses)
 
