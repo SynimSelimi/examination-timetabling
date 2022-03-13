@@ -365,6 +365,76 @@ class Solution:
         print("\n")
         return self.export()
 
+    def mutate_courses(self, number_of_courses = 10):
+        changed_courses = 0
+        pending_course_events = []
+
+        total_events = 0
+        courses = []
+        randomize_rooms = random.randint(0,1) == 0
+        reallocations = 0
+
+        courses = []
+        grouped_courses = self.instances.copy()
+        for group in grouped_courses:
+            group_courses = group.copy()
+            courses.extend(group_courses)
+
+        for assignment in random.sample(self.assignments, number_of_courses):
+            course_events = [x for x in courses if x['Course'] == assignment.course]
+            pending_course_events.extend(course_events)
+            del self.course_assignment_ids[assignment.course]
+            self.assignments.remove(assignment)
+
+        courses = pending_course_events
+        while len(courses) > 0:
+            course = courses.pop(0)
+            course_name = course['Course']
+
+            exam_type = course['ExamType']
+            exam_order = course['ExamOrder']
+            two_part = course.get('TwoPart')
+            written_allocated = course.get('WrittenAllocated')
+            predecessor_allocated = course.get('PredecessorAllocated')
+            multiple_exams = course.get('MultipleExams')
+
+            if reallocations > 250:
+                return None
+
+            if two_part == True and exam_type == 'Oral' and written_allocated == False:
+                # print(reallocations, end="\r")
+                courses.insert(random.randint(int(len(courses)/2), len(courses)), course)
+                reallocations += 1
+                continue
+
+            if multiple_exams == True and predecessor_allocated == False:
+                # print(reallocations, end="\r")
+                courses.insert(random.randint(int(len(courses)/2), len(courses)), course)
+                reallocations += 1
+                continue
+
+            rooms = course.get('PossibleRooms')
+            if randomize_rooms == True: random.shuffle(rooms)
+            periods = course.get('PossiblePeriods')
+            if exam_order % 2 == 1: periods = self.distribute_periods(periods)
+
+            room, period = self.available_room_period(rooms, periods, course)
+
+            if period == None:
+                percentage = '{0:.2f}%'.format((total_events - len(courses)) * 100 / total_events)
+                print("Retrying... ", percentage, end="\r")
+                return None
+
+            self.last_period = period
+            if multiple_exams == True: self.multiple_exams_constraint_propagation(course, courses, period)
+            if two_part == True: self.two_part_constraint_propagation(course, courses, period)
+
+            event = Event(exam_order, exam_type, period, room, course_name)
+            self.add_event(course_name, event)
+
+        if self.with_validation: self.validate()
+        return self.export()
+
     def validate(self):
         start_time = time.time()
         validation_results = validate_solution(self.instance_path, self.export(), None, None, None, False)
