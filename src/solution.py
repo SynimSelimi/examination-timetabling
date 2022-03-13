@@ -338,6 +338,8 @@ class Solution:
 
         return room
 
+    # FIXME a solution validator error appears occasionally
+    # seems this type of mutation is breaking the solution formatting
     def mutate_rooms(self):
         rooms_to_change = 50
         changed_rooms = 0
