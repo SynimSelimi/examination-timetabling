@@ -30,8 +30,18 @@ def up_ip(assignments, undesired, preferred):
 def ur_ir():
   return 0
 
-def wod():
-  return 0
+def wod(assignments):
+  cost = 0
+  two_part_courses = list(filter(lambda val: val.events[0].course_metadata.get('WrittenOralSpecs', None), assignments))
+
+  for assignment in two_part_courses:
+    written_oral_specs = assignment.events[0].course_metadata.get('WrittenOralSpecs')
+    for eventIndex in range(0, len(assignment.events), 2):
+      distance = assignment.events[eventIndex + 1].period - assignment.events[eventIndex].period
+      if written_oral_specs['MinDistance'] <= distance <= written_oral_specs['MaxDistance']:
+          cost += WRITTEN_ORAL_DISTANCE_WEIGHT
+
+  return cost
 
 def scd():
   return 0
@@ -62,5 +72,6 @@ def evaluate(solution):
 
   cost = 0
   cost += up_ip(assignments, undesired_constraints, preferred_constraints)
+  cost += wod(assignments);
 
   return cost
