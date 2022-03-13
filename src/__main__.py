@@ -54,8 +54,12 @@ def run_solver(instance_path):
     solution = Solution.try_solving(instances, hard_constraints, instance_path)
     save_solution(instance_path, solution.export())
 
+    print(solution.validation_results.get('cost'))
+
     solution.mutate_courses()
     save_solution(instance_path, solution.export(), True)
+
+    print(solution.validation_results.get('cost'))
 
     end_time = time.time()
 

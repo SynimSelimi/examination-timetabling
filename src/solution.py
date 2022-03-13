@@ -365,7 +365,8 @@ class Solution:
         print("\n")
         return self.export()
 
-    def mutate_courses(self, number_of_courses = 10):
+    def mutate_courses(self):
+        amount_of_change = 0.25
         changed_courses = 0
         pending_course_events = []
 
@@ -380,12 +381,28 @@ class Solution:
             group_courses = group.copy()
             courses.extend(group_courses)
 
-        for assignment in random.sample(self.assignments, number_of_courses):
+        total_courses = len(self.assignments)
+        for assignment in random.sample(self.assignments, int(total_courses * amount_of_change)):
             course_events = [x for x in courses if x['Course'] == assignment.course]
             pending_course_events.extend(course_events)
-            del self.course_assignment_ids[assignment.course]
+
+            for event in assignment.events:
+                room, period = event.room, event.period
+                if room == None:
+                    self.taken_period_room[period]['noRoom'].remove(assignment.course)
+                else:
+                    is_composite = ":" in room
+                    if is_composite:
+                        com_rooms = room.split(':')[1].split(',')
+                        for c in com_rooms:
+                            self.taken_period_room[period][c] = None
+                    else:
+                        self.taken_period_room[period][room] = None
+            self.course_assignment_ids.pop(assignment.course)
             self.assignments.remove(assignment)
 
+        self.reindex_assignments()
+        random.shuffle(pending_course_events)
         courses = pending_course_events
         while len(courses) > 0:
             course = courses.pop(0)
@@ -441,6 +458,13 @@ class Solution:
         end_time = time.time()
         validation_results['finished_for'] = f"{end_time-start_time:.2f}s."
         self.validation_results = validation_results
+
+    def reindex_assignments(self):
+        self.course_assignment_ids = {}
+        for index, assignment in enumerate(self.assignments):
+            course_name = assignment.course
+            self.course_assignment_ids[course_name] = index
+            self.last_assignment_id = index + 1
 
     def add_event(self, course_name, event):
         if course_name not in self.course_assignment_ids.keys():
