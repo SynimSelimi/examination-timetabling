@@ -260,7 +260,7 @@ class Solution:
             #             swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
             #             print("\t\t\tsmart_injection at", reallocations, end="\r")
 
-            event = Event(exam_order, exam_type, period, room, course_name)
+            event = Event(exam_order, exam_type, period, room, course_name, course)
             self.add_event(course_name, event)
 
         self.cost = evaluate(self)
@@ -338,12 +338,13 @@ class Assignment:
 
 
 class Event:
-    def __init__(self, exam, part, period, room, course):
+    def __init__(self, exam, part, period, room, course, course_metadata={}):
         self.exam = exam
         self.part = part
         self.period = period
         self.room = room
         self.course = course
+        self.course_metadata = course_metadata
 
     def export(self):
         return {
