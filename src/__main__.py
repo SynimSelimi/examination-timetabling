@@ -50,8 +50,10 @@ def run_solver(instance_path):
     data = parse(instance_path)
     instances, hard_constraints = process(data)
     # save_file("preprocess.json", instances, ".")
-    solution = Solution.try_solving(instances, hard_constraints)
+
+    solution = Solution.try_solving(instances, hard_constraints, instance_path)
     save_solution(instance_path, solution.export())
+
     solution.mutate_rooms()
     save_solution(instance_path, solution.export(), True)
 

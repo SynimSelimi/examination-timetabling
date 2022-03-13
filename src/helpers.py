@@ -5,6 +5,7 @@ import sys
 import string
 import random
 from pathlib import Path
+import logging
 
 # import imp
 # try:
@@ -70,6 +71,7 @@ def save_solution(filepath, data, mutated = False):
     filename = os.path.basename(filepath)
     if mutated: filename = f"MUTATED-{filename}"
     save_file(f'{folder}/SOLUTION-{filename}', data, folder)
+    return f'{folder}/SOLUTION-{filename}'
 
 def flat_map(f, xs):
     ys = []
@@ -108,3 +110,15 @@ def grouped_shuffle(courses):
 
 def solve_all_arg():
     return len(sys.argv) > 1 and sys.argv[1] == 'all'
+
+def log(filename = None, disabled = True):
+    if (filename is not None):
+        logging.basicConfig(
+            filename=filename,
+            format='%(levelname)s - %(asctime)s - %(name)s - %(message)s',
+            filemode='w',
+            level=logging.INFO
+        )
+    log = logging.getLogger('costs')
+    log.disabled = disabled
+    return log
