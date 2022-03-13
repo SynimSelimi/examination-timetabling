@@ -14,24 +14,15 @@ PRIMARY_SECONDARY_CONFLICT_WEIGHT = 5
 SECONDARY_SECONDARY_CONFLICT_WEIGHT = 1
 SECONDARY_SECONDARY_DISTANCE_WEIGHT = 1
 
-# UNDESIRED_PERIOD_WEIGHT = 10
-# INDIFFERENT_PERIOD_WEIGHT = 2
-def up_ip(assignments, undesired, preferred):
-  cost = 0
-  undesired_periods = list(filter(lambda val: val['Type'] == 'PeriodConstraint', undesired))
-  undesired_periods = list(map(lambda x: x.get('Period'), undesired))
-
-  for assignment in assignments:
-    for event in assignment.events:
-      if event.period in undesired_periods:
-        cost += UNDESIRED_PERIOD_WEIGHT
-  return cost
-
-# UNDESIRED_ROOM_WEIGHT = 5
-# INDIFFERENT_ROOM_WEIGHT = 1
-def ur_ir(assignments, undesired, preferred):
+# UNDESIRED_PERIOD_WEIGHT
+# INDIFFERENT_PERIOD_WEIGHT
+# UNDESIRED_ROOM_WEIGHT
+# INDIFFERENT_ROOM_WEIGHT
+def room_and_period_costs(assignments, undesired, preferred):
   cost = 0
   constraints = defaultdict(dict)
+  undesired_periods = list(filter(lambda val: val['Type'] == 'PeriodConstraint', undesired))
+  undesired_periods = list(map(lambda x: x.get('Period'), undesired))
   undesired_er = list(filter(lambda val: val['Type'] == 'EventRoomConstraint', undesired))
   preferred_er = list(filter(lambda val: val['Type'] == 'EventRoomConstraint', preferred))
   undesired_ep = list(filter(lambda val: val['Type'] == 'EventPeriodConstraint', undesired))
@@ -90,6 +81,8 @@ def ur_ir(assignments, undesired, preferred):
         cost += UNDESIRED_PERIOD_WEIGHT
       if preferred_ep_not_match(event):
         cost += INDIFFERENT_PERIOD_WEIGHT
+      if event.period in undesired_periods:
+        cost += UNDESIRED_PERIOD_WEIGHT
   return cost
 
 def wod():
@@ -104,17 +97,52 @@ def ppd():
 def psd():
   return 0
 
-# PRIMARY_SECONDARY_CONFLICT_WEIGHT = 5
-def psc():
-  return 0
+# PRIMARY_SECONDARY_CONFLICT_WEIGHT
+# SECONDARY_SECONDARY_CONFLICT_WEIGHT
+def primary_secondary_conflict(solution, undesired, preferred):
+  cost = 0
 
-# SECONDARY_SECONDARY_CONFLICT_WEIGHT = 1
-def ssc():
-  return 0
+  for assignment in solution.assignments:
+    for event in assignment.events:
+      period = event.period
+      course = event.course_metadata
+      no_room_courses = solution.taken_period_room.get(period, {}).get('noRoom', [])
+      period_course = solution.taken_period_room.get(period, {}).values()
 
-# SECONDARY_SECONDARY_DISTANCE_WEIGHT = 1
-def ssd():
-  return 0
+      conflict_courses = []
+      conflict_courses.extend(period_course)
+      conflict_courses.extend(no_room_courses)
+
+      primary_secondary_course_conflicts = list(filter(lambda x: x == True, (item in course["PrimarySecondaryCourses"] for item in conflict_courses)))
+      secondary_course_conflicts = list(filter(lambda x: x == True, (item in course["SecondaryCourses"] for item in conflict_courses)))
+
+      if len(primary_secondary_course_conflicts) != 0:
+        cost += PRIMARY_SECONDARY_CONFLICT_WEIGHT * len(primary_secondary_course_conflicts)
+      elif len(secondary_course_conflicts) != 0:
+        cost += SECONDARY_SECONDARY_CONFLICT_WEIGHT
+  return cost
+
+# FIXME values not displaying consistent results
+# If PrimarySecondaryDistance is missing, slotsPerDay is used as default
+# SECONDARY_SECONDARY_DISTANCE_WEIGHT
+def secondary_secondary_distance(solution, undesired, preferred):
+  cost = 0
+
+  for assignment in solution.assignments:
+    for event in assignment.events:
+      period = event.period
+      course = event.course_metadata
+      name = course['Course']
+      min_distance = course['SlotsPerDay']
+      secondary_courses = course["SecondaryCourses"]
+
+      for secondary_course in secondary_courses:
+        course_id = solution.course_assignment_ids[secondary_course]
+        check_assignment = solution.assignments[course_id]
+        for check_event in check_assignment.events:
+          if abs(event.period - check_event.period) < min_distance:
+            cost += PRIMARY_PRIMARY_DISTANCE_WEIGHT
+  return cost
 
 def evaluate(solution):
   assignments = solution.assignments
@@ -123,7 +151,8 @@ def evaluate(solution):
   preferred_constraints = list(filter(lambda val: val['Level'] == 'Preferred', constraints))
 
   cost = 0
-  cost += up_ip(assignments, undesired_constraints, preferred_constraints)
-  cost += ur_ir(assignments, undesired_constraints, preferred_constraints)
+  cost += room_and_period_costs(assignments, undesired_constraints, preferred_constraints)
+  cost += primary_secondary_conflict(solution, undesired_constraints, preferred_constraints)
+  # cost += secondary_secondary_distance(solution, undesired_constraints, preferred_constraints)
 
   return cost

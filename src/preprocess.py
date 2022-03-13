@@ -79,7 +79,7 @@ def add_possible_rooms(courses, rooms, constraints):
 
     return _courses
 
-def add_curricula_info(courses, curricula):
+def add_curricula_info(courses, curricula, primary_primary_distance, slots_per_day):
     _courses = courses.copy()
     for course in _courses:
         course_name = course['Course']
@@ -88,14 +88,20 @@ def add_curricula_info(courses, curricula):
         relevant_secondaries = list(filter(lambda val : course_name in val['SecondaryCourses'], curricula))
         secondary_courses = list(map(lambda val : val['SecondaryCourses'], relevant_secondaries))
 
+        primary_secondary_courses = list(map(lambda val : val['SecondaryCourses'], relevant_primaries))
+
         primary_courses = flat_map(lambda x: x, primary_courses)
         secondary_courses = flat_map(lambda x: x, secondary_courses)
+        primary_secondary_courses = flat_map(lambda x: x, primary_secondary_courses)
 
         if course_name in primary_courses: primary_courses.remove(course_name)
         if course_name in secondary_courses: secondary_courses.remove(course_name)
 
         course['PrimaryCourses'] = primary_courses
         course['SecondaryCourses'] = secondary_courses
+        course['PrimarySecondaryCourses'] = primary_secondary_courses
+        course['PrimaryPrimaryDistance'] = primary_primary_distance
+        course['SlotsPerDay'] = slots_per_day
 
     return _courses
 

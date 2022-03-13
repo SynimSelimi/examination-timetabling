@@ -31,7 +31,7 @@ def process(data):
     courses = flat_map_courses(courses)
     courses = add_possible_rooms(courses, rooms, event_room_constraints)
     courses = add_possible_periods(courses, periods, event_period_constraints)
-    courses = add_curricula_info(courses, curricula)
+    courses = add_curricula_info(courses, curricula, primary_primary_distance, slots_per_day)
     courses = add_same_teacher_courses(courses)
     courses = order_course_by_constraints(courses)
     courses = group_by_exams_and_parts(courses)
