@@ -43,8 +43,19 @@ def wod(assignments):
 
   return cost
 
-def scd():
-  return 0
+def scd(assignments):
+  cost = 0
+  repeated_courses = list(filter(lambda val: val.events[0].course_metadata.get('MultipleExams'), assignments))
+
+  for assignment in repeated_courses:
+    step = 2 if assignment.events[0].course_metadata.get('WrittenOralSpecs') else 1
+    course_minimum_distance_between_exams = assignment.events[0].course_metadata.get('MinimumDistanceBetweenExams')
+    for eventIndex in range(0, len(assignment.events) - step, step):
+      distance_between_exams = assignment.events[eventIndex + step].period - assignment.events[eventIndex].period
+      if distance_between_exams < course_minimum_distance_between_exams:
+        cost += SAME_COURSE_DISTANCE_WEIGHT
+
+  return cost
 
 def ppd():
   return 0
@@ -72,6 +83,7 @@ def evaluate(solution):
 
   cost = 0
   cost += up_ip(assignments, undesired_constraints, preferred_constraints)
-  cost += wod(assignments);
+  cost += wod(assignments)
+  cost += scd(assignments)
 
   return cost
