@@ -8,7 +8,7 @@ import copy
 from evaluation import evaluate
 
 class Solution:
-    def __init__(self, instances, hard_constraints, with_validation = True, instance_path = None, constraints = None):
+    def __init__(self, instances, hard_constraints, primary_primary_distance, with_validation = True, instance_path = None, constraints = None, ):
 
         self.instances = instances
         self.cost = 0
@@ -26,6 +26,7 @@ class Solution:
         self.last_period = None
         self.instance_path = instance_path
         self.import_constraints()
+        self.primary_primary_distance = primary_primary_distance
 
     def import_constraints(self):
         for c in self.room_period_constraints:
@@ -268,13 +269,13 @@ class Solution:
         return self.export()
 
     @staticmethod
-    def try_solving(instances, hard_constraints, instance_path = None, constraints = None):
+    def try_solving(instances, hard_constraints, primary_primary_distance, instance_path = None, constraints = None):
         solution = None
         attempt = 0
         while solution == None and attempt < 700:
             solution = Solution(
                 copy.deepcopy(instances), hard_constraints, 
-                instance_path=instance_path, constraints=constraints
+                instance_path=instance_path, constraints=constraints, primary_primary_distance=primary_primary_distance
             ).solve()
 
         if attempt < 100:

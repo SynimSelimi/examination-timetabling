@@ -37,7 +37,7 @@ def process(data):
     courses = group_by_exams_and_parts(courses)
     # courses = group_by_course(courses)
 
-    return courses, hard_constraints, constraints
+    return courses, hard_constraints, constraints, primary_primary_distance
 
 """
 Solve one instance -
@@ -48,9 +48,9 @@ def run_solver(instance_path):
     tprint("Running solver on instance:", instance_path)
 
     data = parse(instance_path)
-    instances, hard_constraints, constraints = process(data)
+    instances, hard_constraints, constraints, primary_primary_distance = process(data)
     # save_file("preprocess.json", instances, ".")
-    solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    solution = Solution.try_solving(instances, hard_constraints, primary_primary_distance, instance_path=instance_path, constraints=constraints)
     save_solution(instance_path, solution)
 
     end_time = time.time()
