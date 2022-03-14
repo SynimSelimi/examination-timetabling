@@ -59,8 +59,21 @@ def scd(assignments):
 
   return cost
 
-def ppd():
-  return 0
+def ppd(solution):
+  cost = 0
+  primary_primary_distance = solution.primary_primary_distance
+  for assignment in solution.assignments:
+    for event in assignment.events:
+      course = event.course_metadata
+      primary_courses = course["PrimaryCourses"]
+
+      for primary_course in primary_courses:
+        course_id = solution.course_assignment_ids[primary_course]
+        check_assignment = solution.assignments[course_id]
+        for check_event in check_assignment.events:
+          if abs(event.period - check_event.period) < primary_primary_distance:
+            cost += PRIMARY_PRIMARY_DISTANCE_WEIGHT
+  return cost
 
 def psd():
   return 0
@@ -87,5 +100,6 @@ def evaluate(solution):
   cost += up_ip(assignments, undesired_constraints, preferred_constraints)
   cost += wod(assignments)
   cost += scd(assignments)
+  cost += ppd(solution)
 
   return cost
