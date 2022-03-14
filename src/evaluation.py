@@ -38,8 +38,10 @@ def wod(assignments):
     written_oral_specs = assignment.events[0].course_metadata.get('WrittenOralSpecs')
     for eventIndex in range(0, len(assignment.events), 2):
       distance = assignment.events[eventIndex + 1].period - assignment.events[eventIndex].period
-      if written_oral_specs['MinDistance'] <= distance <= written_oral_specs['MaxDistance']:
-          cost += WRITTEN_ORAL_DISTANCE_WEIGHT
+      if distance < int(written_oral_specs['MinDistance']):
+        cost += abs(written_oral_specs['MinDistance'] - distance) * WRITTEN_ORAL_DISTANCE_WEIGHT
+      elif distance > int(written_oral_specs['MaxDistance']):
+        cost += abs(distance - written_oral_specs['MinDistance']) * WRITTEN_ORAL_DISTANCE_WEIGHT
 
   return cost
 
@@ -52,8 +54,8 @@ def scd(assignments):
     course_minimum_distance_between_exams = assignment.events[0].course_metadata.get('MinimumDistanceBetweenExams')
     for eventIndex in range(0, len(assignment.events) - step, step):
       distance_between_exams = assignment.events[eventIndex + step].period - assignment.events[eventIndex].period
-      if distance_between_exams < course_minimum_distance_between_exams:
-        cost += SAME_COURSE_DISTANCE_WEIGHT
+      if int(distance_between_exams) < int(course_minimum_distance_between_exams):
+        cost += abs(course_minimum_distance_between_exams - distance_between_exams) * SAME_COURSE_DISTANCE_WEIGHT
 
   return cost
 
