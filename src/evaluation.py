@@ -1,4 +1,5 @@
 from collections import defaultdict
+from helpers import flatten
 
 UNDESIRED_PERIOD_WEIGHT = 10
 INDIFFERENT_PERIOD_WEIGHT = 2
@@ -99,7 +100,7 @@ def psd():
 
 # PRIMARY_SECONDARY_CONFLICT_WEIGHT
 # SECONDARY_SECONDARY_CONFLICT_WEIGHT
-def primary_secondary_conflict(solution, undesired, preferred):
+def primary_secondary_conflict(solution):
   cost = 0
 
   for assignment in solution.assignments:
@@ -112,20 +113,25 @@ def primary_secondary_conflict(solution, undesired, preferred):
       conflict_courses = []
       conflict_courses.extend(period_course)
       conflict_courses.extend(no_room_courses)
+      conflict_courses = flatten(conflict_courses)
 
-      primary_secondary_course_conflicts = list(filter(lambda x: x == True, (item in course["PrimarySecondaryCourses"] for item in conflict_courses)))
-      secondary_course_conflicts = list(filter(lambda x: x == True, (item in course["SecondaryCourses"] for item in conflict_courses)))
+      primary_secondary_course_conflicts = len(set(list(set(conflict_courses).intersection(course["PrimarySecondaryCourses"]))))
+      secondary_course_conflicts = len(set(list(set(conflict_courses).intersection(course["SecondaryCourses"]))))
 
-      if len(primary_secondary_course_conflicts) != 0:
-        cost += PRIMARY_SECONDARY_CONFLICT_WEIGHT * len(primary_secondary_course_conflicts)
-      elif len(secondary_course_conflicts) != 0:
-        cost += SECONDARY_SECONDARY_CONFLICT_WEIGHT
+      temp_ps_cost = 0
+      temp_ss_cost = 0
+      if primary_secondary_course_conflicts != 0:
+        temp_ps_cost = PRIMARY_SECONDARY_CONFLICT_WEIGHT * primary_secondary_course_conflicts
+      if secondary_course_conflicts != 0:
+        temp_ss_cost = SECONDARY_SECONDARY_CONFLICT_WEIGHT * secondary_course_conflicts
+
+      cost += max(temp_ps_cost, temp_ss_cost)
   return cost
 
-# FIXME values not displaying consistent results
-# If PrimarySecondaryDistance is missing, slotsPerDay is used as default
+# PRIMARY_PRIMARY_DISTANCE_WEIGHT
+# PRIMARY_SECONDARY_DISTANCE_WEIGHT
 # SECONDARY_SECONDARY_DISTANCE_WEIGHT
-def secondary_secondary_distance(solution, undesired, preferred):
+def distance_constraints(solution):
   cost = 0
 
   for assignment in solution.assignments:
@@ -133,15 +139,36 @@ def secondary_secondary_distance(solution, undesired, preferred):
       period = event.period
       course = event.course_metadata
       name = course['Course']
-      min_distance = course['SlotsPerDay']
+      min_pp_distance = course.get('PrimaryPrimaryDistance') or 2 * course['SlotsPerDay']
+      primary_courses = course["PrimaryCourses"]
+
+      for pp_course in primary_courses:
+        course_id = solution.course_assignment_ids[pp_course]
+        check_assignment = solution.assignments[course_id]
+        for check_event in check_assignment.events:
+          if abs(event.period - check_event.period) < min_pp_distance:
+            cost += PRIMARY_PRIMARY_DISTANCE_WEIGHT * abs(event.period - check_event.period)
+
+      min_ps_distance = course.get('PrimarySecondaryDistance') or course['SlotsPerDay']
+      primary_secondary_courses = course["PrimarySecondaryCourses"]
+
+      for ps_course in primary_secondary_courses:
+        course_id = solution.course_assignment_ids[ps_course]
+        check_assignment = solution.assignments[course_id]
+        for check_event in check_assignment.events:
+          if abs(event.period - check_event.period) < min_ps_distance:
+            cost += PRIMARY_SECONDARY_DISTANCE_WEIGHT * abs(event.period - check_event.period)
+
+      min_ss_distance = course['SlotsPerDay']
       secondary_courses = course["SecondaryCourses"]
 
       for secondary_course in secondary_courses:
         course_id = solution.course_assignment_ids[secondary_course]
         check_assignment = solution.assignments[course_id]
         for check_event in check_assignment.events:
-          if abs(event.period - check_event.period) < min_distance:
-            cost += PRIMARY_PRIMARY_DISTANCE_WEIGHT
+          if abs(event.period - check_event.period) < min_ss_distance:
+            cost += SECONDARY_SECONDARY_DISTANCE_WEIGHT * abs(event.period - check_event.period)
+
   return cost
 
 def evaluate(solution):
@@ -152,7 +179,7 @@ def evaluate(solution):
 
   cost = 0
   cost += room_and_period_costs(assignments, undesired_constraints, preferred_constraints)
-  cost += primary_secondary_conflict(solution, undesired_constraints, preferred_constraints)
-  # cost += secondary_secondary_distance(solution, undesired_constraints, preferred_constraints)
+  cost += primary_secondary_conflict(solution)
+  cost += distance_constraints(solution)
 
   return cost

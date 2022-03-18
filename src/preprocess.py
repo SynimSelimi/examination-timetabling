@@ -96,10 +96,11 @@ def add_curricula_info(courses, curricula, primary_primary_distance, slots_per_d
 
         if course_name in primary_courses: primary_courses.remove(course_name)
         if course_name in secondary_courses: secondary_courses.remove(course_name)
+        if course_name in primary_secondary_courses: primary_secondary_courses.remove(course_name)
 
-        course['PrimaryCourses'] = primary_courses
-        course['SecondaryCourses'] = secondary_courses
-        course['PrimarySecondaryCourses'] = primary_secondary_courses
+        course['PrimaryCourses'] = list(set(primary_courses))
+        course['SecondaryCourses'] = list(set(secondary_courses))
+        course['PrimarySecondaryCourses'] = list(set(primary_secondary_courses))
         course['PrimaryPrimaryDistance'] = primary_primary_distance
         course['SlotsPerDay'] = slots_per_day
 

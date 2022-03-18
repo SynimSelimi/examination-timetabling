@@ -1,7 +1,7 @@
 import random
 import time
 import json
-from helpers import flat_map
+from helpers import flat_map, flatten
 from validation import validate_solution
 from collections import defaultdict
 import copy
@@ -60,6 +60,7 @@ class Solution:
                 no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
                 conflict_courses.extend(period_course)
                 conflict_courses.extend(no_room_courses)
+                conflict_courses = flatten(conflict_courses)
 
                 primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
                 same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
@@ -95,6 +96,7 @@ class Solution:
                 conflict_courses = []
                 conflict_courses.extend(period_course)
                 conflict_courses.extend(no_room_courses)
+                conflict_courses = flatten(conflict_courses)
 
                 primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
                 same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
@@ -269,13 +271,16 @@ class Solution:
 
     @staticmethod
     def try_solving(instances, hard_constraints, instance_path = None, constraints = None):
+        solution_found = None
         solution = None
         attempt = 0
-        while solution == None and attempt < 700:
+
+        while solution_found == None and attempt < 700:
             solution = Solution(
                 copy.deepcopy(instances), hard_constraints, 
                 instance_path=instance_path, constraints=constraints
-            ).solve()
+            )
+            solution_found = solution.solve()
 
         if attempt < 100:
             return solution
