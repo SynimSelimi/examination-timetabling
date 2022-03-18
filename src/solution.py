@@ -269,7 +269,7 @@ class Solution:
         results = None
         attempt = 0
 
-        while solution == None and attempt < 700:
+        while results == None and attempt < 700:
             solution = Solution(copy.deepcopy(instances), hard_constraints, instance_path=instance_path)
             results = solution.solve()
             attempt += 1
@@ -338,8 +338,6 @@ class Solution:
 
         return room
 
-    # FIXME a solution validator error appears occasionally
-    # seems this type of mutation is breaking the solution formatting
     def mutate_rooms(self):
         rooms_to_change = 50
         changed_rooms = 0
@@ -365,8 +363,25 @@ class Solution:
         print("\n")
         return self.export()
 
+    @staticmethod
+    def try_mutating(solution):
+        solution_found = None
+        mutated_solution = None
+        attempt = 0
+
+        while solution_found == None and attempt < 700:
+            mutated_solution = copy.deepcopy(solution)
+            solution_found = mutated_solution.mutate_courses()
+            attempt += 1
+
+        if attempt < 100:
+            return mutated_solution
+        else:
+            print("Could not solve in time!")
+            return None
+
     def mutate_courses(self):
-        amount_of_change = 0.25
+        amount_of_change = random.random() * 0.5
         changed_courses = 0
         pending_course_events = []
 
@@ -452,7 +467,6 @@ class Solution:
         if self.with_validation: self.validate()
         return self.export()
 
-    # FIXME instances/D6-3-17.json and other instances generating invalid file formats
     def validate(self):
         start_time = time.time()
         validation_results = validate_solution(self.instance_path, self.export(), None, None, None, False)
