@@ -381,7 +381,7 @@ class Solution:
             return None
 
     def mutate_courses(self):
-        amount_of_change = random.random() * 0.5
+        amount_of_change = random.random() * 0.5 + 0.1
         changed_courses = 0
         pending_course_events = []
 

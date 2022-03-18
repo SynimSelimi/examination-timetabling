@@ -57,14 +57,15 @@ def run_solver(instance_path):
     print(solution.validation_results.get('cost'))
 
     best_solution = 999999999
-    for i in range(0,1):
-        mutated_solution = Solution.try_mutating(solution)
+    last_solution = solution
+    for i in range(0,1000):
+        mutated_solution = Solution.try_mutating(last_solution)
         if (mutated_solution == None): continue
-        save_solution(instance_path, mutated_solution.export(), True)
-
+        # save_solution(instance_path, mutated_solution.export(), True)
         new_solution = mutated_solution.validation_results.get('cost')
         if (new_solution < best_solution):
             best_solution = new_solution
+            last_solution = mutated_solution
             print(best_solution)
 
     end_time = time.time()
