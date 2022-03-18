@@ -103,6 +103,8 @@ def psd():
 def primary_secondary_conflict(solution):
   cost = 0
 
+  visited_conflicts = defaultdict(dict)
+
   for assignment in solution.assignments:
     for event in assignment.events:
       period = event.period
@@ -115,17 +117,19 @@ def primary_secondary_conflict(solution):
       conflict_courses.extend(no_room_courses)
       conflict_courses = flatten(conflict_courses)
 
-      primary_secondary_course_conflicts = len(set(list(set(conflict_courses).intersection(course["PrimarySecondaryCourses"]))))
-      secondary_course_conflicts = len(set(list(set(conflict_courses).intersection(course["SecondaryCourses"]))))
+      conflicting_ps = list(set(conflict_courses).intersection(course["PrimarySecondaryCourses"]))
+      conflicting_ss = list(set(conflict_courses).intersection(course["SecondaryCourses"]))
+      primary_secondary_course_conflicts = len(conflicting_ps)
+      secondary_course_conflicts = len(conflicting_ss)
 
-      temp_ps_cost = 0
-      temp_ss_cost = 0
       if primary_secondary_course_conflicts != 0:
-        temp_ps_cost = PRIMARY_SECONDARY_CONFLICT_WEIGHT * primary_secondary_course_conflicts
-      if secondary_course_conflicts != 0:
-        temp_ss_cost = SECONDARY_SECONDARY_CONFLICT_WEIGHT * secondary_course_conflicts
+        cost += PRIMARY_SECONDARY_CONFLICT_WEIGHT * primary_secondary_course_conflicts
 
-      cost += max(temp_ps_cost, temp_ss_cost)
+      for conflict in conflicting_ss:
+        if (visited_conflicts.get(f"{conflict}:{course['Course']}", False) == True): continue
+        visited_conflicts[f"{course['Course']}:{conflict}"] = True
+        cost += SECONDARY_SECONDARY_CONFLICT_WEIGHT
+
   return cost
 
 # PRIMARY_PRIMARY_DISTANCE_WEIGHT
