@@ -41,7 +41,7 @@ def wod(assignments):
       if distance < int(written_oral_specs['MinDistance']):
         cost += abs(written_oral_specs['MinDistance'] - distance) * WRITTEN_ORAL_DISTANCE_WEIGHT
       elif distance > int(written_oral_specs['MaxDistance']):
-        cost += abs(distance - written_oral_specs['MinDistance']) * WRITTEN_ORAL_DISTANCE_WEIGHT
+        cost += abs(distance - written_oral_specs['MaxDistance']) * WRITTEN_ORAL_DISTANCE_WEIGHT
 
   return cost
 
