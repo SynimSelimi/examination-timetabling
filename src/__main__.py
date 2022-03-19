@@ -115,14 +115,15 @@ def run_solver(instance_path):
     # save_file("preprocess.json", instances, ".")
 
     solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    # solution.validate()
     save_solution(instance_path, solution.export())
 
     end_time = time.time()
 
     tprint("Solver completed. Check solutions folder.")
     tprint(f"Completed in {end_time-start_time:.2f}s.")
-    run_greedy_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
-    sim_annealing(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    # run_greedy_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    # sim_annealing(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
 
 """
 Solve all instances -

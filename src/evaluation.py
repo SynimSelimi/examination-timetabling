@@ -82,8 +82,6 @@ def room_and_period_costs(assignments, undesired, preferred):
         cost += UNDESIRED_PERIOD_WEIGHT
       if preferred_ep_not_match(event):
         cost += INDIFFERENT_PERIOD_WEIGHT
-      if event.period in undesired_periods:
-        cost += UNDESIRED_PERIOD_WEIGHT
   return cost
 
 
@@ -220,10 +218,10 @@ def evaluate(solution):
 
   cost = 0
   cost += room_and_period_costs(assignments, undesired_constraints, preferred_constraints)
-  cost += primary_secondary_conflict(solution)
-  cost += distance_constraints(solution)
-  cost += written_oral_distance(assignments)
-  cost += same_course_distance(assignments)
+  # cost += primary_secondary_conflict(solution)
+  # cost += distance_constraints(solution)
+  # cost += written_oral_distance(assignments)
+  # cost += same_course_distance(assignments)
   # cost += ppd(solution)
 
   return cost
