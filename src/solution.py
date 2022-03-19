@@ -266,9 +266,12 @@ class Solution:
     @staticmethod
     def try_solving(instances, hard_constraints, instance_path = None):
         solution = None
+        results = None
         attempt = 0
-        while solution == None and attempt < 700:
-            solution = Solution(copy.deepcopy(instances), hard_constraints, instance_path=instance_path).solve()
+
+        while results == None and attempt < 700:
+            solution = Solution(copy.deepcopy(instances), hard_constraints, instance_path=instance_path)
+            results = solution.solve()
             attempt += 1
 
         if attempt < 100:
@@ -277,12 +280,207 @@ class Solution:
             print("Could not solve in time!")
             return None
 
+    def new_available_room(self, rooms, current_room, period, course):
+        rooms = rooms.copy()
+        random.shuffle(rooms)
+        room = None
+
+        if len(rooms) == 0:
+            return room
+        else:
+            for r in rooms:
+                taken = False
+                is_composite = ":" in r
+
+                if is_composite:
+                    com_rooms = r.split(':')[1].split(',')
+                    for c in com_rooms:
+                        if self.taken_period_room.get(period, {}).get(c, {}):
+                            taken = True
+                            break
+                else:
+                    taken = self.taken_period_room.get(period, {}).get(r, {})
+
+                if taken:
+                    continue
+
+                no_room_courses = self.taken_period_room.get(period, {}).get('noRoom', [])
+                period_course = self.taken_period_room.get(period, {}).values()
+
+                conflict_courses = []
+                conflict_courses.extend(period_course)
+                conflict_courses.extend(no_room_courses)
+
+                primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
+                same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
+
+                conflict = conflict_courses and (primary_course_conflicts or same_teacher_conflicts)
+
+                if not taken and not conflict:
+                    if is_composite:
+                        room = r.split(":")[0]
+                        com_rooms = r.split(':')[1].split(',')
+                        for c in com_rooms:
+                            self.taken_period_room[period][c] = course['Course']
+                    else:
+                        room = r
+                        self.taken_period_room[period][room] = course['Course']
+                    break
+
+        if current_room != None and room != None:
+            is_composite = ":" in current_room
+            if is_composite:
+                com_rooms = current_room.split(':')[1].split(',')
+                for c in com_rooms:
+                    self.taken_period_room[period][c] = None
+            else:
+                self.taken_period_room[period][current_room] = None
+
+        return room
+
+    def mutate_rooms(self):
+        rooms_to_change = 50
+        changed_rooms = 0
+
+        courses = []
+        grouped_courses = self.instances.copy()
+        for group in grouped_courses:
+            group_courses = group.copy()
+            courses.extend(group_courses)
+
+        for assignment in self.assignments:
+            if rooms_to_change == changed_rooms: break
+            for event in assignment.events:
+                course = [x for x in courses if x['Course'] == assignment.course and x['ExamType'] == event.part and x['ExamOrder'] == event.exam][0]
+                rooms = course['PossibleRooms']
+                new_room = self.new_available_room(rooms, event.room, event.period, course)
+                if new_room != None:
+                    event.room = new_room
+                    changed_rooms += 1
+                    print("CHANGED ROOMS ", changed_rooms, end="\r")
+
+        if self.with_validation: self.validate()
+        print("\n")
+        return self.export()
+
+    def mutate_courses(self):
+        amount_of_change = random.random() * 0.5 + 0.1
+        changed_courses = 0
+        pending_course_events = []
+
+        courses = []
+        total_events = 0
+        randomize_rooms = random.randint(0,1) == 0
+        reallocations = 0
+
+        grouped_courses = self.instances.copy()
+        for group in grouped_courses:
+            total_events += len(group)
+            group_courses = group.copy()
+            courses.extend(group_courses)
+
+        total_courses = len(self.assignments)
+        for assignment in random.sample(self.assignments, int(total_courses * amount_of_change)):
+            course_events = [x for x in courses if x['Course'] == assignment.course]
+            pending_course_events.extend(course_events)
+
+            for event in assignment.events:
+                room, period = event.room, event.period
+                if room == None:
+                    self.taken_period_room[period]['noRoom'].remove(assignment.course)
+                else:
+                    is_composite = ":" in room
+                    if is_composite:
+                        com_rooms = room.split(':')[1].split(',')
+                        for c in com_rooms:
+                            self.taken_period_room[period][c] = None
+                    else:
+                        self.taken_period_room[period][room] = None
+            self.course_assignment_ids.pop(assignment.course)
+            self.assignments.remove(assignment)
+
+        self.reindex_assignments()
+        random.shuffle(pending_course_events)
+        courses = pending_course_events
+        while len(courses) > 0:
+            course = courses.pop(0)
+            course_name = course['Course']
+
+            exam_type = course['ExamType']
+            exam_order = course['ExamOrder']
+            two_part = course.get('TwoPart')
+            written_allocated = course.get('WrittenAllocated')
+            predecessor_allocated = course.get('PredecessorAllocated')
+            multiple_exams = course.get('MultipleExams')
+
+            if reallocations > 250:
+                return None
+
+            if two_part == True and exam_type == 'Oral' and written_allocated == False:
+                # print(reallocations, end="\r")
+                courses.insert(random.randint(int(len(courses)/2), len(courses)), course)
+                reallocations += 1
+                continue
+
+            if multiple_exams == True and predecessor_allocated == False:
+                # print(reallocations, end="\r")
+                courses.insert(random.randint(int(len(courses)/2), len(courses)), course)
+                reallocations += 1
+                continue
+
+            rooms = course.get('PossibleRooms')
+            if randomize_rooms == True: random.shuffle(rooms)
+            periods = course.get('PossiblePeriods')
+            if exam_order % 2 == 1: periods = self.distribute_periods(periods)
+
+            room, period = self.available_room_period(rooms, periods, course)
+
+            if period == None:
+                percentage = '{0:.2f}%'.format((total_events - len(courses)) * 100 / total_events)
+                print("Retrying... ", percentage, end="\r")
+                return None
+
+            self.last_period = period
+            if multiple_exams == True: self.multiple_exams_constraint_propagation(course, courses, period)
+            if two_part == True: self.two_part_constraint_propagation(course, courses, period)
+
+            event = Event(exam_order, exam_type, period, room, course_name)
+            self.add_event(course_name, event)
+
+        # FIXME should be replaced with evaluation
+        if self.with_validation: self.validate()
+        return self.export()
+
+    @staticmethod
+    def try_mutating(solution):
+        mutation_success = None
+        neighbour_solution = None
+        attempt = 0
+
+        while mutation_success == None and attempt < 700:
+            neighbour_solution = copy.deepcopy(solution)
+            mutation_success = neighbour_solution.mutate_courses()
+            attempt += 1
+
+        if attempt < 100:
+            return neighbour_solution
+        else:
+            print("Could not mutate in time!")
+            return None
+
     def validate(self):
         start_time = time.time()
         validation_results = validate_solution(self.instance_path, self.export(), None, None, None, False)
         end_time = time.time()
         validation_results['finished_for'] = f"{end_time-start_time:.2f}s."
         self.validation_results = validation_results
+
+    def reindex_assignments(self):
+        self.course_assignment_ids = {}
+        for index, assignment in enumerate(self.assignments):
+            course_name = assignment.course
+            self.course_assignment_ids[course_name] = index
+            self.last_assignment_id = index + 1
 
     def add_event(self, course_name, event):
         if course_name not in self.course_assignment_ids.keys():
