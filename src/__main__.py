@@ -98,6 +98,8 @@ def sim_annealing(
             states.append(state)
             costs.append(cost)
             print(cost)
+            # state.validate()
+            # print(state.validation_results["cost"])
     return state
 
 """

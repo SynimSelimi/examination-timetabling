@@ -86,17 +86,54 @@ def room_and_period_costs(assignments, undesired, preferred):
         cost += UNDESIRED_PERIOD_WEIGHT
   return cost
 
-def wod():
-  return 0
 
-def scd():
-  return 0
+# WRITTEN_ORAL_DISTANCE_WEIGHT
+def written_oral_distance(assignments):
+  cost = 0
+  two_part_courses = list(filter(lambda val: val.events[0].course_metadata.get('WrittenOralSpecs', None), assignments))
 
-def ppd():
-  return 0
+  for assignment in two_part_courses:
+    written_oral_specs = assignment.events[0].course_metadata.get('WrittenOralSpecs')
+    for eventIndex in range(0, len(assignment.events), 2):
+      distance = assignment.events[eventIndex + 1].period - assignment.events[eventIndex].period
+      if distance < int(written_oral_specs['MinDistance']):
+        cost += abs(written_oral_specs['MinDistance'] - distance) * WRITTEN_ORAL_DISTANCE_WEIGHT
+      elif distance > int(written_oral_specs['MaxDistance']):
+        cost += abs(distance - written_oral_specs['MaxDistance']) * WRITTEN_ORAL_DISTANCE_WEIGHT
 
-def psd():
-  return 0
+  return cost
+
+# SAME_COURSE_DISTANCE_WEIGHT
+def same_course_distance(assignments):
+  cost = 0
+  repeated_courses = list(filter(lambda val: val.events[0].course_metadata.get('MultipleExams'), assignments))
+
+  for assignment in repeated_courses:
+    step = 2 if assignment.events[0].course_metadata.get('WrittenOralSpecs') else 1
+    course_minimum_distance_between_exams = assignment.events[0].course_metadata.get('MinimumDistanceBetweenExams')
+    for eventIndex in range(0, len(assignment.events) - step, step):
+      distance_between_exams = assignment.events[eventIndex + step].period - assignment.events[eventIndex].period
+      if int(distance_between_exams) < int(course_minimum_distance_between_exams):
+        cost += abs(course_minimum_distance_between_exams - distance_between_exams) * SAME_COURSE_DISTANCE_WEIGHT
+
+  return cost
+
+def ppd(solution):
+  cost = 0
+
+  for assignment in solution.assignments:
+    for event in assignment.events:
+      course = event.course_metadata
+      primary_courses = course["PrimaryCourses"]
+      primary_primary_distance = course["PrimaryPrimaryDistance"]
+
+      for primary_course in primary_courses:
+        course_id = solution.course_assignment_ids[primary_course]
+        check_assignment = solution.assignments[course_id]
+        for check_event in check_assignment.events:
+          if abs(event.period - check_event.period) < primary_primary_distance:
+            cost += PRIMARY_PRIMARY_DISTANCE_WEIGHT
+  return cost
 
 # PRIMARY_SECONDARY_CONFLICT_WEIGHT
 # SECONDARY_SECONDARY_CONFLICT_WEIGHT
@@ -185,5 +222,8 @@ def evaluate(solution):
   cost += room_and_period_costs(assignments, undesired_constraints, preferred_constraints)
   cost += primary_secondary_conflict(solution)
   cost += distance_constraints(solution)
+  cost += written_oral_distance(assignments)
+  cost += same_course_distance(assignments)
+  # cost += ppd(solution)
 
   return cost
