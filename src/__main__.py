@@ -40,6 +40,27 @@ def process(data):
     return courses, hard_constraints, constraints
 
 """
+Run a greedy search -
+This section contains the main logic to run a greedy search from 
+the initial solution by mutation operators
+"""
+def run_greedy_search(instances, hard_constraints, instance_path, constraints, attempts = 1000):
+    solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+
+    best_solution = float('inf')
+    last_solution = solution
+
+    for i in range(0, attempts):
+        mutated_solution = Solution.try_mutating(last_solution)
+        if (mutated_solution == None): continue
+        # save_solution(instance_path, mutated_solution.export(), True)
+        new_solution = mutated_solution.validation_results.get('cost')
+        if (new_solution < best_solution):
+            best_solution = new_solution
+            last_solution = mutated_solution
+            print(best_solution)
+
+"""
 Solve one instance -
 This section contains the main logic to solve one instance
 """
@@ -50,6 +71,7 @@ def run_solver(instance_path):
     data = parse(instance_path)
     instances, hard_constraints, constraints = process(data)
     # save_file("preprocess.json", instances, ".")
+
     solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
     save_solution(instance_path, solution.export())
 
@@ -57,6 +79,7 @@ def run_solver(instance_path):
 
     tprint("Solver completed. Check solutions folder.")
     tprint(f"Completed in {end_time-start_time:.2f}s.")
+    run_greedy_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
 
 """
 Solve all instances -

@@ -66,9 +66,10 @@ def parse(filepath = None):
 
     return data
 
-def save_solution(filepath, data):
+def save_solution(filepath, data, mutated = False):
     folder = 'solutions'
     filename = os.path.basename(filepath)
+    if mutated: filename = f"MUTATED-{filename}"
     save_file(f'{folder}/SOLUTION-{filename}', data, folder)
     return f'{folder}/SOLUTION-{filename}'
 
