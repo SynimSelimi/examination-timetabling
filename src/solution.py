@@ -363,23 +363,6 @@ class Solution:
         print("\n")
         return self.export()
 
-    @staticmethod
-    def try_mutating(solution):
-        solution_found = None
-        mutated_solution = None
-        attempt = 0
-
-        while solution_found == None and attempt < 700:
-            mutated_solution = copy.deepcopy(solution)
-            solution_found = mutated_solution.mutate_courses()
-            attempt += 1
-
-        if attempt < 100:
-            return mutated_solution
-        else:
-            print("Could not solve in time!")
-            return None
-
     def mutate_courses(self):
         amount_of_change = random.random() * 0.5 + 0.1
         changed_courses = 0
@@ -464,8 +447,26 @@ class Solution:
             event = Event(exam_order, exam_type, period, room, course_name)
             self.add_event(course_name, event)
 
+        # FIXME should be replaced with evaluation
         if self.with_validation: self.validate()
         return self.export()
+
+    @staticmethod
+    def try_mutating(solution):
+        mutation_success = None
+        neighbour_solution = None
+        attempt = 0
+
+        while mutation_success == None and attempt < 700:
+            neighbour_solution = copy.deepcopy(solution)
+            mutation_success = neighbour_solution.mutate_courses()
+            attempt += 1
+
+        if attempt < 100:
+            return neighbour_solution
+        else:
+            print("Could not mutate in time!")
+            return None
 
     def validate(self):
         start_time = time.time()
