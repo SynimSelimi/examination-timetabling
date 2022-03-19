@@ -3,6 +3,7 @@ from helpers import *
 from enums import *
 from preprocess import *
 from solution import *
+import math
 
 """
 Process method -
@@ -47,18 +48,57 @@ the initial solution by mutation operators
 def run_greedy_search(instances, hard_constraints, instance_path, constraints, attempts = 1000):
     solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
 
-    best_solution = float('inf')
+    best_cost = float('inf')
     last_solution = solution
 
     for i in range(0, attempts):
         mutated_solution = Solution.try_mutating(last_solution)
         if (mutated_solution == None): continue
+
         # save_solution(instance_path, mutated_solution.export(), True)
-        new_solution = mutated_solution.validation_results.get('cost')
-        if (new_solution < best_solution):
-            best_solution = new_solution
+
+        if (mutated_solution.cost < best_cost):
+            best_cost = mutated_solution.cost
             last_solution = mutated_solution
-            print(best_solution)
+            print(best_cost)
+
+"""
+Run a simluated annealing search -
+This section contains the main logic to run a simluated annealing search from 
+the initial solution by mutation operators
+"""
+def sim_annealing(
+    instances, 
+    hard_constraints,
+    instance_path,
+    constraints,
+    maxsteps=1000,
+    debug=True
+):
+    def acceptance_probability(cost, new_cost, temperature):
+        if new_cost < cost:
+            return 1
+        else:
+            p = math.exp(- (new_cost - cost) / temperature)
+            return p
+    def temperature(fraction):
+        return max(0.01, min(1, 1 - fraction))
+
+    state = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    cost = state.cost
+    states, costs = [state], [cost]
+    for step in range(maxsteps):
+        fraction = step / float(maxsteps)
+        T = temperature(fraction)
+        new_state = Solution.try_mutating(state)
+        new_cost = new_state.cost
+        if debug: print("Step #{:>2}/{:>2} : T = {:>4.3g}, cost = {:>4.3g}, new_cost = {:>4.3g} ...".format(step, maxsteps, T, cost, new_cost))
+        if acceptance_probability(cost, new_cost, T) > random.random():
+            state, cost = new_state, new_cost
+            states.append(state)
+            costs.append(cost)
+            print(cost)
+    return state
 
 """
 Solve one instance -
@@ -80,6 +120,7 @@ def run_solver(instance_path):
     tprint("Solver completed. Check solutions folder.")
     tprint(f"Completed in {end_time-start_time:.2f}s.")
     run_greedy_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    sim_annealing(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
 
 """
 Solve all instances -

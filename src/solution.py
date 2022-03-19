@@ -8,7 +8,7 @@ import copy
 from evaluation import evaluate
 
 class Solution:
-    def __init__(self, instances, hard_constraints, with_validation = True, instance_path = None, constraints = None):
+    def __init__(self, instances, hard_constraints, with_validation = False, instance_path = None, constraints = None):
 
         self.instances = instances
         self.cost = 0
@@ -370,7 +370,7 @@ class Solution:
                     print("CHANGED ROOMS ", changed_rooms, end="\r")
 
         if self.with_validation: self.validate()
-        print("\n")
+        self.cost = evaluate(self)
         return self.export()
 
     def mutate_courses(self):
@@ -454,11 +454,10 @@ class Solution:
             if multiple_exams == True: self.multiple_exams_constraint_propagation(course, courses, period)
             if two_part == True: self.two_part_constraint_propagation(course, courses, period)
 
-            event = Event(exam_order, exam_type, period, room, course_name)
+            event = Event(exam_order, exam_type, period, room, course_name, course)
             self.add_event(course_name, event)
 
-        # FIXME should be replaced with evaluation
-        if self.with_validation: self.validate()
+        self.cost = evaluate(self)
         return self.export()
 
     @staticmethod
