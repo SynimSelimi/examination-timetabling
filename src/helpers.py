@@ -122,3 +122,13 @@ def log(filename = None, disabled = True):
     log = logging.getLogger('costs')
     log.disabled = disabled
     return log
+
+def flatten(some_list):
+    def process(sth):
+        if isinstance(sth, (list, tuple, set, range)):
+            for sub in sth:
+                yield from process(sub)
+        else:
+            yield sth
+
+    return list(process(some_list))

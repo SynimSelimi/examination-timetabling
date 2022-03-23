@@ -1,13 +1,15 @@
 import random
 import time
 import json
-from helpers import flat_map
+from helpers import flat_map, flatten
 from validation import validate_solution
 from collections import defaultdict
 import copy
+from evaluation import evaluate
 
 class Solution:
-    def __init__(self, instances, hard_constraints, with_validation = True, instance_path = None):
+    def __init__(self, instances, hard_constraints, with_validation = False, instance_path = None, constraints = None):
+
         self.instances = instances
         self.cost = 0
         self.assignments = []
@@ -15,6 +17,7 @@ class Solution:
         self.last_assignment_id = 0
         self.taken_period_room = defaultdict(dict)
         self.hard_constraints = hard_constraints
+        self.constraints = constraints
         self.room_period_constraints = list(
             filter(lambda val: val['Type'] == 'RoomPeriodConstraint', self.hard_constraints)
         )
@@ -57,6 +60,7 @@ class Solution:
                 no_room_courses = self.taken_period_room.get(p, {}).get('noRoom', [])
                 conflict_courses.extend(period_course)
                 conflict_courses.extend(no_room_courses)
+                conflict_courses = flatten(conflict_courses)
 
                 primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
                 same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
@@ -92,6 +96,7 @@ class Solution:
                 conflict_courses = []
                 conflict_courses.extend(period_course)
                 conflict_courses.extend(no_room_courses)
+                conflict_courses = flatten(conflict_courses)
 
                 primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
                 same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
@@ -257,24 +262,28 @@ class Solution:
             #             swap(courses, random.randint(_course_index - 1, len(courses)-1), _course_index)
             #             print("\t\t\tsmart_injection at", reallocations, end="\r")
 
-            event = Event(exam_order, exam_type, period, room, course_name)
+            event = Event(exam_order, exam_type, period, room, course_name, course)
             self.add_event(course_name, event)
 
+        self.cost = evaluate(self)
         if self.with_validation: self.validate()
         return self.export()
 
     @staticmethod
-    def try_solving(instances, hard_constraints, instance_path = None):
+    def try_solving(instances, hard_constraints, instance_path = None, constraints = None):
+        solution_found = None
         solution = None
-        results = None
         attempt = 0
 
-        while results == None and attempt < 700:
-            solution = Solution(copy.deepcopy(instances), hard_constraints, instance_path=instance_path)
-            results = solution.solve()
+        while solution_found == None and attempt < 700:
+            solution = Solution(
+                copy.deepcopy(instances), hard_constraints, 
+                instance_path=instance_path, constraints=constraints
+            )
+            solution_found = solution.solve()
             attempt += 1
 
-        if attempt < 100:
+        if attempt < 700:
             return solution
         else:
             print("Could not solve in time!")
@@ -310,6 +319,7 @@ class Solution:
                 conflict_courses = []
                 conflict_courses.extend(period_course)
                 conflict_courses.extend(no_room_courses)
+                conflict_courses = flatten(conflict_courses)
 
                 primary_course_conflicts = any(item in course["PrimaryCourses"] for item in conflict_courses)
                 same_teacher_conflicts = any(item in course["SameTeacherCourses"] for item in conflict_courses)
@@ -360,7 +370,7 @@ class Solution:
                     print("CHANGED ROOMS ", changed_rooms, end="\r")
 
         if self.with_validation: self.validate()
-        print("\n")
+        self.cost = evaluate(self)
         return self.export()
 
     def mutate_courses(self):
@@ -444,11 +454,10 @@ class Solution:
             if multiple_exams == True: self.multiple_exams_constraint_propagation(course, courses, period)
             if two_part == True: self.two_part_constraint_propagation(course, courses, period)
 
-            event = Event(exam_order, exam_type, period, room, course_name)
+            event = Event(exam_order, exam_type, period, room, course_name, course)
             self.add_event(course_name, event)
 
-        # FIXME should be replaced with evaluation
-        if self.with_validation: self.validate()
+        self.cost = evaluate(self)
         return self.export()
 
     @staticmethod
@@ -462,7 +471,7 @@ class Solution:
             mutation_success = neighbour_solution.mutate_courses()
             attempt += 1
 
-        if attempt < 100:
+        if attempt < 700:
             return neighbour_solution
         else:
             print("Could not mutate in time!")
@@ -530,12 +539,13 @@ class Assignment:
 
 
 class Event:
-    def __init__(self, exam, part, period, room, course):
+    def __init__(self, exam, part, period, room, course, course_metadata={}):
         self.exam = exam
         self.part = part
         self.period = period
         self.room = room
         self.course = course
+        self.course_metadata = course_metadata
 
     def export(self):
         return {
