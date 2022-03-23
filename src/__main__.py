@@ -45,7 +45,7 @@ Run a greedy search -
 This section contains the main logic to run a greedy search from 
 the initial solution by mutation operators
 """
-def run_greedy_search(instances, hard_constraints, instance_path, constraints, attempts = 1000):
+def greedy_search(instances, hard_constraints, instance_path, constraints, attempts = 2500):
     solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
 
     best_cost = float('inf')
@@ -60,7 +60,9 @@ def run_greedy_search(instances, hard_constraints, instance_path, constraints, a
         if (mutated_solution.cost < best_cost):
             best_cost = mutated_solution.cost
             last_solution = mutated_solution
-            print(best_cost)
+            if i % 10 == 0:
+                last_solution.validate()
+                print(best_cost, last_solution.validation_results['cost'], last_solution.validation_results['valid'])
 
 """
 Run a simluated annealing search -
@@ -73,7 +75,7 @@ def sim_annealing(
     instance_path,
     constraints,
     maxsteps=1000,
-    debug=True
+    debug=False
 ):
     def acceptance_probability(cost, new_cost, temperature):
         if new_cost < cost:
@@ -97,10 +99,72 @@ def sim_annealing(
             state, cost = new_state, new_cost
             states.append(state)
             costs.append(cost)
-            print(cost)
-            # state.validate()
-            # print(state.validation_results["cost"])
+            if step % 10 == 0:
+                state.validate()
+                print(state.cost, state.validation_results['cost'], state.validation_results['valid'])
     return state
+
+"""
+Run hill climbing search -
+This section contains the main logic to run a hill climbing search from 
+the initial solution by mutation operators
+"""
+def hillclimbing(instances, hard_constraints, instance_path, constraints, old_solution=None):
+    def get_best_neighbour(solution):
+        best_cost = solution.cost
+        best_solution = solution
+
+        for i in range(0, 10):
+            mutated_solution = Solution.try_mutating(best_solution)
+            if (mutated_solution == None): continue
+            if (mutated_solution.cost < best_cost):
+                best_cost = mutated_solution.cost
+                best_solution = mutated_solution
+        return best_solution
+
+    if old_solution == None:
+        solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    else:
+        solution = old_solution
+    neighbour = get_best_neighbour(solution)
+    last_solution = solution
+
+    while neighbour.cost < solution.cost:
+        solution = neighbour
+        neighbour = get_best_neighbour(neighbour)
+
+    return solution
+
+"""
+Run an interated local search -
+This section contains the main logic to run an interated local search from 
+the initial solution by mutation operators
+"""
+def iterated_local_search(
+    instances, 
+    hard_constraints,
+    instance_path,
+    constraints,
+    iterations=200,
+):
+    best_solution = hillclimbing(instances, hard_constraints, instance_path, constraints, None)
+    best_solutions = []
+
+    for n in range(iterations):
+        mutated_solution = None
+        while mutated_solution == None:
+            mutated_solution = Solution.try_mutating(best_solution)
+
+        local_solution = hillclimbing(None, None, None, None, mutated_solution)
+        
+        if local_solution.cost < best_solution.cost:
+            best_solution = local_solution
+            best_solutions.append(best_solution)
+            if n % 3 == 0:
+                best_solution.validate()
+                print(best_solution.cost, best_solution.validation_results['cost'], best_solution.validation_results['valid'])
+    
+    return best_solution
 
 """
 Solve one instance -
@@ -122,7 +186,9 @@ def run_solver(instance_path):
 
     tprint("Solver completed. Check solutions folder.")
     tprint(f"Completed in {end_time-start_time:.2f}s.")
-    # run_greedy_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    iterated_local_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    # hillclimbing(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    # greedy_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
     # sim_annealing(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
 
 """

@@ -192,7 +192,7 @@ class Solution:
         self.cost = 0
         self.assignments = []
 
-        grouped_courses = self.instances.copy()
+        grouped_courses = copy.deepcopy(self.instances)
         total_events = 0
         courses = []
         to_group = random.randint(0,1) == 0
@@ -353,7 +353,7 @@ class Solution:
         changed_rooms = 0
 
         courses = []
-        grouped_courses = self.instances.copy()
+        grouped_courses = copy.deepcopy(self.instances)
         for group in grouped_courses:
             group_courses = group.copy()
             courses.extend(group_courses)
@@ -383,7 +383,7 @@ class Solution:
         randomize_rooms = random.randint(0,1) == 0
         reallocations = 0
 
-        grouped_courses = self.instances.copy()
+        grouped_courses = copy.deepcopy(self.instances)
         for group in grouped_courses:
             total_events += len(group)
             group_courses = group.copy()
@@ -416,6 +416,8 @@ class Solution:
             course = courses.pop(0)
             course_name = course['Course']
 
+            randomize_periods = random.randint(0,1) == 0
+            distribute_periods = random.randint(0,1) == 0
             exam_type = course['ExamType']
             exam_order = course['ExamOrder']
             two_part = course.get('TwoPart')
@@ -441,7 +443,8 @@ class Solution:
             rooms = course.get('PossibleRooms')
             if randomize_rooms == True: random.shuffle(rooms)
             periods = course.get('PossiblePeriods')
-            if exam_order % 2 == 1: periods = self.distribute_periods(periods)
+            if distribute_periods and exam_order % 2 == 1: periods = self.distribute_periods(periods)
+            if randomize_periods == True: random.shuffle(periods)
 
             room, period = self.available_room_period(rooms, periods, course)
 
