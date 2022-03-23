@@ -210,11 +210,11 @@ def evaluate(solution):
   preferred_constraints = list(filter(lambda val: val['Level'] == 'Preferred', constraints))
 
   cost = 0
-  # cost += room_and_period_costs(assignments, undesired_constraints, preferred_constraints)
+  cost += room_and_period_costs(assignments, undesired_constraints, preferred_constraints)
   cost += primary_secondary_conflict(solution)
-  # cost += distance_constraints(solution)
-  # cost += written_oral_distance(assignments)
-  # cost += same_course_distance(assignments)
+  cost += distance_constraints(solution)
+  cost += written_oral_distance(assignments)
+  cost += same_course_distance(assignments)
   # cost += ppd(solution)
 
   return cost
