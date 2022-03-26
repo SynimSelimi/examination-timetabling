@@ -26,6 +26,7 @@ class Solution:
         self.last_period = None
         self.instance_path = instance_path
         self.import_constraints()
+        self.changes = 0
 
     def import_constraints(self):
         for c in self.room_period_constraints:
@@ -367,14 +368,17 @@ class Solution:
                 if new_room != None:
                     event.room = new_room
                     changed_rooms += 1
-                    print("CHANGED ROOMS ", changed_rooms, end="\r")
+                    # print("CHANGED ROOMS ", changed_rooms, end="\r")
 
         if self.with_validation: self.validate()
         self.cost = evaluate(self)
         return self.export()
 
-    def mutate_courses(self):
-        amount_of_change = random.random() * 0.5 + 0.1
+    def mutate_courses(self, feedback=True):
+        if feedback == False:
+            amount_of_change = random.random() * 0.5 + 0.1
+        else:
+            amount_of_change = random.random() * (0.5/(self.changes/2 + 1)) + 0.02
         changed_courses = 0
         pending_course_events = []
 
@@ -468,10 +472,16 @@ class Solution:
         mutation_success = None
         neighbour_solution = None
         attempt = 0
+        to_mutate_courses = random.randint(0,1) > 0.2
 
         while mutation_success == None and attempt < 700:
             neighbour_solution = copy.deepcopy(solution)
-            mutation_success = neighbour_solution.mutate_courses()
+            if to_mutate_courses:
+                mutation_success = neighbour_solution.mutate_courses()
+            else:
+                mutation_success = neighbour_solution.mutate_rooms()
+            neighbour_solution.changes += 1
+
             attempt += 1
 
         if attempt < 700:
