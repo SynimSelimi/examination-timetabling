@@ -198,10 +198,14 @@ def test_evaluation(solution):
     # }
     solution.validate()
     base_cost = solution.cost
-    validator_cost = solution.validation_results['cost_components']['soft_components']['conflicts']
+    validator_cost = \
+        solution.validation_results['cost_components']['soft_components']['min_undirectional_distance'] + \
+        solution.validation_results['cost_components']['soft_components']['max_undirectional_distance']
     
     if (base_cost != validator_cost):
         print("FALSSEEE", base_cost, validator_cost, abs(base_cost - validator_cost))
+    else:
+        print("TRUE", base_cost, validator_cost, abs(base_cost - validator_cost))
 
 """
 Solve one instance -
