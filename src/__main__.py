@@ -165,6 +165,44 @@ def iterated_local_search(
     
     return best_solution
 
+def test_evaluation(solution):
+    # {
+    #    "valid":true,
+    #    "format":"json",
+    #    "cost_components":{
+    #       "hard_components":{
+    #          "conflicts":0,
+    #          "multiple_room_occupation":0,
+    #          "precedence":0,
+    #          "forbidden_period":0,
+    #          "forbidden_room":0,
+    #          "forbidden_room_period":0
+    #       },
+    #       "soft_components":{
+    #          "conflicts":260,
+    #          "min_directional_distance":3306,
+    #          "max_directional_distance":5850,
+    #          "min_undirectional_distance":1360,
+    #          "max_undirectional_distance":0,
+    #          "period_preference":378,
+    #          "room_preference":720,
+    #          "undesired_room_period":0
+    #       },
+    #       "conflicts":0,
+    #       "distances":0,
+    #       "hard_violations":0,
+    #       "soft_violations":11874
+    #    },
+    #    "cost":11874,
+    #    "finished_for":"1.55s."
+    # }
+    solution.validate()
+    base_cost = solution.cost
+    validator_cost = solution.validation_results['cost_components']['soft_components']['conflicts']
+    
+    if (base_cost != validator_cost):
+        print("FALSSEEE", base_cost, validator_cost, abs(base_cost - validator_cost))
+
 """
 Solve one instance -
 This section contains the main logic to solve one instance
@@ -178,14 +216,14 @@ def run_solver(instance_path):
     # save_file("preprocess.json", instances, ".")
 
     solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
-    # solution.validate()
     save_solution(instance_path, solution.export())
+    test_evaluation(solution)
 
     end_time = time.time()
 
     tprint("Solver completed. Check solutions folder.")
     tprint(f"Completed in {end_time-start_time:.2f}s.")
-    iterated_local_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    # iterated_local_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
     # hillclimbing(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
     # greedy_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
     # sim_annealing(instances, hard_constraints, instance_path=instance_path, constraints=constraints)

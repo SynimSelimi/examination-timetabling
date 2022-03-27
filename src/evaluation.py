@@ -15,7 +15,7 @@ PRIMARY_SECONDARY_CONFLICT_WEIGHT = 5
 SECONDARY_SECONDARY_CONFLICT_WEIGHT = 1
 SECONDARY_SECONDARY_DISTANCE_WEIGHT = 1
 
-# QAed
+
 # UNDESIRED_PERIOD_WEIGHT
 # INDIFFERENT_PERIOD_WEIGHT
 # UNDESIRED_ROOM_WEIGHT
@@ -88,7 +88,6 @@ def room_and_period_costs(assignments, undesired, preferred):
   return cost
 
 
-# QAed
 # WRITTEN_ORAL_DISTANCE_WEIGHT
 def written_oral_distance(assignments):
   cost = 0
@@ -105,7 +104,7 @@ def written_oral_distance(assignments):
 
   return cost
 
-# QAed
+
 # SAME_COURSE_DISTANCE_WEIGHT
 def same_course_distance(assignments):
   cost = 0
@@ -121,6 +120,7 @@ def same_course_distance(assignments):
 
   return cost
 
+# TBT
 # PRIMARY_SECONDARY_CONFLICT_WEIGHT
 # SECONDARY_SECONDARY_CONFLICT_WEIGHT
 def primary_secondary_conflict(solution):
@@ -132,34 +132,39 @@ def primary_secondary_conflict(solution):
     for event in assignment.events:
       period = event.period
       course = event.course_metadata
+      course_name = course['Course']
       no_room_courses = solution.taken_period_room.get(period, {}).get('noRoom', [])
-      period_course = solution.taken_period_room.get(period, {}).values()
+      period_courses = solution.taken_period_room.get(period, {}).values()
 
       conflict_courses = []
-      conflict_courses.extend(period_course)
+      conflict_courses.extend(period_courses)
       conflict_courses.extend(no_room_courses)
       conflict_courses = flatten(conflict_courses)
 
-      conflicting_ps = list(set(conflict_courses).intersection(course["PrimarySecondaryCourses"]))
-      conflicting_ss = list(set(conflict_courses).intersection(course["SecondaryCourses"]))
+      conflicting_ps = list(set(list(set(conflict_courses) & set(course["PrimarySecondaryCourses"]))))
+      conflicting_ss = list(set(list(set(conflict_courses) & set(course["SecondaryCourses"]))))
       primary_secondary_course_conflicts = len(conflicting_ps)
       secondary_course_conflicts = len(conflicting_ss)
 
       # if primary_secondary_course_conflicts != 0:
       #   cost += PRIMARY_SECONDARY_CONFLICT_WEIGHT * primary_secondary_course_conflicts
 
-      for conflict in conflicting_ps:
-        if (visited_conflicts.get(f"{conflict}:{course['Course']}", False) == True): continue
-        visited_conflicts[f"{course['Course']}:{conflict}"] = True
-        cost += PRIMARY_SECONDARY_CONFLICT_WEIGHT
+      # for conflict in conflicting_ps:
+      #   if (visited_conflicts.get(f"{conflict}:{course_name}", False) == True): continue
+      #   visited_conflicts[f"{course_name}:{conflict}"] = True
+      #   cost += PRIMARY_SECONDARY_CONFLICT_WEIGHT
 
+      visited_conflicts = defaultdict(dict)
+      # print(course_name, conflicting_ps, conflicting_ss)
       for conflict in conflicting_ss:
-        if (visited_conflicts.get(f"{conflict}:{course['Course']}", False) == True): continue
-        visited_conflicts[f"{course['Course']}:{conflict}"] = True
+        if (conflict in conflicting_ps or course_name in conflicting_ss): continue
+        if (visited_conflicts.get(f"{conflict}:{course_name}", False) == True): continue
+        visited_conflicts[f"{course_name}:{conflict}"] = True
         cost += SECONDARY_SECONDARY_CONFLICT_WEIGHT
 
   return cost
 
+# TBT
 # PRIMARY_PRIMARY_DISTANCE_WEIGHT
 # PRIMARY_SECONDARY_DISTANCE_WEIGHT
 # SECONDARY_SECONDARY_DISTANCE_WEIGHT
@@ -210,11 +215,10 @@ def evaluate(solution):
   preferred_constraints = list(filter(lambda val: val['Level'] == 'Preferred', constraints))
 
   cost = 0
-  cost += room_and_period_costs(assignments, undesired_constraints, preferred_constraints)
+  # cost += room_and_period_costs(assignments, undesired_constraints, preferred_constraints)
+  # cost += written_oral_distance(assignments)
+  # cost += same_course_distance(assignments)
   cost += primary_secondary_conflict(solution)
-  cost += distance_constraints(solution)
-  cost += written_oral_distance(assignments)
-  cost += same_course_distance(assignments)
-  # cost += ppd(solution)
+  # cost += distance_constraints(solution)
 
   return cost
