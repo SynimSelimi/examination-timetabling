@@ -114,7 +114,7 @@ def hillclimbing(instances, hard_constraints, instance_path, constraints, old_so
         best_cost = solution.cost
         best_solution = solution
 
-        for i in range(0, 10):
+        for i in range(0, 15):
             mutated_solution = Solution.try_mutating(best_solution)
             if (mutated_solution == None): continue
             if (mutated_solution.cost < best_cost):
@@ -145,7 +145,7 @@ def iterated_local_search(
     hard_constraints,
     instance_path,
     constraints,
-    iterations=200,
+    iterations=350,
 ):
     best_solution = hillclimbing(instances, hard_constraints, instance_path, constraints, None)
     best_solutions = []
@@ -156,7 +156,6 @@ def iterated_local_search(
             mutated_solution = Solution.try_mutating(best_solution)
 
         local_solution = hillclimbing(None, None, None, None, mutated_solution)
-        
         if local_solution.cost < best_solution.cost:
             best_solution = local_solution
             best_solutions.append(best_solution)

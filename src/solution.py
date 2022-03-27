@@ -26,7 +26,8 @@ class Solution:
         self.last_period = None
         self.instance_path = instance_path
         self.import_constraints()
-        self.changes = 0
+        self.attempt = 0
+        self.ancestors = 0
 
     def import_constraints(self):
         for c in self.room_period_constraints:
@@ -282,6 +283,7 @@ class Solution:
                 instance_path=instance_path, constraints=constraints
             )
             solution_found = solution.solve()
+            solution.attempt = attempt
             attempt += 1
 
         if attempt < 700:
@@ -374,11 +376,13 @@ class Solution:
         self.cost = evaluate(self)
         return self.export()
 
-    def mutate_courses(self, feedback=True):
-        if feedback == False:
-            amount_of_change = random.random() * 0.5 + 0.1
+    def mutate_courses(self, feedback=False, convergence=True):
+        if feedback == True:
+            amount_of_change = random.random() * (0.5/(self.attempt/2 + 1)) + 0.02
+        elif convergence == True:
+            amount_of_change = random.random() * (0.5/(self.ancestors + 1)) + 0.02
         else:
-            amount_of_change = random.random() * (0.5/(self.changes/2 + 1)) + 0.02
+            amount_of_change = random.random() * 0.5 + 0.1
         changed_courses = 0
         pending_course_events = []
 
@@ -454,7 +458,7 @@ class Solution:
 
             if period == None:
                 percentage = '{0:.2f}%'.format((total_events - len(courses)) * 100 / total_events)
-                print("Retrying... ", percentage, end="\r")
+                print("Retrying mutate... ", percentage, end="\r")
                 return None
 
             self.last_period = period
@@ -476,13 +480,15 @@ class Solution:
 
         while mutation_success == None and attempt < 700:
             neighbour_solution = copy.deepcopy(solution)
+            neighbour_solution.attempt = attempt
             if to_mutate_courses:
                 mutation_success = neighbour_solution.mutate_courses()
             else:
                 mutation_success = neighbour_solution.mutate_rooms()
-            neighbour_solution.changes += 1
 
             attempt += 1
+
+        neighbour_solution.ancestors += 1
 
         if attempt < 700:
             return neighbour_solution
