@@ -169,7 +169,8 @@ def distance_constraints(solution):
     for event in assignment.events:
       period = event.period
       course = event.course_metadata
-      name = course['Course']
+      two_part_og = course.get('TwoPart')
+      course_name = course['Course']
       min_pp_distance = course.get('PrimaryPrimaryDistance') or 2 * course['SlotsPerDay']
       primary_courses = course["PrimaryCourses"]
 
@@ -177,18 +178,21 @@ def distance_constraints(solution):
         course_id = solution.course_assignment_ids[pp_course]
         check_assignment = solution.assignments[course_id]
         for check_event in check_assignment.events:
-          if abs(event.period - check_event.period) < min_pp_distance:
-            cost += PRIMARY_PRIMARY_DISTANCE_WEIGHT * abs(event.period - check_event.period)
+          event_course = check_event.course_metadata
+          two_part_ot = event_course.get('TwoPart')
+          is_allowed = (check_event.part == 'Written' or not two_part_og) and (event.part == 'Written' or not two_part_ot)
+          if is_allowed and abs(event.period - check_event.period) < min_pp_distance:
+            cost += PRIMARY_PRIMARY_DISTANCE_WEIGHT * (min_pp_distance - abs(event.period - check_event.period))
 
-      min_ps_distance = course.get('PrimarySecondaryDistance') or course['SlotsPerDay']
-      primary_secondary_courses = course["PrimarySecondaryCourses"]
+      # min_ps_distance = course.get('PrimarySecondaryDistance') or course['SlotsPerDay']
+      # primary_secondary_courses = course["PrimarySecondaryCourses"]
 
-      for ps_course in primary_secondary_courses:
-        course_id = solution.course_assignment_ids[ps_course]
-        check_assignment = solution.assignments[course_id]
-        for check_event in check_assignment.events:
-          if abs(event.period - check_event.period) < min_ps_distance:
-            cost += PRIMARY_SECONDARY_DISTANCE_WEIGHT * abs(event.period - check_event.period)
+      # for ps_course in primary_secondary_courses:
+      #   course_id = solution.course_assignment_ids[ps_course]
+      #   check_assignment = solution.assignments[course_id]
+      #   for check_event in check_assignment.events:
+      #     if abs(event.period - check_event.period) < min_ps_distance:
+      #       cost += PRIMARY_SECONDARY_DISTANCE_WEIGHT * abs(event.period - check_event.period)
 
       # min_ss_distance = course['SlotsPerDay']
       # secondary_courses = course["SecondaryCourses"]
