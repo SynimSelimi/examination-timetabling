@@ -376,8 +376,10 @@ class Solution:
         self.cost = evaluate(self)
         return self.export()
 
-    def mutate_courses(self, feedback=False, convergence=True):
-        if feedback == True:
+    def mutate_courses(self, feedback=False, convergence=True, perturb=False):
+        if perturb == True:
+            amount_of_change = random.random() * (0.5/(self.attempt/2 + 1)) + 0.3
+        elif feedback == True:
             amount_of_change = random.random() * (0.5/(self.attempt/2 + 1)) + 0.02
         elif convergence == True:
             amount_of_change = random.random() * (0.5/(self.ancestors + 1)) + 0.02
@@ -472,17 +474,17 @@ class Solution:
         return self.export()
 
     @staticmethod
-    def try_mutating(solution):
+    def try_mutating(solution, perturb=False):
         mutation_success = None
         neighbour_solution = None
         attempt = 0
-        to_mutate_courses = random.randint(0,1) > 0.2
+        to_mutate_courses = random.random() > 0.1
 
         while mutation_success == None and attempt < 700:
             neighbour_solution = copy.deepcopy(solution)
             neighbour_solution.attempt = attempt
             if to_mutate_courses:
-                mutation_success = neighbour_solution.mutate_courses()
+                mutation_success = neighbour_solution.mutate_courses(perturb=perturb)
             else:
                 mutation_success = neighbour_solution.mutate_rooms()
 

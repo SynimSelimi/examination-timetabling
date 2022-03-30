@@ -147,19 +147,32 @@ def iterated_local_search(
     constraints,
     iterations=350,
 ):
+
+    def new_home_base(home, new):
+        EXPLORATION = 0.3
+        better_home_solution = home.cost < new.cost
+        if (better_home_solution == True and random.random() > EXPLORATION):
+            return home
+        else:
+            return new
+
     best_solution = hillclimbing(instances, hard_constraints, instance_path, constraints, None)
+    home = best_solution
+    working_solution = best_solution
     best_solutions = []
 
     for n in range(iterations):
         mutated_solution = None
         while mutated_solution == None:
-            mutated_solution = Solution.try_mutating(best_solution)
+            mutated_solution = Solution.try_mutating(best_solution, perturb=True)
+
+        mutated_solution = new_home_base(home, mutated_solution)
 
         local_solution = hillclimbing(None, None, None, None, mutated_solution)
         if local_solution.cost < best_solution.cost:
             best_solution = local_solution
             best_solutions.append(best_solution)
-            if n % 3 == 0:
+            if n % 2 == 0:
                 best_solution.validate()
                 print(best_solution.cost, best_solution.validation_results['cost'], best_solution.validation_results['valid'])
     
