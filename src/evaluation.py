@@ -175,15 +175,17 @@ def distance_constraints(solution):
       course_name = course['Course']
       min_pp_distance = course.get('PrimaryPrimaryDistance') or 2 * course['SlotsPerDay']
       primary_courses = course["PrimaryCourses"]
+      visited_conflicts[course_name] = True
 
       for pp_course in primary_courses:
+        if (visited_conflicts.get(pp_course, False) == True): continue
         course_id = solution.course_assignment_ids[pp_course]
         check_assignment = solution.assignments[course_id]
         for check_event in check_assignment.events:
           event_course = check_event.course_metadata
           two_part_ot = event_course.get('TwoPart')
-          same_exam = event_course.get('ExamOrder') == course.get('ExamOrder')
-          is_allowed = (check_event.part == event.part) and same_exam and check_event.period >= event.period
+          same_exam = event.exam == check_event.exam
+          is_allowed = same_exam and ((event.part == "Written" and check_event.part == event.part and two_part_ot != None) or (two_part_ot == None))
           if is_allowed and abs(check_event.period - event.period) < min_pp_distance:
             cost += PRIMARY_PRIMARY_DISTANCE_WEIGHT * (min_pp_distance - abs(check_event.period - event.period))
 
