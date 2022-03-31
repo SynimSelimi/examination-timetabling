@@ -165,6 +165,8 @@ def primary_secondary_conflict(solution):
 def distance_constraints(solution):
   cost = 0
 
+  visited_conflicts = defaultdict(dict)
+
   for assignment in solution.assignments:
     for event in assignment.events:
       period = event.period
@@ -180,9 +182,10 @@ def distance_constraints(solution):
         for check_event in check_assignment.events:
           event_course = check_event.course_metadata
           two_part_ot = event_course.get('TwoPart')
-          is_allowed = (check_event.part == 'Written' or not two_part_og) and (event.part == 'Written' or not two_part_ot)
-          if is_allowed and abs(event.period - check_event.period) < min_pp_distance:
-            cost += PRIMARY_PRIMARY_DISTANCE_WEIGHT * (min_pp_distance - abs(event.period - check_event.period))
+          same_exam = event_course.get('ExamOrder') == course.get('ExamOrder')
+          is_allowed = (check_event.part == event.part) and same_exam and check_event.period >= event.period
+          if is_allowed and abs(check_event.period - event.period) < min_pp_distance:
+            cost += PRIMARY_PRIMARY_DISTANCE_WEIGHT * (min_pp_distance - abs(check_event.period - event.period))
 
       # min_ps_distance = course.get('PrimarySecondaryDistance') or course['SlotsPerDay']
       # primary_secondary_courses = course["PrimarySecondaryCourses"]
@@ -190,9 +193,14 @@ def distance_constraints(solution):
       # for ps_course in primary_secondary_courses:
       #   course_id = solution.course_assignment_ids[ps_course]
       #   check_assignment = solution.assignments[course_id]
+      #   if (visited_conflicts.get(f"{course_name}:{ps_course}", False) == True): continue
       #   for check_event in check_assignment.events:
-      #     if abs(event.period - check_event.period) < min_ps_distance:
-      #       cost += PRIMARY_SECONDARY_DISTANCE_WEIGHT * abs(event.period - check_event.period)
+      #     event_course = check_event.course_metadata
+      #     two_part_ot = event_course.get('TwoPart')
+      #     is_allowed = (check_event.part == 'Written' or not two_part_og) and (event.part == 'Written' or not two_part_ot)
+      #     if is_allowed and abs(event.period - check_event.period) < min_ps_distance:
+      #       visited_conflicts[f"{ps_course}:{course_name}"] = True
+      #       cost += PRIMARY_SECONDARY_DISTANCE_WEIGHT * (min_ps_distance - abs(event.period - check_event.period))
 
       # min_ss_distance = course['SlotsPerDay']
       # secondary_courses = course["SecondaryCourses"]
