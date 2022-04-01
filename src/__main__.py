@@ -165,6 +165,16 @@ def iterated_local_search(
     
     return best_solution
 
+def test_evaluation(solution):
+    solution.validate()
+    base_cost = solution.cost
+    validator_cost = solution.validation_results['cost']
+    
+    if (base_cost != validator_cost):
+        print("FALSE EVALUATION", base_cost, validator_cost, abs(base_cost - validator_cost))
+    else:
+        print("TRUE EVALUATION", base_cost, validator_cost, abs(base_cost - validator_cost))
+
 """
 Solve one instance -
 This section contains the main logic to solve one instance
@@ -178,7 +188,6 @@ def run_solver(instance_path):
     # save_file("preprocess.json", instances, ".")
 
     solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
-    # solution.validate()
     save_solution(instance_path, solution.export())
 
     end_time = time.time()

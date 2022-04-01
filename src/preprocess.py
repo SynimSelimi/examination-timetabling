@@ -89,6 +89,8 @@ def add_curricula_info(courses, curricula, primary_primary_distance, slots_per_d
         secondary_courses = list(map(lambda val : val['SecondaryCourses'], relevant_secondaries))
 
         primary_secondary_courses = list(map(lambda val : val['SecondaryCourses'], relevant_primaries))
+        secondary_primary_courses = list(map(lambda val : val['PrimaryCourses'], relevant_secondaries))
+        primary_secondary_courses.extend(secondary_primary_courses)
 
         primary_courses = list(set(flat_map(lambda x: x, primary_courses)))
         secondary_courses = list(set(flat_map(lambda x: x, secondary_courses)))
