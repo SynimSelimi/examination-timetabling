@@ -355,9 +355,9 @@ class Instance(object):
                 if self.conflicts[i][j] > -1:
                     self.conflicts[i][j] = max(PRIMARY_SECONDARY_CONFLICT_WEIGHT, self.conflicts[i][j])
                     self.conflicts[j][i] = max(PRIMARY_SECONDARY_CONFLICT_WEIGHT, self.conflicts[j][i])
-                # if self.courses[self.events[i].course].parts.index(self.events[i].part) == 0 and self.courses[self.events[j].course].parts.index(self.events[j].part) == 0:
-                #     self.distance_weight[i][j] = max(PRIMARY_SECONDARY_DISTANCE_WEIGHT, self.distance_weight[i][j])
-                #     self.distance_weight[j][i] = max(PRIMARY_SECONDARY_DISTANCE_WEIGHT, self.distance_weight[j][i])
+                if self.courses[self.events[i].course].parts.index(self.events[i].part) == 0 and self.courses[self.events[j].course].parts.index(self.events[j].part) == 0:
+                    self.distance_weight[i][j] = max(PRIMARY_SECONDARY_DISTANCE_WEIGHT, self.distance_weight[i][j])
+                    self.distance_weight[j][i] = max(PRIMARY_SECONDARY_DISTANCE_WEIGHT, self.distance_weight[j][i])
             elif self.courses[self.events[i].course].curricula_secondary & self.courses[self.events[j].course].curricula_secondary and self.conflicts[i][j] > -1:
                 self.conflicts[i][j] = max(SECONDARY_SECONDARY_CONFLICT_WEIGHT, self.conflicts[i][j])
                 self.conflicts[j][i] = max(SECONDARY_SECONDARY_CONFLICT_WEIGHT, self.conflicts[j][i])

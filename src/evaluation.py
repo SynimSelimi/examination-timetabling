@@ -158,14 +158,19 @@ def primary_secondary_conflict(solution):
 
   return cost
 
-# TBT
 # PRIMARY_PRIMARY_DISTANCE_WEIGHT
 # PRIMARY_SECONDARY_DISTANCE_WEIGHT
 # SECONDARY_SECONDARY_DISTANCE_WEIGHT
 def distance_constraints(solution):
   cost = 0
 
-  visited_conflicts = defaultdict(dict)
+  visited = defaultdict(dict)
+  visited_distances = defaultdict(dict)
+
+  def is_first_exam(event):
+    two_part = event.get('TwoPart')
+    part = event.get('ExamType')
+    return (two_part == True and part == "Written") or (two_part == None)
 
   for assignment in solution.assignments:
     for event in assignment.events:
@@ -175,34 +180,32 @@ def distance_constraints(solution):
       course_name = course['Course']
       min_pp_distance = course.get('PrimaryPrimaryDistance') or 2 * course['SlotsPerDay']
       primary_courses = course["PrimaryCourses"]
-      visited_conflicts[course_name] = True
+      visited[course_name] = True
 
       for pp_course in primary_courses:
-        if (visited_conflicts.get(pp_course, False) == True): continue
+        if (visited.get(pp_course, False) == True): continue
         course_id = solution.course_assignment_ids[pp_course]
         check_assignment = solution.assignments[course_id]
         for check_event in check_assignment.events:
           event_course = check_event.course_metadata
-          two_part_ot = event_course.get('TwoPart')
-          same_exam = event.exam == check_event.exam
-          is_allowed = same_exam and ((event.part == "Written" and check_event.part == event.part and two_part_ot != None) or (two_part_ot == None))
+          is_allowed = is_first_exam(course) and is_first_exam(event_course)
           if is_allowed and abs(check_event.period - event.period) < min_pp_distance:
-            cost += PRIMARY_PRIMARY_DISTANCE_WEIGHT * (min_pp_distance - abs(check_event.period - event.period))
+            visited_distances[f"{pp_course}:{course_name}"] = True
+            cost += (PRIMARY_PRIMARY_DISTANCE_WEIGHT * (min_pp_distance - abs(check_event.period - event.period)))
 
-      # min_ps_distance = course.get('PrimarySecondaryDistance') or course['SlotsPerDay']
-      # primary_secondary_courses = course["PrimarySecondaryCourses"]
+      min_ps_distance = course.get('PrimarySecondaryDistance') or course['SlotsPerDay']
+      primary_secondary_courses = course["PrimarySecondaryCourses"]
 
-      # for ps_course in primary_secondary_courses:
-      #   course_id = solution.course_assignment_ids[ps_course]
-      #   check_assignment = solution.assignments[course_id]
-      #   if (visited_conflicts.get(f"{course_name}:{ps_course}", False) == True): continue
-      #   for check_event in check_assignment.events:
-      #     event_course = check_event.course_metadata
-      #     two_part_ot = event_course.get('TwoPart')
-      #     is_allowed = (check_event.part == 'Written' or not two_part_og) and (event.part == 'Written' or not two_part_ot)
-      #     if is_allowed and abs(event.period - check_event.period) < min_ps_distance:
-      #       visited_conflicts[f"{ps_course}:{course_name}"] = True
-      #       cost += PRIMARY_SECONDARY_DISTANCE_WEIGHT * (min_ps_distance - abs(event.period - check_event.period))
+      for ps_course in (primary_secondary_courses):
+        if (visited_distances.get(f"{ps_course}:{course_name}", False) == True): continue
+        if (visited.get(ps_course, False) == True): continue
+        course_id = solution.course_assignment_ids[ps_course]
+        check_assignment = solution.assignments[course_id]
+        for check_event in check_assignment.events:
+          event_course = check_event.course_metadata
+          is_allowed = is_first_exam(course) and is_first_exam(event_course)
+          if is_allowed and abs(check_event.period - event.period) < min_ps_distance:
+            cost += (PRIMARY_SECONDARY_DISTANCE_WEIGHT * (min_ps_distance - abs(check_event.period - event.period)))
 
       # min_ss_distance = course['SlotsPerDay']
       # secondary_courses = course["SecondaryCourses"]
@@ -223,10 +226,10 @@ def evaluate(solution):
   preferred_constraints = list(filter(lambda val: val['Level'] == 'Preferred', constraints))
 
   cost = 0
-  # cost += room_and_period_costs(assignments, undesired_constraints, preferred_constraints)
-  # cost += written_oral_distance(assignments)
-  # cost += same_course_distance(assignments)
-  # cost += primary_secondary_conflict(solution)
+  cost += room_and_period_costs(assignments, undesired_constraints, preferred_constraints)
+  cost += written_oral_distance(assignments)
+  cost += same_course_distance(assignments)
+  cost += primary_secondary_conflict(solution)
   cost += distance_constraints(solution)
 
   return cost
