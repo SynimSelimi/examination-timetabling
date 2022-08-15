@@ -25,6 +25,7 @@ def flat_map_courses(courses):
     while (len(courses) != 0):
         flat_done = False
         course = courses.pop()
+        course['Reallocations'] = 0
         number_of_exams = course['NumberOfExams']
 
         if number_of_exams > 1: course['MultipleExams'] = True
