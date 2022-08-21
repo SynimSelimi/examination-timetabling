@@ -1,0 +1,154 @@
+{
+  "Assignments": [
+    {
+      "Course": "Algorithms",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 12,
+          "Room": "A",
+          "Course": "Algorithms"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 19,
+          "Room": "C",
+          "Course": "Algorithms"
+        }
+      ]
+    },
+    {
+      "Course": "OpRes",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 5,
+          "Room": "G",
+          "Course": "OpRes"
+        },
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 6,
+          "Room": "A",
+          "Course": "OpRes"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 14,
+          "Room": "G",
+          "Course": "OpRes"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 15,
+          "Room": "A",
+          "Course": "OpRes"
+        }
+      ]
+    },
+    {
+      "Course": "Analytics",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 0,
+          "Room": null,
+          "Course": "Analytics"
+        }
+      ]
+    },
+    {
+      "Course": "Programming",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 10,
+          "Room": "AB",
+          "Course": "Programming"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 17,
+          "Room": "AB",
+          "Course": "Programming"
+        }
+      ]
+    },
+    {
+      "Course": "Databases",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 3,
+          "Room": "AB",
+          "Course": "Databases"
+        },
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 7,
+          "Room": null,
+          "Course": "Databases"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 8,
+          "Room": "AB",
+          "Course": "Databases"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 13,
+          "Room": null,
+          "Course": "Databases"
+        }
+      ]
+    }
+  ],
+  "Cost": 20,
+  "Validation": {
+    "valid": true,
+    "format": "json",
+    "cost_components": {
+      "hard_components": {
+        "conflicts": 0,
+        "multiple_room_occupation": 0,
+        "precedence": 0,
+        "forbidden_period": 0,
+        "forbidden_room": 0,
+        "forbidden_room_period": 0
+      },
+      "soft_components": {
+        "conflicts": 0,
+        "min_directional_distance": 0,
+        "max_directional_distance": 0,
+        "min_undirectional_distance": 18,
+        "max_undirectional_distance": 0,
+        "period_preference": 2,
+        "room_preference": 0,
+        "undesired_room_period": 0
+      },
+      "conflicts": 0,
+      "distances": 0,
+      "hard_violations": 0,
+      "soft_violations": 20
+    },
+    "cost": 20,
+    "finished_for": "0.01s."
+  },
+  "Duration_in_s": 600.2389597892761,
+  "Iterations": 1512,
+  "Average_score": 102.91005291005291
+}
