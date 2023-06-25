@@ -1,0 +1,42 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: ETT FIEK Solver
+message: FIEK ILS Solver for the Examination Timetabling Problem
+type: software
+authors:
+  - given-names: Synim
+    family-names: Selimi
+    email: synim.selimi@uni-pr.edu
+    affiliation: >-
+      University of Prishtina, Faculty of Electrical and
+      Computer Engineering
+    orcid: 'https://orcid.org/0000-0003-2061-7297'
+  - given-names: Labeat
+    family-names: Arbneshi
+    email: labeat.arbneshi@uni-pr.edu
+    affiliation: >-
+      University of Prishtina, Faculty of Electrical and
+      Computer Engineering
+identifiers:
+  - type: url
+    value: >-
+      https://www.patatconference.org/patat2022/proceedings/PATAT_2022_paper_01.pdf
+    description: >-
+      Synim Selimi, Labeat Arbneshi, Kadri Sylejmani and
+      Nysret Musliu, Iterated Local Search for the
+      examination timetabling problem with
+      constructive-based initial solution, Proceedings of
+      the 13th International Conference on the Practice and
+      Theory of Automated Timetabling - PATAT 2022: Volume
+      III (2022), ISBN: 978-0-9929984-5-5.
+repository-code: 'https://github.com/SynimSelimi/examination-timetabling'
+url: 'https://examination-timetabling.uni-pr.edu/'
+keywords:
+  - Examination Timetabling
+  - Constructive Heuristics
+  - Iterated Local Search
+  - Timetabling Problem
+license: Apache-2.0
+version: 1.0.0
