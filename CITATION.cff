@@ -35,7 +35,7 @@ repository-code: 'https://github.com/SynimSelimi/examination-timetabling'
 url: 'https://examination-timetabling.uni-pr.edu/'
 keywords:
   - Examination Timetabling
-  - ' Constructive Heuristics'
+  - Constructive Heuristics
   - Iterated Local Search
   - Timetabling Problem
 license: Apache-2.0
