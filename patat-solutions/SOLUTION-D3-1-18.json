@@ -1,0 +1,1688 @@
+{
+  "Assignments": [
+    {
+      "Course": "75253",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 12,
+          "Room": "5579",
+          "Course": "75253"
+        }
+      ]
+    },
+    {
+      "Course": "75199-75200",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 58,
+          "Room": "5440",
+          "Course": "75199-75200"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 181,
+          "Room": "5440",
+          "Course": "75199-75200"
+        }
+      ]
+    },
+    {
+      "Course": "75161-75162",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 86,
+          "Room": "5440",
+          "Course": "75161-75162"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 172,
+          "Room": "5440",
+          "Course": "75161-75162"
+        }
+      ]
+    },
+    {
+      "Course": "75279-75281-75280-75282",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 1,
+          "Room": null,
+          "Course": "75279-75281-75280-75282"
+        },
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 2,
+          "Room": "5429",
+          "Course": "75279-75281-75280-75282"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 85,
+          "Room": null,
+          "Course": "75279-75281-75280-75282"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 86,
+          "Room": "5441",
+          "Course": "75279-75281-75280-75282"
+        }
+      ]
+    },
+    {
+      "Course": "75145-75146",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 5,
+          "Room": "5431",
+          "Course": "75145-75146"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 141,
+          "Room": "5434",
+          "Course": "75145-75146"
+        }
+      ]
+    },
+    {
+      "Course": "75179-75180",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 37,
+          "Room": "5440",
+          "Course": "75179-75180"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 168,
+          "Room": "5440",
+          "Course": "75179-75180"
+        }
+      ]
+    },
+    {
+      "Course": "75205-75206",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 13,
+          "Room": "5579",
+          "Course": "75205-75206"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 151,
+          "Room": "5579",
+          "Course": "75205-75206"
+        }
+      ]
+    },
+    {
+      "Course": "75201-75202",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 5,
+          "Room": "5440",
+          "Course": "75201-75202"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 97,
+          "Room": "5440",
+          "Course": "75201-75202"
+        }
+      ]
+    },
+    {
+      "Course": "75125-75126",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 0,
+          "Room": null,
+          "Course": "75125-75126"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 96,
+          "Room": null,
+          "Course": "75125-75126"
+        }
+      ]
+    },
+    {
+      "Course": "75670-75671",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 72,
+          "Room": "5440",
+          "Course": "75670-75671"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 155,
+          "Room": "5443",
+          "Course": "75670-75671"
+        }
+      ]
+    },
+    {
+      "Course": "75121-75122",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 84,
+          "Room": "5442",
+          "Course": "75121-75122"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 170,
+          "Room": "5443",
+          "Course": "75121-75122"
+        }
+      ]
+    },
+    {
+      "Course": "75207-75208",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 7,
+          "Room": "5443",
+          "Course": "75207-75208"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 154,
+          "Room": "5441",
+          "Course": "75207-75208"
+        }
+      ]
+    },
+    {
+      "Course": "75293-75294",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 14,
+          "Room": "5579",
+          "Course": "75293-75294"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 102,
+          "Room": "5579",
+          "Course": "75293-75294"
+        }
+      ]
+    },
+    {
+      "Course": "75295-75296",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 13,
+          "Room": "5442",
+          "Course": "75295-75296"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 102,
+          "Room": "5442",
+          "Course": "75295-75296"
+        }
+      ]
+    },
+    {
+      "Course": "75147-75148",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 1,
+          "Room": "5429",
+          "Course": "75147-75148"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 178,
+          "Room": "5431",
+          "Course": "75147-75148"
+        }
+      ]
+    },
+    {
+      "Course": "75245-75246",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 15,
+          "Room": "5440",
+          "Course": "75245-75246"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 102,
+          "Room": "5441",
+          "Course": "75245-75246"
+        }
+      ]
+    },
+    {
+      "Course": "75267-75268",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 18,
+          "Room": "5577",
+          "Course": "75267-75268"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 112,
+          "Room": "5577",
+          "Course": "75267-75268"
+        }
+      ]
+    },
+    {
+      "Course": "75143-75144",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 69,
+          "Room": "5429",
+          "Course": "75143-75144"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 187,
+          "Room": "5429",
+          "Course": "75143-75144"
+        }
+      ]
+    },
+    {
+      "Course": "75213-75214",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 5,
+          "Room": "5442",
+          "Course": "75213-75214"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 115,
+          "Room": "5441",
+          "Course": "75213-75214"
+        }
+      ]
+    },
+    {
+      "Course": "75247-75248",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 59,
+          "Room": "5440",
+          "Course": "75247-75248"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 187,
+          "Room": "5440",
+          "Course": "75247-75248"
+        }
+      ]
+    },
+    {
+      "Course": "75155-75156",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 3,
+          "Room": "5429",
+          "Course": "75155-75156"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 130,
+          "Room": "5429",
+          "Course": "75155-75156"
+        }
+      ]
+    },
+    {
+      "Course": "75153-75154",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 17,
+          "Room": "5579",
+          "Course": "75153-75154"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 114,
+          "Room": "5579",
+          "Course": "75153-75154"
+        }
+      ]
+    },
+    {
+      "Course": "75131-75132",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 74,
+          "Room": "5443",
+          "Course": "75131-75132"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 185,
+          "Room": "5440",
+          "Course": "75131-75132"
+        }
+      ]
+    },
+    {
+      "Course": "75277-75278",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 87,
+          "Room": "5440",
+          "Course": "75277-75278"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 181,
+          "Room": "5441",
+          "Course": "75277-75278"
+        }
+      ]
+    },
+    {
+      "Course": "75273-75274",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 99,
+          "Room": "5429",
+          "Course": "75273-75274"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 183,
+          "Room": "5429",
+          "Course": "75273-75274"
+        }
+      ]
+    },
+    {
+      "Course": "75285-75286",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 34,
+          "Room": "5442",
+          "Course": "75285-75286"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 116,
+          "Room": "5442",
+          "Course": "75285-75286"
+        }
+      ]
+    },
+    {
+      "Course": "75157-75158",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 0,
+          "Room": "5442",
+          "Course": "75157-75158"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 89,
+          "Room": "5440",
+          "Course": "75157-75158"
+        }
+      ]
+    },
+    {
+      "Course": "75163-75164",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 47,
+          "Room": "5579",
+          "Course": "75163-75164"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 185,
+          "Room": "5579",
+          "Course": "75163-75164"
+        }
+      ]
+    },
+    {
+      "Course": "75133",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 32,
+          "Room": "5579",
+          "Course": "75133"
+        }
+      ]
+    },
+    {
+      "Course": "75249-75250",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 0,
+          "Room": "5431",
+          "Course": "75249-75250"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 90,
+          "Room": "5434",
+          "Course": "75249-75250"
+        }
+      ]
+    },
+    {
+      "Course": "75193-75194",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 58,
+          "Room": "5579",
+          "Course": "75193-75194"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 158,
+          "Room": "5579",
+          "Course": "75193-75194"
+        }
+      ]
+    },
+    {
+      "Course": "79274-79275",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 63,
+          "Room": "5440",
+          "Course": "79274-79275"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 182,
+          "Room": "5441",
+          "Course": "79274-79275"
+        }
+      ]
+    },
+    {
+      "Course": "75139-75140",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 46,
+          "Room": "5429",
+          "Course": "75139-75140"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 130,
+          "Room": "5431",
+          "Course": "75139-75140"
+        }
+      ]
+    },
+    {
+      "Course": "75239-75240",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 84,
+          "Room": "5440",
+          "Course": "75239-75240"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 184,
+          "Room": "5440",
+          "Course": "75239-75240"
+        }
+      ]
+    },
+    {
+      "Course": "75237-75238",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 0,
+          "Room": "5443",
+          "Course": "75237-75238"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 140,
+          "Room": "5441",
+          "Course": "75237-75238"
+        }
+      ]
+    },
+    {
+      "Course": "75113-75114",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 32,
+          "Room": "5440",
+          "Course": "75113-75114"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 168,
+          "Room": "5442",
+          "Course": "75113-75114"
+        }
+      ]
+    },
+    {
+      "Course": "75123-75124",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 19,
+          "Room": "5443",
+          "Course": "75123-75124"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 157,
+          "Room": "5442",
+          "Course": "75123-75124"
+        }
+      ]
+    },
+    {
+      "Course": "75261-75262",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 17,
+          "Room": "5441",
+          "Course": "75261-75262"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 103,
+          "Room": "5441",
+          "Course": "75261-75262"
+        }
+      ]
+    },
+    {
+      "Course": "75135-75136",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 19,
+          "Room": "5579",
+          "Course": "75135-75136"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 116,
+          "Room": "5579",
+          "Course": "75135-75136"
+        }
+      ]
+    },
+    {
+      "Course": "75149-75150",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 0,
+          "Room": "5441",
+          "Course": "75149-75150"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 95,
+          "Room": "5441",
+          "Course": "75149-75150"
+        }
+      ]
+    },
+    {
+      "Course": "75169-75170",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 45,
+          "Room": null,
+          "Course": "75169-75170"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 141,
+          "Room": null,
+          "Course": "75169-75170"
+        }
+      ]
+    },
+    {
+      "Course": "75227-75228",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 33,
+          "Room": "5440",
+          "Course": "75227-75228"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 145,
+          "Room": "5440",
+          "Course": "75227-75228"
+        }
+      ]
+    },
+    {
+      "Course": "75175-75176",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 38,
+          "Room": "5577",
+          "Course": "75175-75176"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 129,
+          "Room": "5577",
+          "Course": "75175-75176"
+        }
+      ]
+    },
+    {
+      "Course": "75297-75298",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 11,
+          "Room": "5443",
+          "Course": "75297-75298"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 145,
+          "Room": "5443",
+          "Course": "75297-75298"
+        }
+      ]
+    },
+    {
+      "Course": "75189-75190",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 33,
+          "Room": "5441",
+          "Course": "75189-75190"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 168,
+          "Room": "5443",
+          "Course": "75189-75190"
+        }
+      ]
+    },
+    {
+      "Course": "75219-75220",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 42,
+          "Room": "5440",
+          "Course": "75219-75220"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 123,
+          "Room": "5440",
+          "Course": "75219-75220"
+        }
+      ]
+    },
+    {
+      "Course": "75524-75525-75526-75527",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 8,
+          "Room": "5578",
+          "Course": "75524-75525-75526-75527"
+        },
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 10,
+          "Room": "5430",
+          "Course": "75524-75525-75526-75527"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 157,
+          "Room": "5577",
+          "Course": "75524-75525-75526-75527"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 159,
+          "Room": "5431",
+          "Course": "75524-75525-75526-75527"
+        }
+      ]
+    },
+    {
+      "Course": "75129-75130",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 11,
+          "Room": "5442",
+          "Course": "75129-75130"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 100,
+          "Room": "5442",
+          "Course": "75129-75130"
+        }
+      ]
+    },
+    {
+      "Course": "75229-75230",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 56,
+          "Room": "5429",
+          "Course": "75229-75230"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 150,
+          "Room": "5429",
+          "Course": "75229-75230"
+        }
+      ]
+    },
+    {
+      "Course": "75289-75290",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 2,
+          "Room": "5442",
+          "Course": "75289-75290"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 117,
+          "Room": "5441",
+          "Course": "75289-75290"
+        }
+      ]
+    },
+    {
+      "Course": "75662-75663",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 28,
+          "Room": "5441",
+          "Course": "75662-75663"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 113,
+          "Room": "5443",
+          "Course": "75662-75663"
+        }
+      ]
+    },
+    {
+      "Course": "75195-75196",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 3,
+          "Room": "5441",
+          "Course": "75195-75196"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 96,
+          "Room": "5442",
+          "Course": "75195-75196"
+        }
+      ]
+    },
+    {
+      "Course": "75119-75120",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 42,
+          "Room": "5432",
+          "Course": "75119-75120"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 122,
+          "Room": "5432",
+          "Course": "75119-75120"
+        }
+      ]
+    },
+    {
+      "Course": "75215-75216",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 2,
+          "Room": "5440",
+          "Course": "75215-75216"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 148,
+          "Room": "5440",
+          "Course": "75215-75216"
+        }
+      ]
+    },
+    {
+      "Course": "75243-75244",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 7,
+          "Room": "5578",
+          "Course": "75243-75244"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 185,
+          "Room": "5577",
+          "Course": "75243-75244"
+        }
+      ]
+    },
+    {
+      "Course": "75183-75184",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 2,
+          "Room": "5441",
+          "Course": "75183-75184"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 94,
+          "Room": "5440",
+          "Course": "75183-75184"
+        }
+      ]
+    },
+    {
+      "Course": "75197-75198",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 4,
+          "Room": "5443",
+          "Course": "75197-75198"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 113,
+          "Room": "5440",
+          "Course": "75197-75198"
+        }
+      ]
+    },
+    {
+      "Course": "75283-75284",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 89,
+          "Room": "5441",
+          "Course": "75283-75284"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 182,
+          "Room": "5440",
+          "Course": "75283-75284"
+        }
+      ]
+    },
+    {
+      "Course": "79270-79271",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 60,
+          "Room": "5440",
+          "Course": "79270-79271"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 182,
+          "Room": "5442",
+          "Course": "79270-79271"
+        }
+      ]
+    },
+    {
+      "Course": "75263-75264",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 1,
+          "Room": "5440",
+          "Course": "75263-75264"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 95,
+          "Room": "5443",
+          "Course": "75263-75264"
+        }
+      ]
+    },
+    {
+      "Course": "75165-75166",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 34,
+          "Room": null,
+          "Course": "75165-75166"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 144,
+          "Room": null,
+          "Course": "75165-75166"
+        }
+      ]
+    },
+    {
+      "Course": "75101-75102",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 71,
+          "Room": "5432",
+          "Course": "75101-75102"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 152,
+          "Room": "5432",
+          "Course": "75101-75102"
+        }
+      ]
+    },
+    {
+      "Course": "75299-75300",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 4,
+          "Room": "5441",
+          "Course": "75299-75300"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 97,
+          "Room": "5441",
+          "Course": "75299-75300"
+        }
+      ]
+    },
+    {
+      "Course": "75171-75172",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 0,
+          "Room": "5440",
+          "Course": "75171-75172"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 142,
+          "Room": "5440",
+          "Course": "75171-75172"
+        }
+      ]
+    },
+    {
+      "Course": "75269-75270",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 14,
+          "Room": "5440",
+          "Course": "75269-75270"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 159,
+          "Room": "5441",
+          "Course": "75269-75270"
+        }
+      ]
+    },
+    {
+      "Course": "75105-75106",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 63,
+          "Room": "5441",
+          "Course": "75105-75106"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 178,
+          "Room": "5442",
+          "Course": "75105-75106"
+        }
+      ]
+    },
+    {
+      "Course": "75181-75182",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 10,
+          "Room": "5577",
+          "Course": "75181-75182"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 122,
+          "Room": "5578",
+          "Course": "75181-75182"
+        }
+      ]
+    },
+    {
+      "Course": "75209-75210",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 18,
+          "Room": "5440",
+          "Course": "75209-75210"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 168,
+          "Room": "5441",
+          "Course": "75209-75210"
+        }
+      ]
+    },
+    {
+      "Course": "75255-75256",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 16,
+          "Room": "5440",
+          "Course": "75255-75256"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 175,
+          "Room": "5441",
+          "Course": "75255-75256"
+        }
+      ]
+    },
+    {
+      "Course": "75259-75260",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 16,
+          "Room": "5429",
+          "Course": "75259-75260"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 128,
+          "Room": "5429",
+          "Course": "75259-75260"
+        }
+      ]
+    },
+    {
+      "Course": "75107-75108",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 1,
+          "Room": null,
+          "Course": "75107-75108"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 169,
+          "Room": null,
+          "Course": "75107-75108"
+        }
+      ]
+    },
+    {
+      "Course": "75217-75218",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 42,
+          "Room": "5441",
+          "Course": "75217-75218"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 176,
+          "Room": "5440",
+          "Course": "75217-75218"
+        }
+      ]
+    },
+    {
+      "Course": "75141-75142",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 40,
+          "Room": "5431",
+          "Course": "75141-75142"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 141,
+          "Room": "5431",
+          "Course": "75141-75142"
+        }
+      ]
+    },
+    {
+      "Course": "81147",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 119,
+          "Room": "5439",
+          "Course": "81147"
+        }
+      ]
+    },
+    {
+      "Course": "75187-75188",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 4,
+          "Room": "5442",
+          "Course": "75187-75188"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 171,
+          "Room": "5442",
+          "Course": "75187-75188"
+        }
+      ]
+    },
+    {
+      "Course": "75134",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 91,
+          "Room": "5440",
+          "Course": "75134"
+        }
+      ]
+    },
+    {
+      "Course": "75167-75168",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 12,
+          "Room": "5577",
+          "Course": "75167-75168"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 153,
+          "Room": "5577",
+          "Course": "75167-75168"
+        }
+      ]
+    },
+    {
+      "Course": "75185-75186",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 42,
+          "Room": "5442",
+          "Course": "75185-75186"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 120,
+          "Room": "5440",
+          "Course": "75185-75186"
+        }
+      ]
+    },
+    {
+      "Course": "75127-75128",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 2,
+          "Room": "5443",
+          "Course": "75127-75128"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 92,
+          "Room": "5442",
+          "Course": "75127-75128"
+        }
+      ]
+    },
+    {
+      "Course": "75117-75118",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Oral",
+          "Period": 67,
+          "Room": "5440",
+          "Course": "75117-75118"
+        },
+        {
+          "Exam": 1,
+          "Part": "Oral",
+          "Period": 150,
+          "Room": "5440",
+          "Course": "75117-75118"
+        }
+      ]
+    },
+    {
+      "Course": "75287-75288",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 1,
+          "Room": "5443",
+          "Course": "75287-75288"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 171,
+          "Room": "5440",
+          "Course": "75287-75288"
+        }
+      ]
+    },
+    {
+      "Course": "75211-75212",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 1,
+          "Room": "5442",
+          "Course": "75211-75212"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 157,
+          "Room": "5440",
+          "Course": "75211-75212"
+        }
+      ]
+    },
+    {
+      "Course": "75231-75232",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 65,
+          "Room": null,
+          "Course": "75231-75232"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 150,
+          "Room": null,
+          "Course": "75231-75232"
+        }
+      ]
+    },
+    {
+      "Course": "75233-75234",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 0,
+          "Room": null,
+          "Course": "75233-75234"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 95,
+          "Room": null,
+          "Course": "75233-75234"
+        }
+      ]
+    },
+    {
+      "Course": "75271-75272",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 35,
+          "Room": "5429",
+          "Course": "75271-75272"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 118,
+          "Room": "5429",
+          "Course": "75271-75272"
+        }
+      ]
+    },
+    {
+      "Course": "75275-75276",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 66,
+          "Room": "5440",
+          "Course": "75275-75276"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 187,
+          "Room": "5441",
+          "Course": "75275-75276"
+        }
+      ]
+    },
+    {
+      "Course": "75241-75242",
+      "Events": [
+        {
+          "Exam": 0,
+          "Part": "Written",
+          "Period": 58,
+          "Room": "5443",
+          "Course": "75241-75242"
+        },
+        {
+          "Exam": 1,
+          "Part": "Written",
+          "Period": 169,
+          "Room": "5440",
+          "Course": "75241-75242"
+        }
+      ]
+    }
+  ],
+  "Cost": 405,
+  "Validation": {
+    "valid": true,
+    "format": "json",
+    "cost_components": {
+      "hard_components": {
+        "conflicts": 0,
+        "multiple_room_occupation": 0,
+        "precedence": 0,
+        "forbidden_period": 0,
+        "forbidden_room": 0,
+        "forbidden_room_period": 0
+      },
+      "soft_components": {
+        "conflicts": 13,
+        "min_directional_distance": 24,
+        "max_directional_distance": 30,
+        "min_undirectional_distance": 308,
+        "max_undirectional_distance": 0,
+        "period_preference": 0,
+        "room_preference": 0,
+        "undesired_room_period": 0
+      },
+      "conflicts": 0,
+      "distances": 0,
+      "hard_violations": 0,
+      "soft_violations": 375
+    },
+    "cost": 375,
+    "finished_for": "0.34s."
+  }
+}

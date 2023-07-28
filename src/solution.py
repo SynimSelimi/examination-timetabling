@@ -239,13 +239,14 @@ class Solution:
             rooms = course.get('PossibleRooms')
             if randomize_rooms == True: random.shuffle(rooms)
             periods = course.get('PossiblePeriods')
-            if exam_order % 2 == 1: periods = self.distribute_periods(periods)
+            distribute_periods = random.randint(0,1) == 0
+            if distribute_periods == True and exam_order % 2 == 1: periods = self.distribute_periods(periods)
 
             room, period = self.available_room_period(rooms, periods, course)
 
             if period == None:
                 percentage = '{0:.2f}%'.format((total_events - len(courses)) * 100 / total_events)
-                print("Retrying... ", percentage, end="\r")
+                # print("Retrying... ", percentage, end="\r")
                 return None
 
             self.last_period = period
@@ -277,7 +278,7 @@ class Solution:
         solution = None
         attempt = 0
 
-        while solution_found == None and attempt < 700:
+        while solution_found == None and attempt < 1500:
             solution = Solution(
                 copy.deepcopy(instances), hard_constraints, 
                 instance_path=instance_path, constraints=constraints
@@ -286,7 +287,7 @@ class Solution:
             solution.attempt = attempt
             attempt += 1
 
-        if attempt < 700:
+        if attempt < 1500:
             return solution
         else:
             print("Could not solve in time!")
@@ -376,8 +377,10 @@ class Solution:
         self.cost = evaluate(self)
         return self.export()
 
-    def mutate_courses(self, feedback=False, convergence=True):
-        if feedback == True:
+    def mutate_courses(self, feedback=False, convergence=True, perturb=False):
+        if perturb == True:
+            amount_of_change = random.random() * (0.3/(self.attempt/2 + 1)) + 0.20
+        elif feedback == True:
             amount_of_change = random.random() * (0.5/(self.attempt/2 + 1)) + 0.02
         elif convergence == True:
             amount_of_change = random.random() * (0.5/(self.ancestors + 1)) + 0.02
@@ -458,7 +461,7 @@ class Solution:
 
             if period == None:
                 percentage = '{0:.2f}%'.format((total_events - len(courses)) * 100 / total_events)
-                print("Retrying mutate... ", percentage, end="\r")
+                # print("Retrying mutate... ", percentage, end="\r")
                 return None
 
             self.last_period = period
@@ -472,17 +475,17 @@ class Solution:
         return self.export()
 
     @staticmethod
-    def try_mutating(solution):
+    def try_mutating(solution, perturb=False):
         mutation_success = None
         neighbour_solution = None
         attempt = 0
-        to_mutate_courses = random.randint(0,1) > 0.2
+        to_mutate_courses = random.random() > 0.1
 
-        while mutation_success == None and attempt < 700:
+        while mutation_success == None and attempt < 1500:
             neighbour_solution = copy.deepcopy(solution)
             neighbour_solution.attempt = attempt
-            if to_mutate_courses:
-                mutation_success = neighbour_solution.mutate_courses()
+            if to_mutate_courses or perturb != None:
+                mutation_success = neighbour_solution.mutate_courses(perturb=perturb)
             else:
                 mutation_success = neighbour_solution.mutate_rooms()
 
@@ -490,7 +493,7 @@ class Solution:
 
         neighbour_solution.ancestors += 1
 
-        if attempt < 700:
+        if attempt < 1500:
             return neighbour_solution
         else:
             print("Could not mutate in time!")

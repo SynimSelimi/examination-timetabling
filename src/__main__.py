@@ -110,22 +110,27 @@ This section contains the main logic to run a hill climbing search from
 the initial solution by mutation operators
 """
 def hillclimbing(instances, hard_constraints, instance_path, constraints, old_solution=None):
+    solution = None
+
     def get_best_neighbour(solution):
         best_cost = solution.cost
         best_solution = solution
 
-        for i in range(0, 15):
-            mutated_solution = Solution.try_mutating(best_solution)
-            if (mutated_solution == None): continue
+        for i in range(0, 45):
+            mutated_solution = None
+            while mutated_solution == None:
+                mutated_solution = Solution.try_mutating(best_solution)
+
             if (mutated_solution.cost < best_cost):
                 best_cost = mutated_solution.cost
                 best_solution = mutated_solution
         return best_solution
 
-    if old_solution == None:
-        solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
-    else:
-        solution = old_solution
+    while solution == None:
+        if old_solution == None:
+            solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+        else:
+            solution = old_solution
     neighbour = get_best_neighbour(solution)
     last_solution = solution
 
@@ -145,76 +150,196 @@ def iterated_local_search(
     hard_constraints,
     instance_path,
     constraints,
-    iterations=350,
+    iterations=15,
 ):
+    def new_home_base(home, new):
+        EXPLORATION = 0.10
+        better_home_solution = home.cost < new.cost
+        if (better_home_solution == True and random.random() > EXPLORATION):
+            return home
+        else:
+            return new
+
     best_solution = hillclimbing(instances, hard_constraints, instance_path, constraints, None)
+    home = best_solution
+    working_solution = best_solution
     best_solutions = []
 
     for n in range(iterations):
-        mutated_solution = None
-        while mutated_solution == None:
-            mutated_solution = Solution.try_mutating(best_solution)
+        perturbed_solution = None
+        while perturbed_solution == None:
+            perturbed_solution = Solution.try_mutating(home, perturb=True)
 
-        local_solution = hillclimbing(None, None, None, None, mutated_solution)
-        if local_solution.cost < best_solution.cost:
-            best_solution = local_solution
-            best_solutions.append(best_solution)
-            if n % 3 == 0:
-                best_solution.validate()
-                print(best_solution.cost, best_solution.validation_results['cost'], best_solution.validation_results['valid'])
+        working_solution = hillclimbing(None, None, None, None, perturbed_solution)
+        home = new_home_base(home, working_solution)
+
+        print(home.cost)
+        if home.cost < best_solution.cost:
+            best_solution = home
+            best_solutions.append(home)
+        
+        
+        if best_solution.cost == 0:
+            break
+
+        # test_evaluation(working_solution)
+            # if n % 2 == 0:
+            #     best_solution.validate()
+            #     print(best_solution.cost, best_solution.validation_results['cost'], best_solution.validation_results['valid'])
     
     return best_solution
 
 def test_evaluation(solution):
+    # {
+    #    "hard_components":{
+    #       "conflicts":0,
+    #       "multiple_room_occupation":0,
+    #       "precedence":0,
+    #       "forbidden_period":0,
+    #       "forbidden_room":0,
+    #       "forbidden_room_period":0
+    #    },
+    #    "soft_components":{
+    #       "conflicts":11,
+    #       "min_directional_distance":0,
+    #       "max_directional_distance":45,
+    #       "min_undirectional_distance":0,
+    #       "max_undirectional_distance":0,
+    #       "period_preference":4,
+    #       "room_preference":0,
+    #       "undesired_room_period":0
+    #    },
+    #    "conflicts":0,
+    #    "distances":0,
+    #    "hard_violations":0,
+    #    "soft_violations":60
+    # }
     solution.validate()
     base_cost = solution.cost
-    validator_cost = solution.validation_results['cost']
+    validator_cost = \
+        solution.validation_results['cost_components']['soft_components']['conflicts']
     
     if (base_cost != validator_cost):
         print("FALSE EVALUATION", base_cost, validator_cost, abs(base_cost - validator_cost))
     else:
         print("TRUE EVALUATION", base_cost, validator_cost, abs(base_cost - validator_cost))
 
+def run_ils_with_timeout(instances, hard_constraints, instance_path, constraints):
+    start = time.time()
+    best_result = None
+    best_score = 999999999
+    average_score = 0
+    iterations = 0
+
+    while True:
+        result = iterated_local_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+        end = time.time()
+        duration = end - start
+        if (result.cost < best_score):
+            best_score = result.cost
+            best_result = result
+        print(best_score)
+        # test_evaluation(result)
+        average_score += result.cost
+        iterations += 1
+        if (duration > 600 or best_score == 0): break
+
+    best_result.validate()
+    best_result_json = best_result.export()
+    best_result_json['Duration_in_s'] = (end - start)
+    best_result_json['Iterations'] = iterations
+    best_result_json['Average_score'] = average_score / iterations
+    save_solution(instance_path, best_result_json)
+    print("BEST", best_result.cost, best_result.validation_results['cost'], best_result_json['Duration_in_s'])
+    print("average_score", average_score/iterations)
+
+def measure(instances, hard_constraints, instance_path, constraints):
+    start = time.time()
+    best_result = None
+    best_score = 999999999
+    average_score = 0
+    iterations = 0
+
+    while True:
+        result = iterated_local_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+        end = time.time()
+        if (result.cost < best_score):
+            best_score = result.cost
+            best_result = result
+        print(best_score)
+        test_evaluation(result)
+        average_score += result.cost
+        iterations += 1
+        if ((end - start) > 60): break
+
+    best_result.validate()
+    save_solution(instance_path, best_result.export())
+    print("BEST", best_score, best_result.validation_results['cost'])
+    print("average_score", average_score/iterations)
+
 """
 Solve one instance -
 This section contains the main logic to solve one instance
 """
 def run_solver(instance_path):
-    start_time = time.time()
+    # start_time = time.time()
     tprint("Running solver on instance:", instance_path)
 
     data = parse(instance_path)
     instances, hard_constraints, constraints = process(data)
     # save_file("preprocess.json", instances, ".")
+    # solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    # save_solution(instance_path, solution.export())
+    # end_time = time.time()
 
-    solution = Solution.try_solving(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
-    save_solution(instance_path, solution.export())
-
-    end_time = time.time()
-
-    tprint("Solver completed. Check solutions folder.")
-    tprint(f"Completed in {end_time-start_time:.2f}s.")
-    iterated_local_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    run_ils_with_timeout(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    # measure(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+    # iterated_local_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
     # hillclimbing(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
     # greedy_search(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
     # sim_annealing(instances, hard_constraints, instance_path=instance_path, constraints=constraints)
+
+    tprint("Solver completed. Check solutions folder.")
+    # tprint(f"Completed in {end_time-start_time:.2f}s.")
 
 """
 Solve all instances -
 This section contains the main logic to solve all instances,
 which are present in the instances folder
 """
-def solve_all_instances(folder = 'instances'):
+def solve_all_instances(folder = 'instances', resolve_all = False):
+    solved_instances = []
+
+    if resolve_all:
+        for _, _, files in os.walk('solutions'):
+            for filename in files:
+                instance = '-'.join(filename.split('-')[1:])
+                solved_instances.append(instance)
+
     for _, _, files in os.walk(folder):
         print("Solving all instances.")
-        for filename in files: run_solver(f'{folder}/{filename}')
+        for filename in files:
+            if filename in solved_instances: continue
+            run_solver(f'{folder}/{filename}')
+
+def print_results(folder = 'solutions'):
+    results = []
+    for _, _, files in os.walk(folder):
+        for filename in files:
+            solution = '-'.join(filename.split('-')[1:])
+            f = open(f"{folder}/{filename}")
+            data = json.load(f)
+            results.append(f"{solution}\t{data['Average_score']}\t{data['Validation']['cost']}\t{data['Duration_in_s']}")
+
+    print("\n".join(results))
+
 
 """
 Main program -
 This section runs the solver
 """
 def main():
-    if solve_all_arg(): solve_all_instances()
+    if solve_all_arg(): solve_all_instances(resolve_all = True)
     else: run_solver(get_filepath())
 
 """
@@ -222,3 +347,4 @@ Execution
 """
 if __name__ == '__main__':
     main()
+    print_results()
